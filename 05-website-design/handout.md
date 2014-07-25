@@ -1,6 +1,6 @@
 ### Geosoftware II WiSe 2014/15
 
-# Modern Website Design
+# Modern Website Design - Handout
 
 Reqiurements to modern day websites.
 
