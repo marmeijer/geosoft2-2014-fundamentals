@@ -2,6 +2,6 @@
 ##WebSockets##
 ##HTML5 und CSS3##
 ##Linked Data##
-** Blub **
+__Blub__
 * blub 
 * bla
