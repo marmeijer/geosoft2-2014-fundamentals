@@ -7,5 +7,5 @@ __Blub__
 * bla
 
 1. text
-  ..+ unterpunkt
+  ..* unterpunkt
 2. 
