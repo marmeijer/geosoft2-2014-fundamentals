@@ -6,6 +6,5 @@ __Blub__
 * blub 
 * bla
 
-1. text
+* text
   1. unterpunkt
-2. 
