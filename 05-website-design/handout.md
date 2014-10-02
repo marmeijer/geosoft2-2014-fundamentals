@@ -348,7 +348,7 @@ placeholder
 
 #### Allgemein
 
-960 Grid System ist ein CSS-Grid-Framework entwickelt von Nathan Smith mit folgenden Eigenschaften und Feature:
+960 Grid System ist ein CSS-Grid-Framework entwickelt von Nathan Smith mit folgenden Eigenschaften und Features:
 
 * lässt Layouts, die auf Gastaltungsrastern basieren, schnell und leicht durch vordefinierte CSS-Klasen in Webseiten umwandeln
 * Darstellungsbreich auf 960 Pixel Breite festgelegt
@@ -361,7 +361,7 @@ placeholder
 * Abstand zwischen Spalten jeweils bei 20 Pixeln
 * erste und letzte Spalte haben je 10 Pixel zu den Außenkanten
 
-Beispiel Website: [Sony](http://www.sonymusic.de/)Music basiert auf solch ein Gestaltungsraster
+Beispiel Website: [Sony](http://www.sonymusic.de/) Music basiert auf solch ein Gestaltungsraster
 
 Mit einem auf das Framework abgestimmten CSS-Generator können auch eigene Raster festgelegt werden
 Auf [960.gs](http://www.960.gs) gibt es passende Stylesheets.
@@ -382,9 +382,9 @@ Auf [960.gs](http://www.960.gs) gibt es passende Stylesheets.
 * basiert auf 960 Grid System
 * ist um __flexibles Layouts__, erweitert
 * automatische Anpassung an Endgerät
-* http://www.designinfluences.com/fluid960gs/
 
-#####Aufbau
+####Aufbau
+
 * 12- oder 16-Spalten-Grid-Framework (statisch/flexibel)
 * Style-Vorlagen für HTML-Elemente wie zum Beispiel Überschriften
 * bereits implementierbares CSS-Dropdown-Menü
@@ -400,6 +400,7 @@ Auf [960.gs](http://www.960.gs) gibt es passende Stylesheets.
 
 * http://960.gs/
 * http://t3n.de/magazin/css-frameworks-schnelle-neue-stylesheet-welt-230278/
+* http://www.designinfluences.com/fluid960gs/
 * http://andytaylor.me/2013/04/09/1140px-css-grid-retired/
 
 ## Additional Stuff
