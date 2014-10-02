@@ -23,7 +23,19 @@ HTML5 ist:
   		<title>Styling HTML5</title>
 		<meta charset="utf-8">
 
-* ... das Styling, siehe nächsten Abschnitt...
+* ... das Styling
+	* In HTML5 kann der Style eines Dokumentes im Header durch ein Stylesheet festgelegt werden. Somit ist dieser ganz leicht veränderbar. Mit der Programmiersprache CSS3 kann für jedes Element im HTMLDoc ein Style festgelegt werden.
+	* Mehr Infos zu [CSS](http://www.w3schools.com/css/default.asp) und [CSS3](http://www.w3schools.com/css/css3_intro.asp)
+	* Beispiel:
+			
+			/*im <head>*/
+			<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+			/* CSS-Datei style.css */
+			header {background-color: yellow;}
+			nav {background-color: orange;}
+			section {background-color: yellowgreen;}
+			footer {background-color: deepskyblue;}
 
 * ... und damit auch die neuen Style Elemente von HTML5 bei alten Browser funktionieren gibt es "the shiv" (HTML5 Enabling JavaScript). Ohne diesen Kommentar werden von alten Browsern unbekannte Elemente einfach als "inline elements" angezeigt.
 
@@ -38,9 +50,6 @@ HTML5 ist:
 		</body>
 		</html>
 
-
-####Styles####
- 
 
 ####Neue Elemente####
 
@@ -135,7 +144,7 @@ HTML5 hat zwei Tags um Plug-ins einzubinden `<object>,<embed>`. Beide haben die 
 * Beispiel für [`<object>`](http://www.w3schools.com/html/tryit.asp?filename=tryhtml_object_plugin)
 * Beispiel [`<embed>`](http://www.w3schools.com/html/tryit.asp?filename=tryhtml_embed_plugin)
 
-####Funktionen####
+####neue HTML APIs####
 
 + [Geolocation](http://www.w3schools.com/html/html5_geolocation.asp)
 + [Drag/Drop](http://www.w3schools.com/html/html5_draganddrop.asp)
@@ -143,6 +152,13 @@ HTML5 hat zwei Tags um Plug-ins einzubinden `<object>,<embed>`. Beide haben die 
 + [App Cache](http://www.w3schools.com/html/html5_app_cache.asp)
 + [Web Workers](http://www.w3schools.com/html/html5_webworkers.asp)
 + [SSE](http://www.w3schools.com/html/html5_serversentevents.asp)
+
+###Quellen zu HTML5###
+
+[1] <https://de.wikipedia.org/wiki/HTML5>, Datum: 02.10.2014
+
+Der HTML5 Teil des Handouts orientiert sich an der W3school
+<http://www.w3schools.com/html/html5_intro.asp>
 
 
 ##WebSockets##
