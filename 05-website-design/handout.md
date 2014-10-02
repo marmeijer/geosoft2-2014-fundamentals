@@ -351,10 +351,28 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 ## HTML5 Boilerplate
 
 
-placeholder
+HTML5 Boilerplate ist ein Build-Skript welches Vorlagen zur zeitgemäßen und schnellen Web-Entwicklung liefert.
+
+#### Zusammenfassung
+
+* Vorgaben für HTML und CSS sowie JavaScript Bibliotheken und .htaccess-Voreinstellungen (Konfigurationsdatei, z.B. für Passwortschutz)
+* weitere nützliche Vorlagen und Skripte z.B. zum Testen
+* kein klassischen Framework
+* bündelt und dokumentiert sinnvolle Vorlagen und Vorgaben zentral
+* eine Art umfangreiche Universalvorlage
+
+#### Leistungen
+
+* optimiert zum Projekt gehörende HTML-, CSS- und JavaScript-Dateien
+* d.h. fügt die CSS- und JS-Dateien zusammen, entfernt dabei Unnötiges, und strukturiert sinnvoll neu
+* kann auch überflüssige Metadaten aus Bilddateien des Projektes entfernen
+* prüft den Code auf Fehler und unperformante Konstrukte
+
+#### Quellen
 
 * http://html5boilerplate.com/
 * http://webkrauts.de/artikel/2011/bauen-wie-die-ameisen
+* * http://www.sitepoint.com/introduction-html5-boilerplate/
 
 
 ## 960 Grid System
