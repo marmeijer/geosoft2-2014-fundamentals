@@ -77,38 +77,38 @@ LESS ist eine Stylesheet-Sprache, die CSS effektiver machen soll durch Erweiteru
 
 ####LESS Kompilierung
 
-* Server-seitig ( Node.js )
-* Client-seitig ( moderne Browser )
+* Server-seitig (Node.js)
+* Client-seitig (moderne Browser)
 * Änderungen mit Watch mode automatisch im Webrowser
 * wird in CSS kompiliert
 
 ####Codebeispiele
 
-##### Variablen
+####Variablen
 
 * spezielle Farbe als Variable definieren
 * jederzeit wieder aufrufbar
 
- `@mycolor: #4D926F;`
+ `@mycolor: #4D926F;`   
 
- `#header {`
- `color: @mycolor;`
- `}`
- `h2 {`
- `color: @mycolor;`
- `}`
+ `#header {`   
+ `color: @mycolor;`   
+ `}`   
+ `h2 {`   
+ `color: @mycolor;`   
+ `}`   
 
 * wird in CSS zu :
 
- `#header {`
- `background-color: #4D926F;`
- `}`
+ `#header {`   
+ `background-color: #4D926F;`   
+ `}`   
 
- `h2 {`
- `color: #4D926F;`
- `}`
+ `h2 {`   
+ `color: #4D926F;`   
+ `}`   
 
-Mehr Beispiele:[Los geht's!](http://www.lesscss.de/)
+Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
 
 #### Vergleich [LESS/SASS](http://www.hongkiat.com/blog/sass-vs-less/)
 
@@ -120,12 +120,10 @@ Mehr Beispiele:[Los geht's!](http://www.lesscss.de/)
 
 * Variablen-Namen zum Beispiel
 
- @ LESS
+ @ LESS   
  $- SASS
 
 * weitere Vergleiche unter [LESS/SASS](http://www.hongkiat.com/blog/sass-vs-less/)
-
----
 
 ### Stylus
 
@@ -133,36 +131,36 @@ Eine weitere Syslesheet-Sprache, die in Javascript geschriebenen und für die Pl
 
 ####Code Beispiel
 
- `meineFarbe = #0033ff`
- `header`
- `background-color meineFarbe`
- `h1`
- `color meineFarbe`
- `a`
- `color meineFarbe`
+ `meineFarbe = #0033ff`   
+ `header`   
+ `background-color meineFarbe`   
+ `h1`   
+ `color meineFarbe`   
+ `a`   
+ `color meineFarbe`    
 
 wird in CSS zu:
 
- `header{`
- `background-color: #0033ff;`
- `}`
- `h1{`
- `color: #0033ff;`
- `}`
- `a{`
- `color: #0033ff;`
- `}`
+ `header{`   
+ `background-color: #0033ff;`   
+ `}`   
+ `h1{`   
+ `color: #0033ff;`   
+ `}`    
+ `a{`    
+ `color: #0033ff;`   
+ `}`    
 
-#####Im Vergleich zu SASS/LESS
+####Im Vergleich zu SASS/LESS
 
 * in JavaScript geschrieben und für Node.js entwickelt
 * minimale CSS-Syntax (Klammern, Doppelpunkte und Semikolons nicht notwenig)
 
-#####Ausführlicher Vergleich der 3 Stylesheets unter :
+####Ausführlicher Vergleich der 3 Stylesheets unter :
 
 [SASS/LESS/STYLUS](http://www.heise.de/developer/artikel/CSS-Praeprozessoren-im-Vergleich-2288284.html?artikelseite=2)
 
-Quellen & Links
+####Quellen
 
 * http://lesscss.org/
 * http://www.lesscss.de/
