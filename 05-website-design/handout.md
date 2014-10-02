@@ -40,7 +40,7 @@ Die Grundlage bilden die aktuellen Webstandards HTML5, CSS3 und JavaScript (sieh
 
 * Gestaltung einer Website oder Web-App deutlich zeitaufwändiger
 * bei der Ausarbeitung der Inhalte muss auf ggf. begrenzte Bandbreite geachtet werde
-* aufgrund der begrenzten Bildschirmgröße bestimmter Geräte müsste evtl. gezielt auf Inhalte verzichtet werden (graceful degredation)
+* aufgrund der begrenzten Bildschirmgröße bestimmter Geräte müsste evtl. gezielt auf Inhalte verzichtet werden (deswegen: graceful degradation)
 * große Anzahl von Endgeräten muss mit Emulatoren, etc. getestet werden
 
 #### Aber:
@@ -96,20 +96,20 @@ LESS ist eine Stylesheet-Sprache, die CSS effektiver machen soll durch Erweiteru
  `@mycolor: #4D926F;`   
 
  `#header {`   
- `color: @mycolor;`   
+ 	`color: @mycolor;`   
  `}`   
  `h2 {`   
- `color: @mycolor;`   
+ 	`color: @mycolor;`   
  `}`   
 
 * wird in CSS zu :
 
  `#header {`   
- `background-color: #4D926F;`   
+ 	`background-color: #4D926F;`   
  `}`   
 
  `h2 {`   
- `color: #4D926F;`   
+ 	`color: #4D926F;`   
  `}`   
 
 Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
@@ -146,13 +146,13 @@ Eine weitere Syslesheet-Sprache, die in Javascript geschriebenen und für die Pl
 wird in CSS zu:
 
  `header{`   
- `background-color: #0033ff;`   
+ 	`background-color: #0033ff;`   
  `}`   
  `h1{`   
- `color: #0033ff;`   
+ 	`color: #0033ff;`   
  `}`    
  `a{`    
- `color: #0033ff;`   
+ 	`color: #0033ff;`   
  `}`    
 
 ####Im Vergleich zu SASS/LESS
@@ -202,20 +202,20 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
 
 __CSS:__
           
-    body {
-      font: 100% Helvetica, sans-serif;
-      color: #333;
+    body {    
+      font: 100% Helvetica, sans-serif;   
+      color: #333;   
       }      
  
 * __[Mixin]s__, um Gruppen von CSS-Deklarationen zu erstellen,
     
-       =border-radius ( $radius ) 
-       -webkit-border-radius :  $radius 
-       -moz-border-radius :     $radius 
-        ms-border-radius :      $radius 
-       border-radius :          $radius      
+       =border-radius ( $radius )    
+       -webkit-border-radius :  $radius   
+       -moz-border-radius :     $radius    
+        ms-border-radius :      $radius    
+       border-radius :          $radius     
        
-      .box 
+      .box     
          +border-radius ( 10px )
 
 __CSS:__ 
