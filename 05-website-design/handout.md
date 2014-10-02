@@ -6,13 +6,60 @@ Reqiurements to modern day websites.
 
 ## Responsive Design
 
-placeholder
+Responsive Webdesign ist ein gestalterisches und technisches Paradigma bei der Erstellung von Websites.
+Der Inhalt reagiert dabei auf die jeweils genutzten Endgeräte. 
+Dies betrifft sowohl die Auflösung, den Inhalt, als auch Eingabemethoden.
+Die Grundlage bilden die aktuellen Webstandards HTML5, CSS3 und JavaScript (siehe: jeweilige Handouts)
+
+#### Technik:
+
+* wesentliche Vorraussetzungen sog. "Media Queries", ein CCS3-Konzept
+* Design richtet sich nach abgefragten Eigenschaften (Größe des Geräts, Bildschirmauflösung, etc.)
+* in folgendem Beispiel wird die Breite eines Inhaltes auf 600px verkleinert sobald die breite des Browserfensters 1025px unterschreitet
+
+#inhalt {
+   width: 800px;
+}
+ 
+@media screen and (max-width: 1024px) {
+   #inhalt {
+      width: 600px;
+   }
+}
+
+#### Vorteile:
+
+* Website passt sich der Bildschirmauflösung des mobilen Endgerätes an
+* das Webdesign folgt also dem Nutzer - nicht umgekehrt (function follows form)
+* starker Marktanteil von Smartphones und Tablets - Trend zur Nutzung haupts. mobiler Endgeräte
+
+
+#### Nachteile:
+
+* Gestaltung einer Website oder Web-App deutlich zeitaufwändiger
+* bei der Ausarbeitung der Inhalte muss auf ggf. begrenzte Bandbreite geachtet werde
+* aufgrund der begrenzten Bildschirmgröße bestimmter Geräte müsste evtl. gezielt auf Inhalte verzichtet werden (graceful degredation)
+* große Anzahl von Endgeräten muss mit Emulatoren, etc. getestet werden
+
+#### Aber:
+
+* deutlich geringerer Pflegeaufwand da Inhalte nur einmal angelegt werden müssen - kosteneffizient
+
+#### Beispielseite:
+
+https://www.tuj.ac.jp/
+
+#### Mobile First:
+
+Hier wird der gewohnte Ansatz einfach umgedreht, man arbeitet sich von der kleinsten Layout-Version zur größten (progressive enhancement).
+Wenn eine schlanke, übersichtliche Designlösung für den kleisten Bildschirm gefunden ist, ist ein Portierung auf größere Endgeräte kein Problem mehr.
+Man wird also gezwungen, bewusst von vornherein zu Priorisieren und sich auf die wichtigen Dinge zu konzentrieren (content first).
+Erst nach und nach werden (falls überhaupt nötig) weitere Scripte, Slideshows und Grafiken eingebaut.
+In der direkten Umsetzung programmiert man also nach dem min-width Prinzip, also fügt dann erst Weiteres hinzu wenn eine bestimmte Bildschirmbreite überschritten wird.
+
+#### Quellen:
+
 * http://de.wikipedia.org/wiki/Responsive_Webdesign
-* http://www.responsive-webdesign.mobi/
-
-## Mobile First
-
-placeholder
 * http://www.responsive-webdesign.mobi/
 * http://www.elmastudio.de/webdesign/webdesign-goes-mobile-first-eine-kleine-einfuhrung-zum-neuen-webdesign-trend/
 * http://t3n.de/news/responsive-webdesign-einstieg-524171/
