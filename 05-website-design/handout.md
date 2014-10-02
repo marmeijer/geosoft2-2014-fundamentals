@@ -66,21 +66,10 @@ In der direkten Umsetzung programmiert man also nach dem min-width Prinzip, also
 * http://www.elmastudio.de/webdesign/webdesign-goes-mobile-first-eine-kleine-einfuhrung-zum-neuen-webdesign-trend/
 * http://t3n.de/news/responsive-webdesign-einstieg-524171/
 
-## Bootstrap
-
-placeholder
-* http://getbootstrap.com/
-* http://de.wikipedia.org/wiki/Bootstrap_%28Framework%29
-
-## Foundation
-
-placeholder
-* http://foundation.zurb.com/
-* http://de.wikipedia.org/wiki/Foundation_%28Framework%29
-
 ## LESS
 
 placeholder
+
 * http://lesscss.org/
 * http://www.lesscss.de/
 * http://de.wikipedia.org/wiki/LESS_%28Stylesheet-Sprache%29
@@ -100,9 +89,11 @@ Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erweitert. Sie
 * minimalistischste Schreibweise
 
 ####Kompilierung
+
 * wird in SCSS-Datei erstellt und dann in eine CSS-Datei umgewandelt
 
 ####Eigenschaften
+
 * [Mixin]s
 * Paramterübergabe 
 * Code-Blöcke fexileke einzusetzen
@@ -166,28 +157,36 @@ __CSS:__
 * Erweiterung potenzieller Fehlerquellen
 * Stylesheets werden nur per Ruby generiert
 
+####Quellen
 
----
-placeholder
 * http://sass-lang.com/
 * http://webkrauts.de/artikel/2012/css-modularisierung-mit-sass
 * http://de.wikipedia.org/wiki/Sass_%28Stylesheet-Sprache%29
 
+## Bootstrap
+
+* http://getbootstrap.com/
+* http://de.wikipedia.org/wiki/Bootstrap_%28Framework%29
+
+## Foundation
+
+placeholder
+
+* http://foundation.zurb.com/
+* http://de.wikipedia.org/wiki/Foundation_%28Framework%29
+
 ## HTML5 Boilerplate
 
 placeholder
+
 * http://html5boilerplate.com/
 * http://webkrauts.de/artikel/2011/bauen-wie-die-ameisen
 
 ## 960 Grid System
 
 placeholder
+
 * http://960.gs/
 * http://t3n.de/magazin/css-frameworks-schnelle-neue-stylesheet-welt-230278/
 
-## Additional Stuff
-
-* HMTL5?
-* CSS3 (Media Queries)?
-* JavaScript?
 
