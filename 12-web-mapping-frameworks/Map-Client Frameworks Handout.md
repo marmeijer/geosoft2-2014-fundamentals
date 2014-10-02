@@ -74,7 +74,7 @@ Die Liste an populären proprietären Map-Client's ist deutlich übersichtlicher
 
 
 ##4. Map-Client Frameworks im Vergleich
-Beispielhaft werden nun [OpenLayers](http://openlayers.org/) und [Leaflet](http://leafletjs.com/), als Open-Source Lösungen, in ihren modernsten iterationen(versionen?) miteinander verglichen.
+Beispielhaft werden nun [OpenLayers](http://openlayers.org/) und [Leaflet](http://leafletjs.com/), als Open-Source Lösungen, in ihren modernsten Versionen miteinander verglichen.
 
 Beide Map-Client Frameworks sind JavaScript Libraries. Leaflet aktuell in Version 0.7.3, vorraussichtlich im nächsten Monat jedoch mit der 1.0 Veröffentlichung. OpenLayers hingegen befindet sich seit 29.08.2014 in Version 3.0. Die erste Veröffentlichung der beiden Libraries war jeweils 2006 für OpenLayers und 2011 für Leaflet.
 
