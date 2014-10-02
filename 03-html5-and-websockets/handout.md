@@ -151,7 +151,7 @@ HTML5 hat zwei Tags um Plug-ins einzubinden `<object>,<embed>`. Beide haben die 
 + [Local Storage](http://www.w3schools.com/html/html5_webstorage.asp)
 + [App Cache](http://www.w3schools.com/html/html5_app_cache.asp)
 + [Web Workers](http://www.w3schools.com/html/html5_webworkers.asp)
-+ [SSE](http://www.w3schools.com/html/html5_serversentevents.asp)
++ [Server-Sent Events](http://www.w3schools.com/html/html5_serversentevents.asp)
 
 ####Quellen zu HTML5####
 
