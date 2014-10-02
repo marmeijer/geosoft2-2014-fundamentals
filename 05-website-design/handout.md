@@ -17,17 +17,17 @@ Die Grundlage bilden die aktuellen Webstandards HTML5, CSS3 und JavaScript (sieh
 * Design richtet sich nach abgefragten Eigenschaften (Größe des Geräts, Bildschirmauflösung, etc.)
 * in folgendem Beispiel wird die Breite eines Inhaltes auf 600px verkleinert sobald die breite des Browserfensters 1025px unterschreitet
 
+`#inhalt {`
 
-`#inhalt {`   
-	`width: 800px;`    
-`}`   
-
-`@media screen and (max-width: 1024px) {`   
-	`#inhalt {`   
-		`width: 600px;`   
-	`}`    
+	`width: 800px;`
 `}`
 
+`@media screen and (max-width: 1024px) {`
+	`#inhalt {`
+		`width: 600px;`
+	
+	`}`
+`}`
 
 #### Vorteile:
 
@@ -164,6 +164,53 @@ __CSS:__
 * http://de.wikipedia.org/wiki/Sass_%28Stylesheet-Sprache%29
 
 ## Bootstrap
+
+Bootstrap is ein sehr häufig verwendetes und auf Git Hub gehostetes Open Source CSS-Framework mit Gestaltungsvorlagen für Schriften, Formulare, Buttons, Tabellen, etc. Die Idee ist dabei Designer und Entwickler zusammenzubringen, um nicht nur Entwicklungszeiten zu verkürzen sondern auch, ohne langwierige Designprozesse für ein einheitliches Look-and-Feel der Anwendungen zu sorgen.   
+Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive Webdesigns, sowie die unterstützung älterer Browser durch die implementierung alternativer Stylesheets.
+
+#### Aufbau
+
+* enthält eine Reihe von Stylesheets die Grundlegende Stildefinition vorgeben 
+* modular aus LESS-Stylesheets aufgebaut, Einzelkomponenten werden von einer zentralen bootstrap-Datei zusammengeführt
+* standardmäßig: 940px breites, zwölfspaltiges Grid-Layout
+* vier Variationen (für Smartphones, Tablets, PC's mit geringer und hoher Auflösung) stehen zur Verfügung
+* zusätzlich sind weitere, häufig verwendete Buttons, Drop-Down-Menues, etc. enthalten
+* JavaScript Komponenten basieren auf jQuery
+
+#### Anwendung
+
+* vor der Einbindung in ein HTML-Dokument muss eine CSS-Datei aus den LESS-Stylesheets kompiliert werden
+* alternativ lassen sich natürlich auch direkt kompilierte Dateien einbinden
+* bei der Verwendung von JavaScript muss außerdem zunächst die jQuery Bibliothek eingebunden werden
+
+`<head>`
+	`<title>Beispiel</title>`
+
+	`<!-- Einbinden des Bootstrap-Stylesheets -->`
+	`<link rel="stylesheet" href="css/bootstrap.min.css">`
+
+	`<!-- optional: Einbinden der jQuery-Bibliothek -->`
+	`<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>`
+
+	`<!-- optional: Einbinden der Bootstrap-JavaScript-Plugins -->`
+	`<script src="js/bootstrap.min.js"></script>`
+`</head>`
+
+#### Vorteile
+
+* teils erhebliche Verkürzung der Entwicklungszeit    
+* einheitliches Look-and-Feel   
+* zahlreiche Icons und Buttons integriert    
+* Viele Templates und Erweiterungen frei verfügbar    
+* bei optischen Veränderungen muss nur die CSS-Datei angepasst werden    
+
+
+#### Nachteile
+
+* einheitliches Look-and-Feel (will man wirklich, dass jede Site gleich aussieht?)
+* für strukturelle Veränderungen müssen die LESS-Stylesheets und JavaScript-Code geändert werden (mühsam)
+
+#### Quellen
 
 * http://getbootstrap.com/
 * http://de.wikipedia.org/wiki/Bootstrap_%28Framework%29
