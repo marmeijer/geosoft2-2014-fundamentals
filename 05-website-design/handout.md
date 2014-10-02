@@ -19,13 +19,13 @@ Die Grundlage bilden die aktuellen Webstandards HTML5, CSS3 und JavaScript (sieh
 
 
 `#inhalt {`   
-   `width: 800px;`    
+    `width: 800px;`    
 `}`   
 
 `@media screen and (max-width: 1024px) {`   
-   `#inhalt {`   
-      `width: 600px;`   
-   `}`    
+    `#inhalt {`   
+        `width: 600px;`   
+    `}`    
 `}`
 
 
