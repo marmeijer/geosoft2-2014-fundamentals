@@ -19,13 +19,13 @@ Die Grundlage bilden die aktuellen Webstandards HTML5, CSS3 und JavaScript (sieh
 
 
 `#inhalt {`   
-    `width: 800px;`    
+	`width: 800px;`    
 `}`   
 
 `@media screen and (max-width: 1024px) {`   
-    `#inhalt {`   
-        `width: 600px;`   
-    `}`    
+	`#inhalt {`   
+		`width: 600px;`   
+	`}`    
 `}`
 
 
@@ -57,7 +57,7 @@ Hier wird der gewohnte Ansatz einfach umgedreht, man arbeitet sich von der klein
 Wenn eine schlanke, übersichtliche Designlösung für den kleisten Bildschirm gefunden ist, ist ein Portierung auf größere Endgeräte kein Problem mehr.
 Man wird also gezwungen, bewusst von vornherein zu Priorisieren und sich auf die wichtigen Dinge zu konzentrieren (content first).
 Erst nach und nach werden (falls überhaupt nötig) weitere Scripte, Slideshows und Grafiken eingebaut.
-In der direkten Umsetzung programmiert man also nach dem min-width Prinzip, also fügt dann erst Weiteres hinzu wenn eine bestimmte Bildschirmbreite *über*schritten wird.
+In der direkten Umsetzung programmiert man also nach dem min-width Prinzip, also fügt dann erst Weiteres hinzu wenn eine bestimmte Bildschirmbreite überschritten wird.
 
 #### Quellen:
 
