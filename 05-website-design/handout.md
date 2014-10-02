@@ -4,7 +4,9 @@
 
 Reqiurements to modern day websites.
 
+
 ## Responsive Design
+
 
 Responsive Webdesign ist ein gestalterisches und technisches Paradigma bei der Erstellung von Websites.
 Der Inhalt reagiert dabei auf die jeweils genutzten Endgeräte. 
@@ -64,7 +66,9 @@ In der direkten Umsetzung programmiert man also nach dem min-width Prinzip, also
 * http://www.elmastudio.de/webdesign/webdesign-goes-mobile-first-eine-kleine-einfuhrung-zum-neuen-webdesign-trend/
 * http://t3n.de/news/responsive-webdesign-einstieg-524171/
 
+
 ## LESS
+
 
 LESS ist eine Stylesheet-Sprache, die CSS effektiver machen soll durch Erweiterung von Variablen, Mixins, Berechnung von Funktionen. Entwickelt wird sie von Alexis Sellier.
 
@@ -167,7 +171,9 @@ wird in CSS zu:
 * http://de.wikipedia.org/wiki/LESS_%28Stylesheet-Sprache%29
 * http://less2css.org/
 
+
 ## SASS
+
 
 * Syntactically Awesome Stylesheets
 
@@ -241,7 +247,9 @@ __CSS:__
 * http://webkrauts.de/artikel/2012/css-modularisierung-mit-sass
 * http://de.wikipedia.org/wiki/Sass_%28Stylesheet-Sprache%29
 
+
 ## Foundation 5
+
 
 ####Allgemein
 
@@ -286,7 +294,9 @@ Neue Feature für Foundation 5 sind unter anderem ein Editor, um das Framework v
 * [iq2](http://www.iq2.at/blog-details/zurb-foundation-frontend-framework-einfuehrung.html)
 * http://de.wikipedia.org/wiki/Foundation_%28Framework%29
 
+
 ## Bootstrap
+
 
 Bootstrap is ein sehr häufig verwendetes und auf Git Hub gehostetes Open Source CSS-Framework mit Gestaltungsvorlagen für Schriften, Formulare, Buttons, Tabellen, etc. Die Idee ist dabei Designer und Entwickler zusammenzubringen, um nicht nur Entwicklungszeiten zu verkürzen sondern auch, ohne langwierige Designprozesse für ein einheitliches Look-and-Feel der Anwendungen zu sorgen.   
 Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive Webdesigns, sowie die unterstützung älterer Browser durch die implementierung alternativer Stylesheets.
@@ -337,14 +347,18 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 * http://getbootstrap.com/
 * http://de.wikipedia.org/wiki/Bootstrap_%28Framework%29
 
+
 ## HTML5 Boilerplate
+
 
 placeholder
 
 * http://html5boilerplate.com/
 * http://webkrauts.de/artikel/2011/bauen-wie-die-ameisen
 
+
 ## 960 Grid System
+
 
 #### Allgemein
 
@@ -403,7 +417,9 @@ Auf [960.gs](http://www.960.gs) gibt es passende Stylesheets.
 * http://www.designinfluences.com/fluid960gs/
 * http://andytaylor.me/2013/04/09/1140px-css-grid-retired/
 
+
 ## Additional Stuff
+
 
 ###Less Framework
 
