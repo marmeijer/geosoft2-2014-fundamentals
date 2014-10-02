@@ -163,21 +163,48 @@ Dies ist jedoch nur halbduplex, Nachrichten können zwar in beide Richtungen ver
 
 
 ####Wie benutze ich WebSockets?####
+Es gibt verschiedene Serverimplementierungen die das WebSocketprotokoll unterstützen sind zum Beispiel [3]:
 
++ Node.js
+    + Socket.IO
+    + WebSocket-Node
+    + ws
++ Java
+    + Jetty
++ Ruby
+    + EventMachine
++ Python
+    + pywebsocket
+    + Tornado
++ Erlang
+    + Shirasu
++ C++
+    + libwebsockets
++ .NET
+    + SuperWebSocket
+
+Wie man mit JavaScript eine WebSocketverbinung aufbaut findet man [hier](http://www.html5rocks.com/de/tutorials/websockets/basics/#toc-introduction-sockets).  
+Noch zu beachten ist vielleicht das Schema der URIs zur Verbindung mit einem WebSockets unterstützenden Server. Diese beginnen mit `ws:`, wenn die Verbindung unverschlüsselt ist und mit `wss:`, wenn sie verschlüsselt ist. 
 
 
 ####Links###
 
 [1] <http://pusher.com/websockets>
 
-[2] http://www.heise.de/developer/artikel/WebSocket-Annaeherung-an-Echtzeit-im-Web-1260189.html
+[2] <http://www.heise.de/developer/artikel/WebSocket-Annaeherung-an-Echtzeit-im-Web-1260189.html>
 
-http://en.wikipedia.org/wiki/Comet_(programming)
+[3] <http://www.html5rocks.com/de/tutorials/websockets/basics/>
 
-http://de.wikipedia.org/wiki/WebSocket
+Der Wikipediaartikel zu WebSockets:  
+<http://de.wikipedia.org/wiki/WebSocket>
 
-http://www.html5rocks.com/de/tutorials/websockets/basics/
+Zwei offizielle Seiten zu WebSockets:  
+W3:  
+<http://dev.w3.org/html5/websockets/>  
+Internet Engineering Task Force:   
+<http://tools.ietf.org/pdf/rfc6455.pdf>
 
-http://caniuse.com/#feat=websockets
+
+Welche Browser WebSockets unterstützen findet man hier:  
+<http://caniuse.com/#feat=websockets>
 ##Linked Data##
-
