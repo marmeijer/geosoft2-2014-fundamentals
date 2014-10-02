@@ -146,5 +146,38 @@ HTML5 hat zwei Tags um Plug-ins einzubinden `<object>,<embed>`. Beide haben die 
 
 
 ##WebSockets##
+####Was sind WebSockets?####
+WebSockets erlauben bidirektionale Kommunikation zwischen einem Server und einem Client, ohne dabei jedes mal eine neue Verbindung aufbauen zu müssen. Nachrichten können...
+
+* **gleichzeitig** in **beide Richtungen** (Server - Client, Client - Server)(vollduplex)
+* mit geringem Overhead
+
+
+...übertragen werden.[1] Websockets eignen sich deshalb besonders für Anwendungen mit viel Server-User-Interaktion oder mit mehreren Usern gleichzeiting. Beispiele sidn Onlinespiele oder colloboratives Editieren von Inhalten (in unserem Fall Kartenanwendungen). 
+
+####Bidirektional Kommunikation####
+Ein Großteil der "normalen" Komunikation zwischen Client und Server besteht darin, dass der Client einen HTTP-Request an den Server sendet und dieser ihm als Antwort darauf Informationen zurücksendet. Diese Art der Datenübertragung wird jedoch immer von Client initialisiert. Wenn auf dem Server eine Änderung der Daten stattfindet, gibt es erst dann die Möglichkeit diese Änderung zu übertragen, wenn der Client danach fragt.  
+Aber auch vor der Einführung von Websockets gab es schon Möglichkeiten, im Browser dargestellte Seiten in mehr oder weniger Echtzeit mit neuen vom Server kommenden Informationen zu versorgen. So kann der Client zum Beispiel in regelmäßigen Abständen einen Request an den Server senden um zu gucken, ob sich etwas verändert hat (Polling). Eine andere Möglichkeit ist, proforma einen Request an den Server zu senden, der jedoch erst dann beantwortet wird, wenn eine Änderung vorliegt (long Polling).  
+Dies ist jedoch nur halbduplex, Nachrichten können zwar in beide Richtungen verschickt werden, jedoch ist für jede Nachricht ein eigener HTTP Request nötig. Der bei jeder Nachricht mitgesendete HTTP Header erzeugt einen relativ großen Overhead, besonders wenn sich der Zustand von Server oder Client oft ändert (z.B. Mehrspielerspiele).[2] Mit WebSockets spart man diesen Overhead ein, indem nur ein einzelner Komunikationskanal geöffnet wird, über den sowohl Client als auch Server Nachrichten schicken können. Dieser Kanal bleibt für die länge der Session bestehen.
+
+
+
+####Wie benutze ich WebSockets?####
+
+
+
+####Links###
+
+[1] <http://pusher.com/websockets>
+
+[2] http://www.heise.de/developer/artikel/WebSocket-Annaeherung-an-Echtzeit-im-Web-1260189.html
+
+http://en.wikipedia.org/wiki/Comet_(programming)
+
+http://de.wikipedia.org/wiki/WebSocket
+
+http://www.html5rocks.com/de/tutorials/websockets/basics/
+
+http://caniuse.com/#feat=websockets
 ##Linked Data##
 
