@@ -4,7 +4,7 @@
   1. **Definition**
   2. **Web-Maps, how do they work? Slippy what??**
   3. **Aktuelle Map-Client Frameworks. Proprietär und Open-Source**
-  4. **Map-Client Frameworks im Vergleich](##Map-Client Frameworks im Vergleich**
+  4. **Map-Client Frameworks im Vergleich**
   5. **Ausblick**
   6. **Quellen**
   
