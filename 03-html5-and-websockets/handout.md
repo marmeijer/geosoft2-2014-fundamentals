@@ -223,4 +223,44 @@ Internet Engineering Task Force:
 
 Welche Browser WebSockets unterstützen findet man hier:  
 <http://caniuse.com/#feat=websockets>
+
+
 ##Linked Data##
+
+Das klassische Internet, und auch große Teile dessen was wir täglich nutzen besteht aus Dokumenten die durch Links miteinander verbunden sind. Die Informationen, die wir aus dem Internet bekommen sind die, die in diesen Dokumenten enthalten sind. Wollen wir beispielsweise Informationen über Berlin erhalten, könnten wir den Wikipediaartikel zu [Berlin](http://de.wikipedia.org/wiki/Berlin) lesen und würden erfahren, dass Berlin die Hauptstadt, und gleichzeitig ein Bundesland, von Deutschland ist und ungefähr 3,4 Millionen Einwohner hat [1]. Wir könnten jetzt weiterlesen und uns über den [Berliner Fernsehturm](http://de.wikipedia.org/wiki/Berliner_Fernsehturm) informieren. Diese Zusammenhänge werden uns deutlich, weil wir in der Lage sind, Text zu lesen und Informationen daraus zu extrahieren. Ein Computer der vor die Aufgabe gestellt würde, die relevanten Informationen aus dem Artikel zu erarbeiten, wäre nicht dazu in der Lage, oder hätte die größten Schwierigkeiten.
+
+
+Die Idee hinter Linked Data ist es jetzt eine Struktur zu schaffen, die weniger auf textuelle Informationen setzt, sondern deren Informationen in den Beziehungen zwischen einzelnen Objekten enthalten sind. Diese standardisierten Beziehungen, können auch von Computern interpretiert werden.
+
+Daten werden nach dem [RDF Schema](http://de.wikipedia.org/wiki/Resource_Description_Framework) gespeichert. Hierbei entsteht ein gerichteter Graph, dessen Kanten durch Tripel aus Subjekt - Prädikat- Objekt beschrieben werden. Das oben genutzte Beispiel könnte beispielsweise folgende Tripel liefern:
+
++ Berlin - ist Hauptstadt - Deutschland
++ Berlin - ist Bundesland - Deutschland
++ Berlin - hat Einwohner - 3,4 Millionen
++ der Berliner Fernsehturm - steht in - Berlin
+
+Diese Aussagen können auch von einem Computer verstanden werden, sofern er weiß, wie er die einzelnen Elemente zu interpretieren hat. Hier kommen Resourcen ins Spiel, sie sind eindeutige Identifikatoren für das zu beschreibenden Objekt. Resourcen werden eindeutig durch eine URI beschrieben. URIs müssen aber nicht zwangsweise im Netzwerk erreichbar sein.
+Berlin wird beispielsweise in der [DBpedia](http://de.dbpedia.org/) mit `http://dbpedia.org/resource/Berlin` identifiziert. Von anderen Quellen kann jetzt auf das in der DBpedia-Datenbank enthaltene Berlin verwiesen werden, was demjenigen, der dem Verweis folgt alle in DBpedia enthaltenen Informationen und Verweise zur Verfügung stellt.
+
+Es gilt, Subjekt und Prädikat müssen immer Ressourcen sein, das Objekt kann aus einer Resource bestehen, kann aber auch auf einen elementaren Wert verweisen (Literal). In unserem Beispiel wäre dies bei der Einwohnerzahl der Fall, diese Beziehung verweist auf eine einfache Zahl.
+Prädikate bestehen aus Resourcen, die jedoch keinen Gegestand beschreiben, sondern eben die Beziehung zwischen zwei Objekten.
+
+Mit Hilfe dieser Beschreibungen ist es möglich auch komplexe Zusammenhänge zu formalisieren und durch Abfragesprachen wie [SPARQL](http://de.wikipedia.org/wiki/SPARQL) abzufragen.
+
+*Anmerkung:* Es macht Sinn, wenn die URI, die eine Resource beschreibt aufrufbar ist, und selbst weiterführende Informationee in Form von RDF Tripeln liefert nur so wächst der Graph und können die verfügbaren Informationen vermehrt werden
+
+
+
+####Links####
+[1] <http://de.wikipedia.org/wiki/Berlin>
+
+Wikipediaartikel Linked Data:  
+<http://de.wikipedia.org/wiki/Linked_Open_Data>
+
+DBpedia  
+<http://de.dbpedia.org/>
+
+*Weiterführende Links:*
+
+Lodum - Linked Open Data University of Münster  
+<http://lodum.de/>
