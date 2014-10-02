@@ -38,6 +38,87 @@ placeholder
 
 ## SASS
 
+
+__S__yntactically __A__wesome __S__tyle__s__heets
+
+####Allgemein 
+ 
+
+Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erweitert. Sie wird von Natalie Weizenbaum und Chris Eppstein entwickelt.
+
+* ursprünglich von Auszeichnungssprache [YAML]
+* basiert auf [Ruby]
+* minimalistischste Schreibweise
+
+####Kompilierung
+* wird in SCSS-Datei erstellt und dann in eine CSS-Datei umgewandelt
+
+####Eigenschaften
+* [Mixin]s
+* Paramterübergabe 
+* Code-Blöcke fexileke einzusetzen
+
+####SASS Syntax Beispiele    
+  
+* __Variablen__ definieren, um zum Beispiel Farben und Schriftarten schneller aufrufen zu können
+    
+        
+        $font-stack:    Helvetica, sans-serif
+        $primary-color: #333
+
+          body
+             font: 100% $font-stack
+             color: $primary-color
+
+
+
+__CSS:__
+
+          
+    body {
+      font: 100% Helvetica, sans-serif;
+      color: #333;
+      }      
+ 
+* __[Mixin]s__, um Gruppen von CSS-Deklarationen zu erstellen, 
+
+    
+       =border-radius ( $radius ) 
+       -webkit-border-radius :  $radius 
+       -moz-border-radius :     $radius 
+        ms-border-radius :      $radius 
+       border-radius :          $radius      
+       
+      .box 
+         +border-radius ( 10px )
+
+__CSS:__ 
+
+          
+    .box {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+         border-radius: 10px;
+        }
+
+
+####Vorteile
+
+* Nutzung von Variablen zum Beispiel um mathmatisch Operationen zu definieren
+* Verschachtelungen von Klassen 
+* bessere Übersicht 
+* Vererbung 
+* Vermeidung von Redunanzen 
+
+####Nachteile
+
+* erschwertes Debugging 
+* Erweiterung potenzieller Fehlerquellen
+* Stylesheets werden nur per Ruby generiert
+
+
+---
 placeholder
 * http://sass-lang.com/
 * http://webkrauts.de/artikel/2012/css-modularisierung-mit-sass
