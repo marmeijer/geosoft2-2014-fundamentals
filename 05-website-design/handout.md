@@ -18,14 +18,12 @@ Die Grundlage bilden die aktuellen Webstandards HTML5, CSS3 und JavaScript (sieh
 * in folgendem Beispiel wird die Breite eines Inhaltes auf 600px verkleinert sobald die breite des Browserfensters 1025px unterschreitet
 
 `#inhalt {`
-
 	`width: 800px;`
 `}`
 
 `@media screen and (max-width: 1024px) {`
 	`#inhalt {`
 		`width: 600px;`
-	
 	`}`
 `}`
 
