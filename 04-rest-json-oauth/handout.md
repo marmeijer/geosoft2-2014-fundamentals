@@ -25,16 +25,16 @@ Die Prinzipien nach dem REST funktioniert sind dabei:<br>
 - Entkopplung von Ressourcen und Repräsentation: Die gleiche Ressource kann in verschiedenen Repräsentationen dargestellt werden
 
 ### Was ist RESTful? ###
-Unter RESTful versteht man die Umsetzung des REST-Paradigmas in einer Webanwendung. Dafür muss ein Zusatndsloses Client-/Server-Protokoll verwendet werden (meistens HTTP/HTTPS). Die wichtigsten (HTTP-)Operationen, die dabei verwendet werden sind dabei: <br>
+Unter RESTful versteht man die Umsetzung des REST-Paradigmas in einer Webanwendung. Dafür muss ein zustandsloses Client-/Server-Protokoll verwendet werden (meistens HTTP/HTTPS). Die wichtigsten (HTTP-)Operationen, die dabei verwendet werden sind dabei: <br>
     
-- GET
-- POST
-- PUT
-- DELETE
+- ```GET```
+- ```POST```
+- ```PUT```
+- ```DELETE```
 
 #### Beispiel: ####
 
-In diesem Beispiel sehen wir uns Aufreine Webanwendung an, die das Telefonbuch des IFGIs verwaltet und wir möchten mit einem Aufruf den Benutzer mit der UserID 0815 aufrufen. <br>
+In diesem Beispiel sehen wir uns eine Webanwendung an, die das Telefonbuch des IFGIs verwaltet und wir möchten mit einem Aufruf den Benutzer mit der UserID 0815 aufrufen. <br>
 
 Als SOAP-Envelope sieht das ganze dann so aus: <br>
 
@@ -75,6 +75,7 @@ Da das bis dato vorherschende SOAP (**S**imple **O**bject **A**ccess **P**rotoco
 		<td>rechenintensiv</td>
 	</tr>
 </table>
+
     
 
 
@@ -97,16 +98,15 @@ Datenaustausch zwischen Anwendungen ermöglicht. <br>
         
 ### Datenstruktur ###
 Als Zeichenkodierung verwendet JSON Standardmäßig UTF-8 (es sind aber auch UTF-16 und UTF-32 möglich).<br>
-Verschachtelung
 
 **Folgende Datentypen werden von JSON unterstützt:** <br>
 
-- Nullwert (durch Schlüsselwort *null* dargestellt)
-- Boolescher Wert (durch Schlüsselwörter *true* und *false* dargestellt)
-- Zahl (Folge von Ziffern *0-9* die Vorzeichen *-* haben kann, Dezimalpunkt besitze und ein Exponentenzeichen *e* oder *E*  haben kann (mit *-* oder *+* Vorzeichen))
-- Zeichenkette (beginnt und endet mit *"* und enthält Unicodezeichen)
-- Array (Geordnete Liste von Werten gleichen oder unterschiedlichen Datentyps - Anfang durch *[* und Ende durch *]* markiert)
-- Objekt (Ungeordnete Liste von Eigenschaften - Beginn der Liste mit *{* und Ende mit *}* markiert - Objekte ohne Eigenschaft sind zulässig 
+- **Nullwert** (durch Schlüsselwort *null* dargestellt)
+- **Boolescher Wert** (durch Schlüsselwörter *true* und *false* dargestellt)
+- **Zahl** (Folge von Ziffern *0-9* die Vorzeichen *-* haben kann, Dezimalpunkt besitze und ein Exponentenzeichen *e* oder *E*  haben kann (mit *-* oder *+* Vorzeichen))
+- **Zeichenkette** (beginnt und endet mit *"* und enthält Unicodezeichen)
+- **Array** (Geordnete Liste von Werten gleichen oder unterschiedlichen Datentyps - Anfang durch *[* und Ende durch *]* markiert)
+- **Objekt** (Ungeordnete Liste von Eigenschaften - Beginn der Liste mit *{* und Ende mit *}* markiert - Objekte ohne Eigenschaft sind zulässig 
   - Eigenschaft besteht aus Schlüssel und Eigenschaftswert in der Form *{Schlüssel:Wert}*
   - Schlüssel als Zeichenkette
   - Wert mit beliebigen Datentyp
@@ -129,26 +129,26 @@ Verschachtelung
      }
 
 #### Zum Vergelich das selbe Objekt in XML-Repräsentation: ####
-
-    <Location
-       Latitude="37.7668"
-       Longitude="-122.3959"
-       Address=""
-       precision="zip">
-       <City 
-         Name="San Francisco"
-         State="CA"
-         Zip="94107"
-         Country="US"
-       >
-         <Sightseeing>
-           <Sight>"Golden Gate Bridge"</Sight>
-           <Sight>"Pier 39"</Sight>
-           <Sight>"Cable Cars"</Sight>
-           <Sight>"Museum of Modern Art"</Sight>
-         </Sightseeing>
-    </Location>
-
+```xml
+<Location
+   Latitude="37.7668"
+   Longitude="-122.3959"
+   Address=""
+   precision="zip">
+   <City 
+ Name="San Francisco"
+ State="CA"
+ Zip="94107"
+ Country="US"
+   >
+ <Sightseeing>
+   <Sight>"Golden Gate Bridge"</Sight>
+   <Sight>"Pier 39"</Sight>
+   <Sight>"Cable Cars"</Sight>
+   <Sight>"Museum of Modern Art"</Sight>
+ </Sightseeing>
+</Location>
+```
 Wie man schnell erkennt ist JSON nicht nur übersichtlicher, sondern hat auch einen geringeren Speicherbedarf,
 was besonders in Umgebungen mit begrenzten Ressourcen (z.B. Embedded-Systeme) vom Vorteil ist. Sehr praktisch für Webanwendungen ist auch, dass JSON-Objekte valides JavaScript sind, was somit die Verwendung der übertragenen Daten in einer JavaScript-Anwendung vereifacht.<br>
 
