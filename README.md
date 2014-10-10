@@ -27,7 +27,7 @@ The evaluation is conducted based on the content of the handout, the presentatio
 
 Make sure you cover at least the mentioned keywords. More is better, but only really better if you evaluate alternatives, phrase opinions, and provide guidelines for your fellow students.
 
-* Disaster management - Twelsiek, Steinblum
+* Disaster management - Twelsiek, Steinblum, Rendel
 * Tools for Collaborative Software Development (GitHub, Trello, wikis, ...) - Bodem, Weber
 * Server-Side JS and JS Security (node.js, same-origin policy) - Esaulova, Köster
 * RESTful Services, JSON and OAuth - Ummelmann, Rieping
