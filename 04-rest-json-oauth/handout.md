@@ -57,24 +57,12 @@ Ist unsere Anwendung hingegen nun RESTful reicht uns diese kurze URL, die wir al
 Da das bis dato vorherschende SOAP (**S**imple **O**bject **A**ccess **P**rotocol) paradoxerweise sehr kompliziert war, herrschte ein großes Verlangen nach Vereinfachung. <br>
 
 *Tabelle 1: Stärken und Schwächen von SOAP:*
-<table>
-    <tr>
-        <th>Stärken</th>
-		<th>Schwächen</th>
-    </tr>
-	<tr>
-		<td>große Mächtigkeit der SOAP-Envelopes</td>
-		<td>komplizierte XML-Nachrichten</td>
-	</tr>
-	<tr>
-		<td>Programmiersprachen- und Plattform-unabhängig</td>
-		<td>großer Overhead</td>
-	</tr>
-	<tr>
-		<td>-</td>
-		<td>rechenintensiv</td>
-	</tr>
-</table>
+
+|                    Stärken                    |            Schwächen         |
+| --------------------------------------------- | --------------------------- :|
+|     große Mächtigkeit der SOAP-Envelopes      | komplizierte XML-Nachrichten |
+| Programmiersprachen- und Plattform-unabhängig |         großer Overhead      |
+|                        -                      |         rechenintensiv       |
 
     
 
@@ -114,19 +102,20 @@ Als Zeichenkodierung verwendet JSON Standardmäßig UTF-8 (es sind aber auch UTF
 ### Beispiel und Unterschied zum XML ###
 
 #### Ein JSON-Objekt der Stadt San Francisco kann zum Beispiel so aussehen: ####
-
-    {
-     "precision": "zip",
-     "Latitude":  37.7668,
-     "Longitude": -122.3959,
-     "Address":   "",
-     "City":  {
-       "Name" : "San Francisco",
-       "Sightseeing" : ["Golden Gate Bridge", "Pier 39", "Cable Cars", "Musem of Modern Art"],
-       "State": "CA",
-       "Zip":   "94107",
-       "Country":   "US"
-     }
+```json
+{
+ "precision": "zip",
+ "Latitude":  37.7668,
+ "Longitude": -122.3959,
+ "Address":   "",
+ "City":  {
+   "Name" : "San Francisco",
+   "Sightseeing" : ["Golden Gate Bridge", "Pier 39", "Cable Cars", "Musem of Modern Art"],
+   "State": "CA",
+   "Zip":   "94107",
+   "Country":   "US"
+ }
+```
 
 #### Zum Vergelich das selbe Objekt in XML-Repräsentation: ####
 ```xml
@@ -156,9 +145,10 @@ Die Nachteile von JSON sind das es auf der einen Seite (noch) wenig verbreitet i
     
 Methoden in JavaScript, um JSON-Dokumete zu parsen (es gibt Parser in fast jeder Programmiersprache):
 
-    JSON.parse()
-    JSON.stringify()
-
+```javascript
+JSON.parse()
+JSON.stringify()
+```
             
 ## OAuth ##
 
