@@ -27,7 +27,7 @@ The evaluation is conducted based on the content of the handout, the presentatio
 
 Make sure you cover at least the mentioned keywords. More is better, but only really better if you evaluate alternatives, phrase opinions, and provide guidelines for your fellow students.
 
-* Disaster management - Twelsiek, Steinblum, Rendel
+* Disaster management - Twelsiek, Steinblum
 * Tools for Collaborative Software Development (GitHub, Trello, wikis, ...) - Bodem, Weber
 * Server-Side JS and JS Security (node.js, same-origin policy) - Esaulova, Köster
 * RESTful Services, JSON and OAuth - Ummelmann, Rieping
@@ -35,7 +35,7 @@ Make sure you cover at least the mentioned keywords. More is better, but only re
 * Databases (Spatial DB, NoSQL, Triple stores, ...) - Stüwe, Loos
 * Map-Client Frameworks (Leaflet, OpenLayers, GeoExt, ...) - Dragunski, Rohtermundt 
 * JavaScript Frameworks (jQuery, ExtJS, D3, AngularJS, JSONIX ...) - Mohr, Stöcker
-* Web technologies (HTML5, WebSockets, Linked Data, ...) - Rendel van Zadelhoff
+* Web technologies (HTML5, WebSockets, Linked Data, ...) - Rendel, van Zadelhoff
 * Geodata formats (WMS, Flickr images, WFS, raster/vector, netCDF, tagged data, GeoTIFF, ...) - Schulte, Tasse
 * Metadata (ISO 19xxx, microformats, OGC Catalog, FGDC, Dublin Core, OWL, Ontologies, Folksonomies, ...) - Gockel, Mazurkiedicz, Golze
 * Modern websites (responsiveness, mobile first, Bootstrap, LESS, SASS, HTML5Boilerplate, Foundation, 960.gs) - Ehrecke, Meijer
