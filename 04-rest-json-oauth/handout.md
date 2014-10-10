@@ -59,7 +59,7 @@ Da das bis dato vorherschende SOAP (**S**imple **O**bject **A**ccess **P**rotoco
 *Tabelle 1: Stärken und Schwächen von SOAP:*
 
 |                    Stärken                    |            Schwächen         |
-| --------------------------------------------- | --------------------------- :|
+| --------------------------------------------- | ---------------------------  |
 |     große Mächtigkeit der SOAP-Envelopes      | komplizierte XML-Nachrichten |
 | Programmiersprachen- und Plattform-unabhängig |         großer Overhead      |
 |                        -                      |         rechenintensiv       |
