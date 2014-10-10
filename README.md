@@ -1,6 +1,6 @@
 # Geosoftware II WiSe 2014/15
 
-Handouts for background technical presentations for Geosoftware II Seminar at ifgi
+Handouts for background technical presentations for Geosoftware II Seminar at ifgi. These handouts are the core of the preparation of a topic. It should be prepared in a manner so that fellow students can use it as a starting point for making decisions during their project work.
 
 ## Process
 
@@ -38,7 +38,7 @@ Make sure you cover at least the mentioned keywords. More is better, but only re
 * Web technologies (HTML5, WebSockets, Linked Data, ...) - Rendel van Zadelhoff
 * Geodata formats (WMS, Flickr images, WFS, raster/vector, netCDF, tagged data, GeoTIFF, ...) - Schulte, Tasse
 * Metadata (ISO 19xxx, microformats, OGC Catalog, FGDC, Dublin Core, OWL, Ontologies, Folksonomies, ...) - Gockel, Mazurkiedicz, Golze
-* Website design (responsiveness, mobile first, Bootstrap, LESS, SASS, HTML5Boilerplate, Foundation, 960.gs) - NN
+* Modern websites (responsiveness, mobile first, Bootstrap, LESS, SASS, HTML5Boilerplate, Foundation, 960.gs) - Ehrecke, Meijer
 * Reviews and Ratings on the web - Daniel Nüst
 
 ## Further Resources
