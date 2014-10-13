@@ -66,7 +66,7 @@ Ihr könnt das Beispiel und viele weitere zu dieser API auf dieser Seite finden 
 ## JSON ##
 
 ### Was ist JSON? ###
-[**JSON**](#JSON-Quellen) steht für: **J** ava **S** cript **O** bject **N** otation <br>
+[**JSON**](#json-quellen) steht für: **J** ava **S** cript **O** bject **N** otation <br>
 
 Es handelt sich um ein Datenaustauschformat, welches einen
 Datenaustausch zwischen Anwendungen ermöglicht. <br>
