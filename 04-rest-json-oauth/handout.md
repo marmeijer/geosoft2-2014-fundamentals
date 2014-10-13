@@ -13,9 +13,9 @@
 ## RESTful Webservices ##
 
 ### Was ist REST? ###
-**REST** steht für: **RE**presentational **S**tate **T**ransfer <br>
+**REST** steht für: **RE** presentational **S** tate **T** ransfer <br>
 
-Es handelt sich dabei um ein von Roy Fielding 1994 entworfenes Programmierparadigma für Webapplikationen, welches davon ausgeht, dass auf einen Aufruf einer **URI** (**U**niform **R**esource **I**dentifier) immer mit der gleichen Antwort geantwortet wird. <br>
+Es handelt sich dabei um ein von Roy Fielding 1994 entworfenes Programmierparadigma für Webapplikationen, welches davon ausgeht, dass auf einen Aufruf einer **URI** (**U** niform **R** esource **I** dentifier) immer mit der gleichen Antwort geantwortet wird. <br>
 
 Die Prinzipien nach dem REST funktioniert sind dabei:<br>
 
@@ -34,43 +34,39 @@ Unter RESTful versteht man die Umsetzung des REST-Paradigmas in einer Webanwendu
 
 #### Beispiel: ####
 
-In diesem Beispiel sehen wir uns eine Webanwendung an, die das Telefonbuch des IFGIs verwaltet und wir möchten mit einem Aufruf den Benutzer mit der UserID 0815 aufrufen. <br>
+Als Beispiel sehen wir uns einen Aufruf an, der in der HP Gloe-API alle Objekte für die WGS84-Koordinaten 37.234,-122.234 zurückgeben.
 
-Als SOAP-Envelope sieht das ganze dann so aus: <br>
+Dazu verwenden wir folgenden Header:
 
-```xml
-<?xml version="1.0"?>
-<soap:Envelope
-xmlns:soap="http://www.w3.org/2001/12/soap-envelope"
-soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
- <soap:body pb="http://ifgi.uni-muenster.de/phonebook">
-  <pb:GetUserInfo>
-   <pb:UserID>0815</pb:UserID>
-  </pb:GetUserInfo>
- </soap:Body>
-</soap:Envelope>
+```
+GET /json/getrec/?lat=37.234&lon=-122.234
+Host: http://www.hpgloe.com
+Accept: application/json
 ```
 
-Ist unsere Anwendung hingegen nun RESTful reicht uns diese kurze URL, die wir als HTTP-GET-Request senden, um die gleiche Ressource anzufragen: <br>
 
-	http://ifgi.uni-muenster.de/phonebook/UserInfo/0815
-    
-### Warum REST? ###
-Da das bis dato vorherschende SOAP (**S**imple **O**bject **A**ccess **P**rotocol) sehr kompliziert war, herrschte ein großes Verlangen nach Vereinfachung (viele APIs basieren bis heute auf SOAP). <br>
+Der Response darauf sieht dann folgendermaßen aus (im JSON-Format):
 
-*Tabelle 1: Stärken und Schwächen von SOAP:*
+```JSON
+[
+  [305.0, "http://www.hp.com", "", null, null, "hp", 37.234052809673, -122.233976388235, 1, 0.0038707032904373973], [27.0, "", "", null, null, "", 37.234, -122.234, 0, 0.0], 
+  [13.0, "http://en.wikipedia.org/wiki/KFJC", "", null, null, "wikipedia_city", 37.3205986, -122.14099884, 1, 7.864991161742064],
+  [4.0, "http://www.hp.c", "", null, null, "", 37.234, -122.234, 0, 0.0],
+  [3.0, "http://en.wikipedia.org/wiki/Middleton_Tract%2C_California", "", null, null, "wikipedia", 37.26683426, -122.20866648, 0, 2.6654883246520082],
+  [3.0, "http://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Santa_Clara_County%2C_California", "", null, null, "wikipedia", 37.264633176667, -122.074666343333, 0, 9.159602799996797],
+  [2.0, "http://en.wikipedia.org/wiki/Los_Trancos_Woods%2C_California", "", null, null, "wikipedia_landmark", 37.34939957, -122.19866435, 1, 8.200834466364913],
+  [2.0, "http://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_San_Mateo_County%2C_California", "", null, null, "wikipedia", 37.126800535, -122.308498385, 0, 8.46873826798457],
+  [2.0, "http://en.wikipedia.org/wiki/Boulder_Creek%2C_California", "", null, null, "settlements", 37.12820053, -122.124500275, 0, 9.469549354050134],
+  [2.0, "http://www.panoramio.com/photo/4489152", "Silicon%20Valley%20View%20From%20Mountain%20Winery", null, null, "photos", 37.2580986, -122.06300354, 0, 9.54463050551031]
+]
+```
 
-|                    Stärken                    |            Schwächen         |
-| --------------------------------------------- | ---------------------------  |
-|     große Mächtigkeit der SOAP-Envelopes      | komplizierte XML-Nachrichten |
-| Programmiersprachen- und Plattform-unabhängig |         großer Overhead      |
-|                        -                      |         rechenintensiv       |    
-
+Ihr könnt das Beispiel und viele weitere zu dieser API auf dieser Seite finden -> [HP-Gloe Rest-Examples](http://wiki.hpgloe.com/restexamples "HP-Gloe Rest-Examples").
 
 ## JSON ##
 
 ### Was ist JSON? ###
-**JSON** steht für: **J**ava**S**cript **O**bject **N**otation <br>
+[**JSON**](#JSON-Quellen) steht für: **J** ava **S** cript **O** bject **N** otation <br>
 
 Es handelt sich um ein Datenaustauschformat, welches einen
 Datenaustausch zwischen Anwendungen ermöglicht. <br>
@@ -141,19 +137,22 @@ Als Zeichenkodierung verwendet JSON Standardmäßig UTF-8 (es sind aber auch UTF
 Wie man schnell erkennt ist JSON nicht nur übersichtlicher, sondern hat auch einen geringeren Speicherbedarf,
 was besonders in Umgebungen mit begrenzten Ressourcen (z.B. Embedded-Systeme) vom Vorteil ist. Sehr praktisch für Webanwendungen ist auch, dass JSON-Objekte valides JavaScript sind, was somit die Verwendung der übertragenen Daten in einer JavaScript-Anwendung vereifacht.<br>
 
-Die Nachteile von JSON sind das es auf der einen Seite (noch) wenig verbreitet ist und dadurch nicht so vielseitig einsetzbar ist, wie das XML-Format. <br>
+Die Nachteile von JSON sind das es keinen eigenen Datentyp für ein Datum besitzt und das es keine Kommentare besitzt. <br>
+
+Es gibt zur Zeit der Dokumenterstellung Parser für JSON in den meisten beliebten Programmiersprachen.
+Eine Liste der verfügbaren Parser findet sich auf [JSON.org](http://json.org "JSON.org")
+
     
-Methoden in JavaScript, um JSON-Dokumete zu parsen (es gibt Parser in fast jeder Programmiersprache):
+Hier ein Beispiel einer Methode in JavaScript, um JSON-Dokumete zu parsen:
 
 ```javascript
 JSON.parse()
-JSON.stringify()
 ```
             
 ## OAuth ##
 
 ### Was ist OAuth? ###
-OAuth steht für **O**pen **Auth**entication <br>
+OAuth steht für **O** pen **Auth** entication <br>
 Es handelt sich um ein Protokoll, das standardisierte API-Autorisierung für Desktop-, Web und Mobil-Applications erlaubt. <br>
 Ziel: Übermittlung von Authorisierungsdaten an Dritte vermeiden.
 
@@ -198,19 +197,25 @@ Ind er aktuellen Version OAuth 2.0 ist das Protokoll erheblich komplexer geworde
 Im "OAuth 2.0 Playground" von Google kann man eine OAuth 2.0 Authentifikation anschaulich, in einzelnen Schritten  selbst ausprobieren. Man findet das
 Tool hier -> [OAuth 2.0 Playground](https://developers.google.com/oauthplayground/ "OAuth 2.0 Playground von Google")
 
+### OAuth-Bibliotheken für eigene Projekte ###
+Eine Liste mit Server- und Client-Frameworks, um OAuth in eigene Projekte zu integrieren findet man unter [http://oauth.net/2/](http://oauth.net/2/ "oauth.net/2/").
+
+### Tutorials für OAuth ###
+
+Mit den hier aufgeführten Tutorial für JavaScript und HTML5 könnt ihr OAuth selber in einem Programmierprojekt ausprobieren: [How to Implement Safe Sign-In via OAuth](http://devcenter.kinvey.com/html5/tutorials/how-to-implement-safe-signin-via-oauth# "How to Implement Safe Sign-In via OAuth").
 
     
 ## Quellen ##
 
-### RESTful Web Services ###
+### RESTful Webservices ###
 
-[RFC 6749 (REST)](http://tools.ietf.org/html/rfc6749 "REST RFC bei der IETF") <br>
-[Restful Webservices - was ist das überhaubt](https://blog.mittwald.de/webentwicklung/restful-webservices-1-was-ist-das-uberhaupt/ "RESTful") <br>
-[Fielding - Dissertation - Chapter 5](http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm "Disertation about REST by Fielding")
+[Q1 - RFC 6749 (REST)](http://tools.ietf.org/html/rfc6749 "REST RFC bei der IETF") <br>
+[Q2 - Restful Webservices - was ist das überhaubt](https://blog.mittwald.de/webentwicklung/restful-webservices-1-was-ist-das-uberhaupt/ "RESTful") <br>
+[Q3 - Fielding - Dissertation - Chapter 5](http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm "Disertation about REST by Fielding")
         
-### JSON ###
+### JSON-Quellen ###
 
-[JSON-Projekt Homepage](http://json.org/ "JSON Projekt-Homepage") <br>
+[Q4 - JSON-Projekt Homepage](http://json.org/ "JSON Projekt-Homepage") <br>
 [RFC 4627 (JSON)](http://tools.ietf.org/html/rfc4627 "JSON RFC bei der IETF") <br>
 [Wikipedia-Seite über Douglas Crockford](http://en.wikipedia.org/wiki/Douglas_Crockford)
 
