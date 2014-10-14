@@ -3,6 +3,7 @@
 # Modern Website Design - Handout
 
 Reqiurements to modern day websites.
+
 ---
 
 ## Inhalt
@@ -20,6 +21,7 @@ Reqiurements to modern day websites.
   4. [HTML 5 Boilerplate](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#html-5-boilerplate)
   5. [Additional Stuff](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#additional-stuff)
 4. [Einschätzung](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#einschätzung)
+
 ---
 
 ## Responsive Design
