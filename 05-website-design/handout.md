@@ -19,7 +19,7 @@ Die Grundlage bilden die aktuellen Webstandards HTML5, CSS3 und JavaScript (sieh
 * Design richtet sich nach abgefragten Eigenschaften (Größe des Geräts, Bildschirmauflösung, etc.)
 * in folgendem Beispiel wird die Breite eines Inhaltes auf 600px verkleinert sobald die breite des Browserfensters 1025px unterschreitet
 
-	```html
+	```javascript
 	#inhalt {
 		width: 800px;
 	}
@@ -130,8 +130,10 @@ Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
 
 * Variablen-Namen zum Beispiel
 
- @ LESS   
- $- SASS
+ 	```javascript
+ 	@ LESS   
+ 	$- SASS
+ 	```
 
 * weitere Vergleiche unter [LESS/SASS](http://www.hongkiat.com/blog/sass-vs-less/)
 
@@ -151,6 +153,7 @@ Eine weitere Syslesheet-Sprache, die in Javascript geschriebenen und für die Pl
 
 wird in CSS zu:
 
+ 	```javascript
  	header{   
  		background-color: #0033ff;   
  	}   
@@ -159,7 +162,8 @@ wird in CSS zu:
  	}    
  	a{    
  		color: #0033ff;   
- 	}    
+ 	}
+ 	```
 
 ####Im Vergleich zu SASS/LESS
 
@@ -199,39 +203,47 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
 
 * __Variablen__ definieren, um zum Beispiel Farben und Schriftarten schneller aufrufen zu können
 
+        ```javascript
         $font-stack:    Helvetica, sans-serif
         $primary-color: #333
 
 	body
 		font: 100% $font-stack
 		color: $primary-color
+	```javascript
 
 __CSS:__
           
+	```javascript
 	body {    
       		font: 100% Helvetica, sans-serif;   
       		color: #333;   
-      	}      
+      	}  
+      	```
  
 * __[Mixin]s__, um Gruppen von CSS-Deklarationen zu erstellen,
     
-     	=border-radius ( $radius )    
+     	```javascript
+	=border-radius ( $radius )    
 	-webkit-border-radius : $radius   
 	-moz-border-radius 	$radius    
-       	ms-border-radius :     	$radius    
-       	border-radius :         $radius     
+	ms-border-radius :     	$radius    
+	border-radius :         $radius     
        
       	.box     
         	+border-radius ( 10px )
+        ```
 
 __CSS:__ 
           
+    	```javascript
     	.box {
         	-webkit-border-radius: 10px;
         	-moz-border-radius: 10px;
         	-ms-border-radius: 10px;
          	border-radius: 10px;
      	}
+     	```
 
 ####Vorteile
 
@@ -322,6 +334,7 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 * alternativ lassen sich natürlich auch direkt kompilierte Dateien einbinden
 * bei der Verwendung von JavaScript muss außerdem zunächst die jQuery Bibliothek eingebunden werden
 
+	```html
 	<head>
 		<title>Beispiel</title>
 
@@ -334,6 +347,7 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 		<!-- optional: Einbinden der Bootstrap-JavaScript-Plugins -->
 		<script src="js/bootstrap.min.js"></script>
 	</head>
+	```
 
 #### Vorteile
 
@@ -378,7 +392,7 @@ HTML5 Boilerplate ist ein Build-Skript welches Vorlagen zur zeitgemäßen und sc
 
 * http://html5boilerplate.com/
 * http://webkrauts.de/artikel/2011/bauen-wie-die-ameisen
-* * http://www.sitepoint.com/introduction-html5-boilerplate/
+* http://www.sitepoint.com/introduction-html5-boilerplate/
 
 
 ## 960 Grid System
