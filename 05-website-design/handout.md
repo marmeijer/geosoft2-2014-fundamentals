@@ -153,7 +153,7 @@ Eine weitere Syslesheet-Sprache, die in Javascript geschriebenen und für die Pl
  	color meineFarbe
  	```
 
-wird in CSS zu:
+* wird in CSS zu:
 
  	```javascript
  	header {
@@ -213,7 +213,7 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
 		color: $primary-color
 	```
 	
-__CSS:__
+* wird in CSS zu:
 
 	```javascript
 	body {    
@@ -235,7 +235,7 @@ __CSS:__
 		+border-radius(10px)
 	```
 
-__CSS:__ 
+* wird in CSS zu:
 
     	```javascript
     	.box {
@@ -335,7 +335,7 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 * alternativ lassen sich natürlich auch direkt kompilierte Dateien einbinden
 * bei der Verwendung von JavaScript muss außerdem zunächst die jQuery Bibliothek eingebunden werden
 
-	```html
+	```
 	<head>
 		<title>Beispiel</title>
 
