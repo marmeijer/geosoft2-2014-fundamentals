@@ -19,6 +19,7 @@ Die Grundlage bilden die aktuellen Webstandards HTML5, CSS3 und JavaScript (sieh
 * Design richtet sich nach abgefragten Eigenschaften (Größe des Geräts, Bildschirmauflösung, etc.)
 * in folgendem Beispiel wird die Breite eines Inhaltes auf 600px verkleinert sobald die breite des Browserfensters 1025px unterschreitet
 
+	```html
 	#inhalt {
 		width: 800px;
 	}
@@ -28,6 +29,7 @@ Die Grundlage bilden die aktuellen Webstandards HTML5, CSS3 und JavaScript (sieh
 			width: 600px;
 		}
 	}
+	```
 
 #### Vorteile:
 
@@ -93,6 +95,7 @@ LESS ist eine Stylesheet-Sprache, die CSS effektiver machen soll durch Erweiteru
 * spezielle Farbe als Variable definieren
 * jederzeit wieder aufrufbar
 
+ 	```javascript
  	@mycolor: #4D926F;  
 
  	#header {   
@@ -100,17 +103,20 @@ LESS ist eine Stylesheet-Sprache, die CSS effektiver machen soll durch Erweiteru
 	 }   
  	h2 {   
  		color: @mycolor;   
- 	}   
+ 	}  
+ 	```
 
 * wird in CSS zu :
 
+ 	```javascript
  	#header {   
  		background-color: #4D926F;   
  	}   
 
  	h2 {   
  		color: #4D926F;   
- 	}   
+ 	}
+ 	```
 
 Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
 
