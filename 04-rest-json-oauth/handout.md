@@ -155,12 +155,14 @@ JSON.parse()
             
 ## OAuth ##
 
-### Was ist OAuth? ###
-OAuth steht für **O**pen **Auth**entication <br>
+[[Quellen]](#oauth-quellen)
+
+### Was ist OAuth?  [[Q7]](#oauth-quellen)###
+OAuth steht für **O** pen **Auth** entication <br>
 Es handelt sich um ein Protokoll, das standardisierte API-Autorisierung für Desktop-, Web und Mobil-Applications erlaubt. <br>
 Ziel: Übermittlung von Authorisierungsdaten an Dritte vermeiden.
 
-### Begriffe ###
+### Begriffe [[Q7]](#oauth-quellen)###
 
 - Service Provider: Damit ist eine Webseite oder ein Dienst gemeint, bei dem die Informationen liegen
 - User: Der Eigentümer der Information
@@ -168,7 +170,7 @@ Ziel: Übermittlung von Authorisierungsdaten an Dritte vermeiden.
 - Protected Resources: Die Informationen des Users die durch OAuth geschützt werden
 - Token: Authentifikations-Token ersetzen die Authorisierungsdaten und geben Zugang entweder für Abfragen oder Zugang zu bestimmten Bereichen (Es handelt sich um eine Kryptografisch erzeugte lange Zeichenfolge, die schwer zu erraten ist)
 
-### Ablauf ###
+### Ablauf [[Q8]](#oauth-quellen)###
 
 - *Schritt 1:*
   - User erlaubt Consumer Zugriff auf seine Daten
@@ -186,7 +188,7 @@ Ziel: Übermittlung von Authorisierungsdaten an Dritte vermeiden.
   - Consumer kann auf Daten des User zugreifen
 
 
-### Sicherheit ###
+### Sicherheit [[Q7]](#oauth-quellen)###
 
 Ind er aktuellen Version OAuth 2.0 ist das Protokoll erheblich komplexer geworden, was aber bis heute zu Diskussionen führt. Hier die markantesten Sicherheitsfeatures des Protokolls:
 
@@ -194,7 +196,7 @@ Ind er aktuellen Version OAuth 2.0 ist das Protokoll erheblich komplexer geworde
 - Token mit Güligkeitsdauer
 - Verwendung von SSL zur Verschlüsselung
 
-> Zitat Eran Hammer (ehemaliger Redakteur des Spezifikationsdokuments von OAuth 2.0): OAuth 2.0 sei "... vor allem weniger sicher" als 1.0
+> Zitat Eran Hammer (ehemaliger Redakteur des Spezifikationsdokuments von OAuth 2.0): OAuth 2.0 sei "... vor allem weniger sicher" als 1.0 [[Q10]](#oauth-quellen)
     
 ### OAuth 2.0 Playground ###
 
@@ -217,16 +219,16 @@ Mit den hier aufgeführten Tutorial für JavaScript und HTML5 könnt ihr OAuth s
 [Q2 - Restful Webservices - was ist das überhaubt](https://blog.mittwald.de/webentwicklung/restful-webservices-1-was-ist-das-uberhaupt/ "RESTful") <br>
 [Q3 - Fielding - Dissertation - Chapter 5](http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm "Disertation about REST by Fielding")
         
-### JSON-Quellen ###
+### JSON - Quellen ###
 
 [Q4 - JSON-Projekt Homepage](http://json.org/ "JSON Projekt-Homepage") <br>
 [Q5 -RFC 4627 (JSON)](http://tools.ietf.org/html/rfc4627 "JSON RFC bei der IETF") <br>
 [Q6 -Wikipedia-Seite über Douglas Crockford](http://en.wikipedia.org/wiki/Douglas_Crockford)
 
-### OAuth ###
-[Q7 -Kritik von Eran Hammer an OAuth 2.0](http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell/ "OAuth 2.0 and the Road to Hell") <br>
+### OAuth - Quellen###
+[Q7 -Beginners Guide to OAuth](http://hueniverse.com/2007/10/04/beginners-guide-to-oauth-part-i-overview/ "Beginners Guide to OAuth 1.0") <br>
 [Q8 -Introduction to OAuth](http://blog.varonis.com/introduction-to-oauth/ ) <br>
-[Q9 -Beginners Guide to OAuth](http://hueniverse.com/2007/10/04/beginners-guide-to-oauth-part-i-overview/ "Beginners Guide to OAuth 1.0") <br>
-[Q10 -Google OAuth 2.0 Playground](https://developers.google.com/oauthplayground/)
+[Q9 -Google OAuth 2.0 Playground](https://developers.google.com/oauthplayground/) <br>
+[Q10 -Kritik von Eran Hammer an OAuth 2.0](http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell/ "OAuth 2.0 and the Road to Hell") <br>
 
     
