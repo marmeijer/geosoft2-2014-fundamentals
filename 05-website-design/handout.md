@@ -10,14 +10,14 @@ Reqiurements to modern day websites.
 
 1. [Introduction](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#responsive-design)
 2. [Stylesheets](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#less)
-..1. [LESS](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#less)
-..2. [SASS](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#sass)
+  1. [LESS](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#less)
+  2. [SASS](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#sass)
 3. [Frameworks & Tools](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#foundation-5)
-..1. [Foundation 5](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#foundation-5)
-..2. [Bootstrap](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#bootstrap)
-..3. [HTML 5 Boilerplate](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#html-5-boilerplate)
-..4. [960 Grid System](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#960-gid-system)
-..5. [Additional Stuff](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#additional-stuff)
+  1. [Foundation 5](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#foundation-5)
+  2. [Bootstrap](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#bootstrap)
+  3. [HTML 5 Boilerplate](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#html-5-boilerplate)
+  4. [960 Grid System](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#960-gid-system)
+  5. [Additional Stuff](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#additional-stuff)
 
 
 ## Responsive Design
