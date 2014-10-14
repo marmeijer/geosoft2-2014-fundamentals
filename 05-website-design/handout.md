@@ -334,7 +334,7 @@ Neue Feature für Foundation 5 sind unter anderem ein Editor, um das Framework v
 
 [Beispiel Webseiten die Foundation benutzen](http://zurb.com/responsive?framework_id=1)
 
-<img src="http://zurb.com/responsive/system/upload/desktop_screenshots/images/000/000/741/regular/express.com-wide.jpg?1410306028" alt="Example0" width="150px" height"50">
+<img src="http://zurb.com/responsive/system/upload/desktop_screenshots/images/000/000/741/regular/express.com-wide.jpg?1410306028" alt="Example1" width="400px"> <img src="http://zurb.com/responsive/system/upload/mobile_screenshots/images/000/000/742/regular/express.com-narrow.jpg?1410306032" alt="Example2" width="150px">
 
 ![alt text](http://zurb.com/responsive/system/upload/desktop_screenshots/images/000/000/741/regular/express.com-wide.jpg?1410306028 "Example1") ![alt text](http://zurb.com/responsive/system/upload/mobile_screenshots/images/000/000/742/regular/express.com-narrow.jpg?1410306032 "Example2")
 
