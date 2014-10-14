@@ -36,7 +36,7 @@ Die Grundlage bilden die aktuellen Webstandards [HTML5](https://github.com/JanVa
 * Design richtet sich nach abgefragten Eigenschaften (Größe des Geräts, Bildschirmauflösung, etc.)
 * in folgendem Beispiel wird die Breite eines Inhaltes auf 600px verkleinert sobald die breite des Browserfensters 1025px unterschreitet
 
-	```javascript
+	```html
 	#inhalt {
 		width: 800px;
 	}
@@ -132,7 +132,7 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
 
 * wird in CSS zu:
 
-	```javascript
+	```css
 	body {
 		font: 100% Helvetica, sans-serif;
 		color: #333;
@@ -155,7 +155,7 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
 
 * wird in CSS zu:
 
-	```javascript
+	```css
 	.box {
 		-webkit-border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -225,7 +225,7 @@ LESS ist eine Stylesheet-Sprache, die CSS effektiver machen soll durch Erweiteru
  	
 * wird in CSS zu :
 
- 	```javascript
+ 	```css
  	#header {   
  		background-color: #4D926F;   
  	}   
@@ -260,17 +260,17 @@ Eine weitere Syslesheet-Sprache, die in Javascript geschriebenen und für die Pl
 
 ####Code Beispiel
 
- 	meineFarbe = #0033ff
-	header
-	background-color meineFarbe
-	h1
-	color meineFarbe
-	a
-	color meineFarbe
+ 		meineFarbe = #0033ff
+		header
+		background-color meineFarbe
+		h1
+		color meineFarbe
+		a
+		color meineFarbe
 
 * wird in CSS zu:
 
- 	```javascript
+ 	```css
  	header {
  		background-color: #0033ff;
  	}
