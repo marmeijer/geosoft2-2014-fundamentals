@@ -70,6 +70,8 @@ Die Grundlage bilden die aktuellen Webstandards [HTML5](https://github.com/JanVa
 
 * https://www.tuj.ac.jp/
 
+<img src="https://www.dropbox.com/s/heh94vjihsv0alz/ResponsiveDesign%28MaxWidth1060px%29.jpg?dl=0" alt="MaxWidth 1060px" width="582px"> <img src="https://www.dropbox.com/s/i9xjijei1asd2ap/ResponsiveDesign%28MaxWidth480px%29.jpg?dl=0" alt="MaxWidth 480px" width="270px">
+
 #### Mobile First:
 
 Hier wird der gewohnte Ansatz einfach umgedreht, man arbeitet sich von der kleinsten Layout-Version zur größten (progressive enhancement).
@@ -394,7 +396,7 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 
 [Beispiel Webseiten die Bootstrap benutzen](http://lovebootstrap.com/)
 
-![alt text](http://lovebootstrap.com/sites/default/files/styles/screenshot_browser/public/screenshot-xofestival.nl_.jpeg?itok=pVWQNt1V "Example")
+![alt text](http://lovebootstrap.com/sites/default/files/styles/screenshot_browser/public/screenshot-www.tryvertty.com_.jpeg?itok=t7B8p1mO "Example")
 
 #### Quellen
 
@@ -420,7 +422,9 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 * Abstand zwischen Spalten jeweils bei 20 Pixeln
 * erste und letzte Spalte haben je 10 Pixel zu den Außenkanten
 
-Beispiel Website: [Sony](http://www.sonymusic.de/) Music basiert auf solch ein Gestaltungsraster
+Beispiel Website: [Sony](http://www.sonymusic.de/) Music basiert auf solch einem Gestaltungsraster
+
+<img src="https://www.dropbox.com/s/wh537y8icdfd894/960GS%28wide%29.jpg?dl=0" alt="Example1" width="582px"> <img src="https://www.dropbox.com/s/vkbpg2j7vod8avx/960GS%28small%29.jpg?dl=0" alt="Example2" width="270px">
 
 Mit einem auf das Framework abgestimmten CSS-Generator können auch eigene Raster festgelegt werden
 Auf [960.gs](http://www.960.gs) gibt es passende Stylesheets.
