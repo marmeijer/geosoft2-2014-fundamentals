@@ -12,6 +12,8 @@
 
 ## RESTful Webservices ##
 
+
+
 ### Was ist REST? ###
 **REST** steht für: **RE** presentational **S** tate **T** ransfer <br>
 
@@ -65,8 +67,10 @@ Ihr könnt das Beispiel und viele weitere zu dieser API auf dieser Seite finden 
 
 ## JSON ##
 
+[[Quellen]](#json-quellen)
+
 ### Was ist JSON? ###
-[**JSON**](#json-quellen) steht für: **J** ava **S** cript **O** bject **N** otation <br>
+**JSON** steht für: **J** ava **S** cript **O** bject **N** otation [[Q4]](#json-quellen) <br>
 
 Es handelt sich um ein Datenaustauschformat, welches einen
 Datenaustausch zwischen Anwendungen ermöglicht. <br>
@@ -152,7 +156,7 @@ JSON.parse()
 ## OAuth ##
 
 ### Was ist OAuth? ###
-OAuth steht für **O** pen **Auth** entication <br>
+OAuth steht für **O**pen **Auth**entication <br>
 Es handelt sich um ein Protokoll, das standardisierte API-Autorisierung für Desktop-, Web und Mobil-Applications erlaubt. <br>
 Ziel: Übermittlung von Authorisierungsdaten an Dritte vermeiden.
 
@@ -166,19 +170,19 @@ Ziel: Übermittlung von Authorisierungsdaten an Dritte vermeiden.
 
 ### Ablauf ###
 
-- Schritt 1:
+- *Schritt 1:*
   - User erlaubt Consumer Zugriff auf seine Daten
-- Schritt 2:
+- *Schritt 2:*
   - Consumer erhält Genehmigung vom Provider
   - erhält ein (Abfrage-)Token
-- Schritt 3:
+- *Schritt 3:*
   - User wird vom Consumer an Provider geleitetet
   - User bekommt Token mit
-- Schritt 4:
+- *Schritt 4:*
   - User autorisiert das Token beim Provider
-- Schritt 5:
+- *Schritt 5:*
   - Consumer erhält vom Provider (Zugangs-)Token
-- Schritt 6:
+- *Schritt 6:*
   - Consumer kann auf Daten des User zugreifen
 
 
@@ -216,13 +220,13 @@ Mit den hier aufgeführten Tutorial für JavaScript und HTML5 könnt ihr OAuth s
 ### JSON-Quellen ###
 
 [Q4 - JSON-Projekt Homepage](http://json.org/ "JSON Projekt-Homepage") <br>
-[RFC 4627 (JSON)](http://tools.ietf.org/html/rfc4627 "JSON RFC bei der IETF") <br>
-[Wikipedia-Seite über Douglas Crockford](http://en.wikipedia.org/wiki/Douglas_Crockford)
+[Q5 -RFC 4627 (JSON)](http://tools.ietf.org/html/rfc4627 "JSON RFC bei der IETF") <br>
+[Q6 -Wikipedia-Seite über Douglas Crockford](http://en.wikipedia.org/wiki/Douglas_Crockford)
 
 ### OAuth ###
-[Kritik von Eran Hammer an OAuth 2.0](http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell/ "OAuth 2.0 and the Road to Hell") <br>
-[Introduction to OAuth](http://blog.varonis.com/introduction-to-oauth/ ) <br>
-[Beginners Guide to OAuth](http://hueniverse.com/2007/10/04/beginners-guide-to-oauth-part-i-overview/ "Beginners Guide to OAuth 1.0")
-[Google OAuth 2.0 Playground](https://developers.google.com/oauthplayground/)
+[Q7 -Kritik von Eran Hammer an OAuth 2.0](http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell/ "OAuth 2.0 and the Road to Hell") <br>
+[Q8 -Introduction to OAuth](http://blog.varonis.com/introduction-to-oauth/ ) <br>
+[Q9 -Beginners Guide to OAuth](http://hueniverse.com/2007/10/04/beginners-guide-to-oauth-part-i-overview/ "Beginners Guide to OAuth 1.0") <br>
+[Q10 -Google OAuth 2.0 Playground](https://developers.google.com/oauthplayground/)
 
     
