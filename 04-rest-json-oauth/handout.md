@@ -12,22 +12,25 @@
 
 ## RESTful Webservices ##
 
+[[Quellen]](#restful-webservices-quellen)
 
-
-### Was ist REST? ###
+### Was ist REST? [[Q1/Q2/Q3]](#restful-webservices-quellen)###
 **REST** steht für: **RE** presentational **S** tate **T** ransfer <br>
 
 Es handelt sich dabei um ein von Roy Fielding 1994 entworfenes Programmierparadigma für Webapplikationen, welches davon ausgeht, dass auf einen Aufruf einer **URI** (**U** niform **R** esource **I** dentifier) immer mit der gleichen Antwort geantwortet wird. <br>
 
-Die Prinzipien nach dem REST funktioniert sind dabei:<br>
+Die Prinzipien nach dem REST funktioniert sind dabei: [[Q1]](#restful-webservices-quellen)<br>
 
-- Adressierbarkeit: Jede Ressource besitzt eine eindeutige Adresse (URI)
-- Zustandslosigkeit: Jede REST-Nachricht enthält alle benötigten Informationen, somit muss keine offene Verbindung gehalten werden.
-- Einheitliche Schnittstelle
-- Entkopplung von Ressourcen und Repräsentation: Die gleiche Ressource kann in verschiedenen Repräsentationen dargestellt werden
+- **Adressierbarkeit:** <br>
+  Jede Ressource besitzt eine eindeutige Adresse (URI)
+- **Zustandslosigkeit:** <br>
+  Jede REST-Nachricht enthält alle benötigten Informationen, somit muss keine offene Verbindung gehalten werden.
+- **Einheitliche Schnittstelle** <br>
+- **Entkopplung von Ressourcen und Repräsentation:** <br>
+  Die gleiche Ressource kann in verschiedenen Repräsentationen dargestellt werden
 
-### Was ist RESTful? ###
-Unter RESTful versteht man die Umsetzung des REST-Paradigmas in einer Webanwendung. Dafür muss ein zustandsloses Client-/Server-Protokoll verwendet werden (meistens HTTP/HTTPS). Die wichtigsten (HTTP-)Operationen, die dabei verwendet werden sind dabei: <br>
+### Was ist RESTful? [[Q1]](#restful-webservices-quellen)###
+Unter RESTful versteht man die Umsetzung des REST-Paradigmas in einer Webanwendung. Dafür muss ein zustandsloses Client-/Server-Protokoll verwendet werden (meistens HTTP/HTTPS). Die wichtigsten (HTTP-) Operationen, die dabei verwendet werden sind dabei: <br>
     
 - ```GET```
 - ```POST```
@@ -69,13 +72,13 @@ Ihr könnt das Beispiel und viele weitere zu dieser API auf dieser Seite finden 
 
 [[Quellen]](#json-quellen)
 
-### Was ist JSON? ###
+### Was ist JSON? [[Q4/Q5]](#json-quellen)###
 **JSON** steht für: **J** ava **S** cript **O** bject **N** otation [[Q4]](#json-quellen) <br>
 
 Es handelt sich um ein Datenaustauschformat, welches einen
 Datenaustausch zwischen Anwendungen ermöglicht. <br>
 
-**Ursprung:** Douglas Crockford (JavaScript); spezifizierte JSON-Standards <br>
+**Ursprung:** Douglas Crockford (JavaScript); spezifizierte JSON-Standards [[Q6]](#json-quellen)<br>
 
 - Unabhängig von der Programmiersprache
 
@@ -84,7 +87,7 @@ Datenaustausch zwischen Anwendungen ermöglicht. <br>
 - Datenübertragung zwischen Client und Server
 - Ersatz für XML, um Ressourcen einzusparen
         
-### Datenstruktur ###
+### Datenstruktur [[Q4/Q5]](#json-quellen)###
 Als Zeichenkodierung verwendet JSON Standardmäßig UTF-8 (es sind aber auch UTF-16 und UTF-32 möglich).<br>
 
 **Folgende Datentypen werden von JSON unterstützt:** <br>
@@ -213,22 +216,22 @@ Mit den hier aufgeführten Tutorial für JavaScript und HTML5 könnt ihr OAuth s
     
 ## Quellen ##
 
-### RESTful Webservices ###
+### RESTful-Webservices-Quellen ###
 
-[Q1 - RFC 6749 (REST)](http://tools.ietf.org/html/rfc6749 "REST RFC bei der IETF") <br>
-[Q2 - Restful Webservices - was ist das überhaubt](https://blog.mittwald.de/webentwicklung/restful-webservices-1-was-ist-das-uberhaupt/ "RESTful") <br>
+[Q1 - Restful Webservices - was ist das überhaubt](https://blog.mittwald.de/webentwicklung/restful-webservices-1-was-ist-das-uberhaupt/ "RESTful") <br>
+[Q2 - RFC 6749 (REST)](http://tools.ietf.org/html/rfc6749 "REST RFC bei der IETF") <br>
 [Q3 - Fielding - Dissertation - Chapter 5](http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm "Disertation about REST by Fielding")
         
 ### JSON-Quellen ###
 
 [Q4 - JSON-Projekt Homepage](http://json.org/ "JSON Projekt-Homepage") <br>
-[Q5 -RFC 4627 (JSON)](http://tools.ietf.org/html/rfc4627 "JSON RFC bei der IETF") <br>
-[Q6 -Wikipedia-Seite über Douglas Crockford](http://en.wikipedia.org/wiki/Douglas_Crockford)
+[Q5 - RFC 4627 (JSON)](http://tools.ietf.org/html/rfc4627 "JSON RFC bei der IETF") <br>
+[Q6 - Wikipedia-Seite über Douglas Crockford](http://en.wikipedia.org/wiki/Douglas_Crockford)
 
 ### OAuth-Quellen###
-[Q7 -Beginners Guide to OAuth](http://hueniverse.com/2007/10/04/beginners-guide-to-oauth-part-i-overview/ "Beginners Guide to OAuth 1.0") <br>
-[Q8 -Introduction to OAuth](http://blog.varonis.com/introduction-to-oauth/ ) <br>
-[Q9 -Google OAuth 2.0 Playground](https://developers.google.com/oauthplayground/) <br>
-[Q10 -Kritik von Eran Hammer an OAuth 2.0](http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell/ "OAuth 2.0 and the Road to Hell") <br>
+[Q7 - Beginners Guide to OAuth](http://hueniverse.com/2007/10/04/beginners-guide-to-oauth-part-i-overview/ "Beginners Guide to OAuth 1.0") <br>
+[Q8 - Introduction to OAuth](http://blog.varonis.com/introduction-to-oauth/ ) <br>
+[Q9 - Google OAuth 2.0 Playground](https://developers.google.com/oauthplayground/) <br>
+[Q10 - Kritik von Eran Hammer an OAuth 2.0](http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell/ "OAuth 2.0 and the Road to Hell") <br>
 
     
