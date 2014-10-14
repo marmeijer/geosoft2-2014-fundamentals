@@ -132,7 +132,6 @@ Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
 
  	```javascript
  	@ LESS
- 	
  	$- SASS
  	```
 
@@ -209,14 +208,13 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
         ```javascript
         $font-stack:    Helvetica, sans-serif
         $primary-color: #333
-
 	body
 		font: 100% $font-stack
 		color: $primary-color
 	```
-
+	
 __CSS:__
-          
+
 	```javascript
 	body {    
       		font: 100% Helvetica, sans-serif;   
@@ -227,19 +225,18 @@ __CSS:__
 * __[Mixin]s__, um Gruppen von CSS-Deklarationen zu erstellen,
     
         ```javascript
-        
-	=border-radius ($radius)
-	-webkit-border-radius : $radius
-	-moz-border-radius : $radius
-	ms-border-radius : $radius
-	border-radius : $radius
+	=border-radius($radius)
+		-webkit-border-radius :	$radius
+		-moz-border-radius : 	$radius
+		ms-border-radius : 	$radius
+		border-radius : 	$radius
 	
 	.box
-		+border-radius ( 10px )
+		+border-radius(10px)
 	```
 
 __CSS:__ 
-          
+
     	```javascript
     	.box {
         	-webkit-border-radius: 10px;
