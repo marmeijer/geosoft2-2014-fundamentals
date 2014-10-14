@@ -72,6 +72,10 @@ Die Grundlage bilden die aktuellen Webstandards [HTML5](https://github.com/JanVa
 
 <img src="https://www.dropbox.com/s/heh94vjihsv0alz/ResponsiveDesign%28MaxWidth1060px%29.jpg?dl=0" alt="MaxWidth 1060px" width="582px"> <img src="https://www.dropbox.com/s/i9xjijei1asd2ap/ResponsiveDesign%28MaxWidth480px%29.jpg?dl=0" alt="MaxWidth 480px" width="270px">
 
+![alt text](https://www.dropbox.com/s/heh94vjihsv0alz/ResponsiveDesign%28MaxWidth1060px%29.jpg?dl=0 "Example")
+
+
+
 #### Mobile First:
 
 Hier wird der gewohnte Ansatz einfach umgedreht, man arbeitet sich von der kleinsten Layout-Version zur größten (progressive enhancement).
