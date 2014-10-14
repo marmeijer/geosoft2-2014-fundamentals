@@ -143,13 +143,15 @@ Eine weitere Syslesheet-Sprache, die in Javascript geschriebenen und für die Pl
 
 ####Code Beispiel
 
+ 	```javascript
  	meineFarbe = #0033ff   
  	header   
  	background-color meineFarbe   
  	h1   
  	color meineFarbe   
  	a   
- 	color meineFarbe    
+ 	color meineFarbe
+ 	```
 
 wird in CSS zu:
 
@@ -210,7 +212,7 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
 	body
 		font: 100% $font-stack
 		color: $primary-color
-	```javascript
+	```
 
 __CSS:__
           
@@ -223,16 +225,17 @@ __CSS:__
  
 * __[Mixin]s__, um Gruppen von CSS-Deklarationen zu erstellen,
     
-     	```javascript
-	=border-radius ( $radius )    
-	-webkit-border-radius : $radius   
-	-moz-border-radius 	$radius    
-	ms-border-radius :     	$radius    
-	border-radius :         $radius     
-       
-      	.box     
-        	+border-radius ( 10px )
-        ```
+        ```javascript
+        
+	=border-radius ($radius)
+	-webkit-border-radius : $radius
+	-moz-border-radius : $radius
+	ms-border-radius : $radius
+	border-radius : $radius
+	
+	.box
+		+border-radius ( 10px )
+	```
 
 __CSS:__ 
           
