@@ -208,9 +208,10 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
         ```javascript
         $font-stack:    Helvetica, sans-serif
         $primary-color: #333
+        
 	body
-		font: 100% $font-stack
-		color: $primary-color
+		font: 100% 
+		$font-stackcolor: $primary-color
 	```
 	
 * wird in CSS zu:
@@ -230,11 +231,11 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
 		-moz-border-radius : 	$radius
 		ms-border-radius : 	$radius
 		border-radius : 	$radius
-	
+		
 	.box
 		+border-radius(10px)
 	```
-
+	
 * wird in CSS zu:
 
     	```javascript
