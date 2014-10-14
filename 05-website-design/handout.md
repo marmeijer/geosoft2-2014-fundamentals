@@ -131,7 +131,8 @@ Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
 * Variablen-Namen zum Beispiel
 
  	```javascript
- 	@ LESS   
+ 	@ LESS
+ 	
  	$- SASS
  	```
 
