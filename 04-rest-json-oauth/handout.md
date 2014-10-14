@@ -167,33 +167,40 @@ Ziel: Übermittlung von Authorisierungsdaten an Dritte vermeiden.
 
 ### Begriffe [[Q7]](#oauth-quellen)###
 
-- Service Provider: Damit ist eine Webseite oder ein Dienst gemeint, bei dem die Informationen liegen
-- User: Der Eigentümer der Information
-- Consumer: Eine Webseite/Anwendung, die auf die Informationen zugreifen möchte
-- Protected Resources: Die Informationen des Users die durch OAuth geschützt werden
-- Token: Authentifikations-Token ersetzen die Authorisierungsdaten und geben Zugang entweder für Abfragen oder Zugang zu bestimmten Bereichen (Es handelt sich um eine Kryptografisch erzeugte lange Zeichenfolge, die schwer zu erraten ist)
+- **Service Provider:** <br>
+  Damit ist eine Webseite oder ein Dienst gemeint, bei dem die Informationen liegen
+- **User:** <br>
+  Der Eigentümer der Information
+- **Consumer:** <br>
+  Eine Webseite/Anwendung, die auf die Informationen zugreifen möchte
+- **Protected Resources:** <br>
+  Die Informationen des Users die durch OAuth geschützt werden
+- **Token:** <br>
+  Authentifikations-Token ersetzen die Authorisierungsdaten und geben Zugang entweder für Abfragen oder Zugang zu bestimmten Bereichen (Es handelt sich um eine Kryptografisch erzeugte lange Zeichenfolge, die schwer zu erraten ist)
 
 ### Ablauf [[Q8]](#oauth-quellen)###
 
-- *Schritt 1:*
+Diese 6 Schritte stellen eine abstrakte Beschreibung des Ablauf einer API-Autorisierung durch OAuth dar:
+
+- **Schritt 1:**
   - User erlaubt Consumer Zugriff auf seine Daten
-- *Schritt 2:*
+- **Schritt 2:**
   - Consumer erhält Genehmigung vom Provider
   - erhält ein (Abfrage-)Token
-- *Schritt 3:*
+- **Schritt 3:**
   - User wird vom Consumer an Provider geleitetet
   - User bekommt Token mit
-- *Schritt 4:*
+- **Schritt 4:**
   - User autorisiert das Token beim Provider
-- *Schritt 5:*
+- **Schritt 5:**
   - Consumer erhält vom Provider (Zugangs-)Token
-- *Schritt 6:*
+- **Schritt 6:**
   - Consumer kann auf Daten des User zugreifen
 
 
 ### Sicherheit [[Q7]](#oauth-quellen)###
 
-Ind er aktuellen Version OAuth 2.0 ist das Protokoll erheblich komplexer geworden, was aber bis heute zu Diskussionen führt. Hier die markantesten Sicherheitsfeatures des Protokolls:
+In der aktuellen Version OAuth 2.0 ist das Protokoll erheblich komplexer geworden, was aber bis heute zu Diskussionen führt. Hier die markantesten Sicherheitsfeatures des Protokolls:
 
 - OAuth 2.0 (angeblich) sicherer als 1.0
 - Token mit Güligkeitsdauer
@@ -203,13 +210,13 @@ Ind er aktuellen Version OAuth 2.0 ist das Protokoll erheblich komplexer geworde
     
 ### OAuth 2.0 Playground ###
 
-Im "OAuth 2.0 Playground" von Google kann man eine OAuth 2.0 Authentifikation anschaulich, in einzelnen Schritten  selbst ausprobieren. Man findet das
-Tool hier -> [OAuth 2.0 Playground](https://developers.google.com/oauthplayground/ "OAuth 2.0 Playground von Google")
+Im "OAuth 2.0 Playground" von Google kann man eine OAuth 2.0 Authentifikation anschaulich, in einzelnen Schritten  selbst ausprobieren. Man findet dieses
+(Entwickler-) Tool unter -> [OAuth 2.0 Playground](https://developers.google.com/oauthplayground/ "OAuth 2.0 Playground von Google")
 
 ### OAuth-Bibliotheken für eigene Projekte ###
-Eine Liste mit Server- und Client-Frameworks, um OAuth in eigene Projekte zu integrieren findet man unter [http://oauth.net/2/](http://oauth.net/2/ "oauth.net/2/").
+Eine Liste mit Server- und Client-Frameworks, um OAuth in eigene Projekte zu integrieren, findet man unter [http://oauth.net/2/](http://oauth.net/2/ "oauth.net/2/").
 
-### Tutorials für OAuth ###
+### Tutorial für OAuth ###
 
 Mit den hier aufgeführten Tutorial für JavaScript und HTML5 könnt ihr OAuth selber in einem Programmierprojekt ausprobieren: [How to Implement Safe Sign-In via OAuth](http://devcenter.kinvey.com/html5/tutorials/how-to-implement-safe-signin-via-oauth# "How to Implement Safe Sign-In via OAuth").
 
