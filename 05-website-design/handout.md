@@ -19,16 +19,6 @@ Die Grundlage bilden die aktuellen Webstandards HTML5, CSS3 und JavaScript (sieh
 * Design richtet sich nach abgefragten Eigenschaften (Größe des Geräts, Bildschirmauflösung, etc.)
 * in folgendem Beispiel wird die Breite eines Inhaltes auf 600px verkleinert sobald die breite des Browserfensters 1025px unterschreitet
 
-`#inhalt {`   
-	`width: 800px;`   
-`}`
-
-`@media screen and (max-width: 1024px) {`   
-	`#inhalt {`   
-		`width: 600px;`   
-	`}`   
-`}`
-
 	#inhalt {
 		width: 800px;
 	}
@@ -103,24 +93,24 @@ LESS ist eine Stylesheet-Sprache, die CSS effektiver machen soll durch Erweiteru
 * spezielle Farbe als Variable definieren
 * jederzeit wieder aufrufbar
 
- `@mycolor: #4D926F;`   
+ 	@mycolor: #4D926F;  
 
- `#header {`   
- 	`color: @mycolor;`   
- `}`   
- `h2 {`   
- 	`color: @mycolor;`   
- `}`   
+ 	#header {   
+ 		color: @mycolor;   
+	 }   
+ 	h2 {   
+ 		color: @mycolor;   
+ 	}   
 
 * wird in CSS zu :
 
- `#header {`   
- 	`background-color: #4D926F;`   
- `}`   
+ 	#header {   
+ 		background-color: #4D926F;   
+ 	}   
 
- `h2 {`   
- 	`color: #4D926F;`   
- `}`   
+ 	h2 {   
+ 		color: #4D926F;   
+ 	}   
 
 Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
 
@@ -145,25 +135,25 @@ Eine weitere Syslesheet-Sprache, die in Javascript geschriebenen und für die Pl
 
 ####Code Beispiel
 
- `meineFarbe = #0033ff`   
- `header`   
- `background-color meineFarbe`   
- `h1`   
- `color meineFarbe`   
- `a`   
- `color meineFarbe`    
+ 	meineFarbe = #0033ff   
+ 	header   
+ 	background-color meineFarbe   
+ 	h1   
+ 	color meineFarbe   
+ 	a`   
+ 	color meineFarbe    
 
 wird in CSS zu:
 
- `header{`   
- 	`background-color: #0033ff;`   
- `}`   
- `h1{`   
- 	`color: #0033ff;`   
- `}`    
- `a{`    
- 	`color: #0033ff;`   
- `}`    
+ 	header{   
+ 		background-color: #0033ff;   
+ 	}   
+ 	h1{   
+ 		color: #0033ff;   
+ 	}    
+ 	a{    
+ 		color: #0033ff;   
+ 	}    
 
 ####Im Vergleich zu SASS/LESS
 
@@ -206,36 +196,36 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
         $font-stack:    Helvetica, sans-serif
         $primary-color: #333
 
-          body
-             font: 100% $font-stack
-             color: $primary-color
+	body
+		font: 100% $font-stack
+		color: $primary-color
 
 __CSS:__
           
-    body {    
-      font: 100% Helvetica, sans-serif;   
-      color: #333;   
-      }      
+	body {    
+      		font: 100% Helvetica, sans-serif;   
+      		color: #333;   
+      	}      
  
 * __[Mixin]s__, um Gruppen von CSS-Deklarationen zu erstellen,
     
-       =border-radius ( $radius )    
-       -webkit-border-radius :  $radius   
-       -moz-border-radius :     $radius    
-        ms-border-radius :      $radius    
-       border-radius :          $radius     
+     	=border-radius ( $radius )    
+	-webkit-border-radius : $radius   
+	-moz-border-radius 	$radius    
+       	ms-border-radius :     	$radius    
+       	border-radius :         $radius     
        
-      .box     
-         +border-radius ( 10px )
+      	.box     
+        	+border-radius ( 10px )
 
 __CSS:__ 
           
-    .box {
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-         border-radius: 10px;
-        }
+    	.box {
+        	-webkit-border-radius: 10px;
+        	-moz-border-radius: 10px;
+        	-ms-border-radius: 10px;
+         	border-radius: 10px;
+     	}
 
 ####Vorteile
 
@@ -326,18 +316,18 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 * alternativ lassen sich natürlich auch direkt kompilierte Dateien einbinden
 * bei der Verwendung von JavaScript muss außerdem zunächst die jQuery Bibliothek eingebunden werden
 
-`<head>`
-	`<title>Beispiel</title>`
+	<head>
+		<title>Beispiel</title>
 
-	`<!-- Einbinden des Bootstrap-Stylesheets -->`
-	`<link rel="stylesheet" href="css/bootstrap.min.css">`
+		<!-- Einbinden des Bootstrap-Stylesheets -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 
-	`<!-- optional: Einbinden der jQuery-Bibliothek -->`
-	`<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>`
+		<!-- optional: Einbinden der jQuery-Bibliothek -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 
-	`<!-- optional: Einbinden der Bootstrap-JavaScript-Plugins -->`
-	`<script src="js/bootstrap.min.js"></script>`
-`</head>`
+		<!-- optional: Einbinden der Bootstrap-JavaScript-Plugins -->
+		<script src="js/bootstrap.min.js"></script>
+	</head>
 
 #### Vorteile
 
