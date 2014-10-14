@@ -143,7 +143,7 @@ Eine weitere Syslesheet-Sprache, die in Javascript geschriebenen und für die Pl
 
 ####Code Beispiel
 
- 	```javascript
+ 	```
 	meineFarbe = #0033ff
 	header
 	background-color meineFarbe
