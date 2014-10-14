@@ -5,6 +5,14 @@
 Reqiurements to modern day websites.
 
 
+## Inhalt
+
+
+[Responsive Design](https://github.com/Ehrecke/geosoft2-2014-fundamentals/edit/master/05-website-design/handout.md#responsive-design)
+[Styling (LESS/SASS)](https://github.com/Ehrecke/geosoft2-2014-fundamentals/edit/master/05-website-design/handout.md#less)
+[Frameworks & Tools](https://github.com/Ehrecke/geosoft2-2014-fundamentals/edit/master/05-website-design/handout.md#foundation-5)
+
+
 ## Responsive Design
 
 
