@@ -335,7 +335,7 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 * alternativ lassen sich natürlich auch direkt kompilierte Dateien einbinden
 * bei der Verwendung von JavaScript muss außerdem zunächst die jQuery Bibliothek eingebunden werden
 
-	```
+	```html
 	<head>
 		<title>Beispiel</title>
 
