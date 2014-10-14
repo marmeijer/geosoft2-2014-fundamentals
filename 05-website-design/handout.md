@@ -205,26 +205,16 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
 
 * __Variablen__ definieren, um zum Beispiel Farben und Schriftarten schneller aufrufen zu können
 
-
-
 	```javascript
-
 	$font-stack:    Helvetica, sans-serif
-
 	$primary-color: #333
 
 	body
-		
-		font: 100%
-		$font-stackcolor: $primary-color
-
+		font: 100% $font-stack
+		color: $primary-color
 	```
 
-
-
 * wird in CSS zu:
-
-
 
 	```javascript
 	body {
@@ -237,43 +227,25 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
 * __[Mixin]s__, um Gruppen von CSS-Deklarationen zu erstellen
 
 	```javascript
-
 	=border-radius($radius)
-
 		-webkit-border-radius : $radius
-
 		-moz-border-radius : $radius
 		ms-border-radius : $radius
-
 		border-radius : $radius
 
-
 	.box
-
 		+border-radius(10px)
-
 	```
-
-
 
 * wird in CSS zu:
 
-
-
 	```javascript
-
 	.box {
-
 		-webkit-border-radius: 10px;
-
 		-moz-border-radius: 10px;
-
 		-ms-border-radius: 10px;
-
 		border-radius: 10px;
-
 	}
-
 	```
 
 ####Vorteile
