@@ -10,8 +10,9 @@ Reqiurements to modern day websites.
 
 1. [Introduction](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#responsive-design)
 2. [Stylesheets](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#less)
-  1. [LESS](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#less)
+  1. [CSS(3)]()
   2. [SASS](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#sass)
+  3. [LESS](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#less)
 3. [Frameworks & Tools](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#foundation-5)
   1. [Foundation 5](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#foundation-5)
   2. [Bootstrap](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#bootstrap)
@@ -82,6 +83,94 @@ In der direkten Umsetzung programmiert man also nach dem min-width Prinzip, also
 * http://www.responsive-webdesign.mobi/
 * http://www.elmastudio.de/webdesign/webdesign-goes-mobile-first-eine-kleine-einfuhrung-zum-neuen-webdesign-trend/
 * http://t3n.de/news/responsive-webdesign-einstieg-524171/
+
+
+## CSS(3)
+
+
+## SASS
+
+
+* Syntactically Awesome Stylesheets
+
+Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erweitert. Sie wird von Natalie Weizenbaum und Chris Eppstein entwickelt. SASS wird in einer SCSS-Datei erstelllt und dann in eine CSS-Datei umgewandelt.
+
+* ursprünglich von Auszeichnungssprache YAML
+* basiert auf [Ruby](http://www.ruby.org)
+* minimalistischste Schreibweise
+
+####Eigenschaften
+
+* verwendet Mixins
+* Paramterübergabe
+* Code-Blöcke fexibel einsetzbar
+
+####SASS Syntax Beispiele
+
+* __Variablen__ definieren, um zum Beispiel Farben und Schriftarten schneller aufrufen zu können
+
+	```javascript
+	$font-stack:    Helvetica, sans-serif
+	$primary-color: #333
+
+	body
+		font: 100% $font-stack
+		color: $primary-color
+	```
+
+* wird in CSS zu:
+
+	```javascript
+	body {
+		font: 100% Helvetica, sans-serif;
+		color: #333;
+	}
+	```
+
+
+* __[Mixin]s__, um Gruppen von CSS-Deklarationen zu erstellen
+
+	```javascript
+	=border-radius($radius)
+		-webkit-border-radius : $radius
+		-moz-border-radius : $radius
+		ms-border-radius : $radius
+		border-radius : $radius
+
+	.box
+		+border-radius(10px)
+	```
+
+* wird in CSS zu:
+
+	```javascript
+	.box {
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		border-radius: 10px;
+	}
+	```
+
+####Vorteile
+
+* Nutzung von Variablen zum Beispiel um mathmatisch Operationen zu definieren
+* Verschachtelungen von "Klassen"
+* bessere Übersicht
+* Vererbung
+* Vermeidung von Redunanzen
+
+####Nachteile
+
+* erschwertes Debugging 
+* Erweiterung potenzieller Fehlerquellen
+* Stylesheets werden nur per Ruby generiert
+
+####Quellen
+
+* http://sass-lang.com/
+* http://webkrauts.de/artikel/2012/css-modularisierung-mit-sass
+* http://de.wikipedia.org/wiki/Sass_%28Stylesheet-Sprache%29
 
 
 ## LESS
@@ -195,91 +284,6 @@ Eine weitere Syslesheet-Sprache, die in Javascript geschriebenen und für die Pl
 * http://www.lesscss.de/
 * http://de.wikipedia.org/wiki/LESS_%28Stylesheet-Sprache%29
 * http://less2css.org/
-
-
-## SASS
-
-
-* Syntactically Awesome Stylesheets
-
-Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erweitert. Sie wird von Natalie Weizenbaum und Chris Eppstein entwickelt. SASS wird in einer SCSS-Datei erstelllt und dann in eine CSS-Datei umgewandelt.
-
-* ursprünglich von Auszeichnungssprache YAML
-* basiert auf [Ruby](http://www.ruby.org)
-* minimalistischste Schreibweise
-
-####Eigenschaften
-
-* verwendet Mixins
-* Paramterübergabe
-* Code-Blöcke fexibel einsetzbar
-
-####SASS Syntax Beispiele
-
-* __Variablen__ definieren, um zum Beispiel Farben und Schriftarten schneller aufrufen zu können
-
-	```javascript
-	$font-stack:    Helvetica, sans-serif
-	$primary-color: #333
-
-	body
-		font: 100% $font-stack
-		color: $primary-color
-	```
-
-* wird in CSS zu:
-
-	```javascript
-	body {
-		font: 100% Helvetica, sans-serif;
-		color: #333;
-	}
-	```
-
-
-* __[Mixin]s__, um Gruppen von CSS-Deklarationen zu erstellen
-
-	```javascript
-	=border-radius($radius)
-		-webkit-border-radius : $radius
-		-moz-border-radius : $radius
-		ms-border-radius : $radius
-		border-radius : $radius
-
-	.box
-		+border-radius(10px)
-	```
-
-* wird in CSS zu:
-
-	```javascript
-	.box {
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		-ms-border-radius: 10px;
-		border-radius: 10px;
-	}
-	```
-
-####Vorteile
-
-* Nutzung von Variablen zum Beispiel um mathmatisch Operationen zu definieren
-* Verschachtelungen von "Klassen"
-* bessere Übersicht
-* Vererbung
-* Vermeidung von Redunanzen
-
-####Nachteile
-
-* erschwertes Debugging 
-* Erweiterung potenzieller Fehlerquellen
-* Stylesheets werden nur per Ruby generiert
-
-####Quellen
-
-* http://sass-lang.com/
-* http://webkrauts.de/artikel/2012/css-modularisierung-mit-sass
-* http://de.wikipedia.org/wiki/Sass_%28Stylesheet-Sprache%29
 
 
 ## Foundation 5
