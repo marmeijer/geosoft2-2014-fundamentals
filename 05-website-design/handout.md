@@ -9,8 +9,8 @@ Reqiurements to modern day websites.
 
 
 1. [Einführung](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#responsive-design)
-2. [Stylesheets](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#less)
-  1. [CSS(3)]()
+2. [Stylesheets](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#css(3))
+  1. [CSS(3)](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#css(3))
   2. [SASS](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#sass)
   3. [LESS](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#less)
 3. [Frameworks & Tools](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#foundation-5)
