@@ -70,11 +70,7 @@ Die Grundlage bilden die aktuellen Webstandards [HTML5](https://github.com/JanVa
 
 * https://www.tuj.ac.jp/
 
-<img src="https://www.dropbox.com/s/heh94vjihsv0alz/ResponsiveDesign%28MaxWidth1060px%29.jpg?dl=0" alt="MaxWidth 1060px" width="582px"> <img src="https://www.dropbox.com/s/i9xjijei1asd2ap/ResponsiveDesign%28MaxWidth480px%29.jpg?dl=0" alt="MaxWidth 480px" width="270px">
-
-![alt text](https://www.dropbox.com/s/heh94vjihsv0alz/ResponsiveDesign%28MaxWidth1060px%29.jpg?dl=0 "Example")
-
-
+<img src="http://img5.fotos-hochladen.net/uploads/responsivedesigex0rscti4m.jpg" alt="MaxWidth 1060px" width="582px"> <img src="http://img5.fotos-hochladen.net/uploads/responsivedesigi5qdsr02b6.jpg" alt="MaxWidth 480px" width="270px">
 
 #### Mobile First:
 
@@ -428,7 +424,7 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 
 Beispiel Website: [Sony](http://www.sonymusic.de/) Music basiert auf solch einem Gestaltungsraster
 
-<img src="https://www.dropbox.com/s/wh537y8icdfd894/960GS%28wide%29.jpg?dl=0" alt="Example1" width="582px"> <img src="https://www.dropbox.com/s/vkbpg2j7vod8avx/960GS%28small%29.jpg?dl=0" alt="Example2" width="270px">
+<img src="http://img5.fotos-hochladen.net/uploads/960gswideqjwbidvt3u.jpg" alt="Example1" width="582px"> <img src="http://img5.fotos-hochladen.net/uploads/960gssmallhijkwcnyvl.jpg" alt="Example2" width="270px">
 
 Mit einem auf das Framework abgestimmten CSS-Generator können auch eigene Raster festgelegt werden
 Auf [960.gs](http://www.960.gs) gibt es passende Stylesheets.
