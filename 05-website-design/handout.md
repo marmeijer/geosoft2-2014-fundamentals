@@ -70,7 +70,7 @@ Die Grundlage bilden die aktuellen Webstandards [HTML5](https://github.com/JanVa
 
 * https://www.tuj.ac.jp/
 
-<img src="http://img5.fotos-hochladen.net/uploads/responsivedesigex0rscti4m.jpg" alt="MaxWidth 1060px" width="582px"> <img src="http://img5.fotos-hochladen.net/uploads/responsivedesigi5qdsr02b6.jpg" alt="MaxWidth 480px" width="270px">
+<img src="http://img5.fotos-hochladen.net/uploads/responsivedesigex0rscti4m.jpg" alt="MaxWidth 1060px" width="600px"> <img src="http://img5.fotos-hochladen.net/uploads/responsivedesigi5qdsr02b6.jpg" alt="MaxWidth 480px" width="150px">
 
 #### Mobile First:
 
