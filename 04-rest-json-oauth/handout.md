@@ -219,13 +219,13 @@ Mit den hier aufgeführten Tutorial für JavaScript und HTML5 könnt ihr OAuth s
 [Q2 - Restful Webservices - was ist das überhaubt](https://blog.mittwald.de/webentwicklung/restful-webservices-1-was-ist-das-uberhaupt/ "RESTful") <br>
 [Q3 - Fielding - Dissertation - Chapter 5](http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm "Disertation about REST by Fielding")
         
-### JSON - Quellen ###
+### JSON-Quellen ###
 
 [Q4 - JSON-Projekt Homepage](http://json.org/ "JSON Projekt-Homepage") <br>
 [Q5 -RFC 4627 (JSON)](http://tools.ietf.org/html/rfc4627 "JSON RFC bei der IETF") <br>
 [Q6 -Wikipedia-Seite über Douglas Crockford](http://en.wikipedia.org/wiki/Douglas_Crockford)
 
-### OAuth - Quellen###
+### OAuth-Quellen###
 [Q7 -Beginners Guide to OAuth](http://hueniverse.com/2007/10/04/beginners-guide-to-oauth-part-i-overview/ "Beginners Guide to OAuth 1.0") <br>
 [Q8 -Introduction to OAuth](http://blog.varonis.com/introduction-to-oauth/ ) <br>
 [Q9 -Google OAuth 2.0 Playground](https://developers.google.com/oauthplayground/) <br>
