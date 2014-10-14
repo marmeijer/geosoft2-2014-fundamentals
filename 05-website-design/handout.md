@@ -424,7 +424,7 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 
 Beispiel Website: [Sony](http://www.sonymusic.de/) Music basiert auf solch einem Gestaltungsraster
 
-<img src="http://img5.fotos-hochladen.net/uploads/960gswideqjwbidvt3u.jpg" alt="Example1" width="650px"> <img src="http://img5.fotos-hochladen.net/uploads/960gssmallhijkwcnyvl.jpg" alt="Example2" width="155px">
+<img src="http://img5.fotos-hochladen.net/uploads/960gswideqjwbidvt3u.jpg" alt="Example1" width="650px"> <img src="http://img5.fotos-hochladen.net/uploads/960gssmallhijkwcnyvl.jpg" alt="Example2" width="170px">
 
 Mit einem auf das Framework abgestimmten CSS-Generator können auch eigene Raster festgelegt werden
 Auf [960.gs](http://www.960.gs) gibt es passende Stylesheets.
