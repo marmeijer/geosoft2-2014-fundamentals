@@ -121,7 +121,7 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
 
 * __Variablen__ definieren, um zum Beispiel Farben und Schriftarten schneller aufrufen zu können
 
-	```css
+	```javascript
 	$font-stack:    Helvetica, sans-serif
 	$primary-color: #333
 
@@ -142,7 +142,7 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
 
 * __[Mixin]s__, um Gruppen von CSS-Deklarationen zu erstellen
 
-	```css
+	```javascript
 	=border-radius($radius)
 		-webkit-border-radius : $radius
 		-moz-border-radius : $radius
@@ -212,7 +212,7 @@ LESS ist eine Stylesheet-Sprache, die CSS effektiver machen soll durch Erweiteru
 * spezielle Farbe als Variable definieren
 * jederzeit wieder aufrufbar
 
- 	```css
+ 	```javascript
  	@mycolor: #4D926F;  
 
  	#header {   
@@ -247,7 +247,7 @@ Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
 
 * Variablen-Namen zum Beispiel
 
- 	```css
+ 	```javascript
  	@ LESS
  	$- SASS
  	```
