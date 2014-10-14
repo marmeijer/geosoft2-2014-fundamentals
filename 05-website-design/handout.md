@@ -8,7 +8,7 @@ Reqiurements to modern day websites.
 ## Inhalt
 
 
-1. [Introduction](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#responsive-design)
+1. [Einführung](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#responsive-design)
 2. [Stylesheets](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#less)
   1. [CSS(3)]()
   2. [SASS](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#sass)
@@ -16,9 +16,10 @@ Reqiurements to modern day websites.
 3. [Frameworks & Tools](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#foundation-5)
   1. [Foundation 5](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#foundation-5)
   2. [Bootstrap](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#bootstrap)
-  3. [HTML 5 Boilerplate](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#html-5-boilerplate)
-  4. [960 Grid System](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#960-grid-system)
+  3. [960 Grid System](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#960-grid-system)
+  4. [HTML 5 Boilerplate](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#html-5-boilerplate)
   5. [Additional Stuff](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#additional-stuff)
+4. [Einschätzung](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#einschätzung)
 
 
 ## Responsive Design
@@ -77,6 +78,10 @@ Man wird also gezwungen, bewusst von vornherein zu Priorisieren und sich auf die
 Erst nach und nach werden (falls überhaupt nötig) weitere Scripte, Slideshows und Grafiken eingebaut.
 In der direkten Umsetzung programmiert man also nach dem min-width Prinzip, also fügt dann erst Weiteres hinzu wenn eine bestimmte Bildschirmbreite überschritten wird.
 
+#### Beispielseite
+
+* http://myrainbownursery.co.uk/
+
 #### Quellen:
 
 * http://de.wikipedia.org/wiki/Responsive_Webdesign
@@ -86,6 +91,9 @@ In der direkten Umsetzung programmiert man also nach dem min-width Prinzip, also
 
 
 ## CSS(3)
+
+
+hier kommt noch text hin
 
 
 ## SASS
@@ -326,6 +334,8 @@ Neue Feature für Foundation 5 sind unter anderem ein Editor, um das Framework v
 
 [Beispiel Webseiten die Foundation benutzen](http://zurb.com/responsive?framework_id=1)
 
+![alt text](http://zurb.com/responsive/system/upload/desktop_screenshots/images/000/000/741/regular/express.com-wide.jpg?1410306028 "Example1") ![alt text](http://zurb.com/responsive/system/upload/mobile_screenshots/images/000/000/742/regular/express.com-narrow.jpg?1410306032 "Example2")
+
 ####Quellen
 
 * http://foundation.zurb.com/
@@ -382,37 +392,14 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 * einheitliches Look-and-Feel (will man wirklich, dass jede Site gleich aussieht?)
 * für strukturelle Veränderungen müssen die LESS-Stylesheets und JavaScript-Code geändert werden (mühsam)
 
+[Beispiel Webseiten die Bootstrap benutzen](http://lovebootstrap.com/)
+
+![alt text](http://lovebootstrap.com/sites/default/files/styles/screenshot_browser/public/screenshot-xofestival.nl_.jpeg?itok=pVWQNt1V "Example")
+
 #### Quellen
 
 * http://getbootstrap.com/
 * http://de.wikipedia.org/wiki/Bootstrap_%28Framework%29
-
-
-## HTML5 Boilerplate
-
-
-HTML5 Boilerplate ist ein Build-Skript welches Vorlagen zur zeitgemäßen und schnellen Web-Entwicklung liefert.
-
-#### Zusammenfassung
-
-* Vorgaben für HTML und CSS sowie JavaScript Bibliotheken und .htaccess-Voreinstellungen (Konfigurationsdatei, z.B. für Passwortschutz)
-* weitere nützliche Vorlagen und Skripte z.B. zum Testen
-* kein klassischen Framework
-* bündelt und dokumentiert sinnvolle Vorlagen und Vorgaben zentral
-* eine Art umfangreiche Universalvorlage
-
-#### Leistungen
-
-* optimiert zum Projekt gehörende HTML-, CSS- und JavaScript-Dateien
-* d.h. fügt die CSS- und JS-Dateien zusammen, entfernt dabei Unnötiges, und strukturiert sinnvoll neu
-* kann auch überflüssige Metadaten aus Bilddateien des Projektes entfernen
-* prüft den Code auf Fehler und unperformante Konstrukte
-
-#### Quellen
-
-* http://html5boilerplate.com/
-* http://webkrauts.de/artikel/2011/bauen-wie-die-ameisen
-* http://www.sitepoint.com/introduction-html5-boilerplate/
 
 
 ## 960 Grid System
@@ -476,6 +463,33 @@ Auf [960.gs](http://www.960.gs) gibt es passende Stylesheets.
 * http://andytaylor.me/2013/04/09/1140px-css-grid-retired/
 
 
+## HTML5 Boilerplate
+
+
+HTML5 Boilerplate ist ein Build-Skript welches Vorlagen zur zeitgemäßen und schnellen Web-Entwicklung liefert.
+
+#### Zusammenfassung
+
+* Vorgaben für HTML und CSS sowie JavaScript Bibliotheken und .htaccess-Voreinstellungen (Konfigurationsdatei, z.B. für Passwortschutz)
+* weitere nützliche Vorlagen und Skripte z.B. zum Testen
+* kein klassischen Framework
+* bündelt und dokumentiert sinnvolle Vorlagen und Vorgaben zentral
+* eine Art umfangreiche Universalvorlage
+
+#### Leistungen
+
+* optimiert zum Projekt gehörende HTML-, CSS- und JavaScript-Dateien
+* d.h. fügt die CSS- und JS-Dateien zusammen, entfernt dabei Unnötiges, und strukturiert sinnvoll neu
+* kann auch überflüssige Metadaten aus Bilddateien des Projektes entfernen
+* prüft den Code auf Fehler und unperformante Konstrukte
+
+#### Quellen
+
+* http://html5boilerplate.com/
+* http://webkrauts.de/artikel/2011/bauen-wie-die-ameisen
+* http://www.sitepoint.com/introduction-html5-boilerplate/
+
+
 ## Additional Stuff
 
 
@@ -492,3 +506,9 @@ Auf [960.gs](http://www.960.gs) gibt es passende Stylesheets.
 * http://lessframework.com/
 * http://lesscss.org/
 * http://www.lesscss.de/
+
+
+## Einschätzung
+
+
+hier kommt noch text hin
