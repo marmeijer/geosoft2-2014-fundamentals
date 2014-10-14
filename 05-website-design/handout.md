@@ -3,7 +3,7 @@
 # Modern Website Design - Handout
 
 Reqiurements to modern day websites.
-
+---
 
 ## Inhalt
 
@@ -20,7 +20,7 @@ Reqiurements to modern day websites.
   4. [HTML 5 Boilerplate](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#html-5-boilerplate)
   5. [Additional Stuff](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#additional-stuff)
 4. [Einschätzung](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#einschätzung)
-
+---
 
 ## Responsive Design
 
@@ -90,13 +90,13 @@ In der direkten Umsetzung programmiert man also nach dem min-width Prinzip, also
 * http://www.responsive-webdesign.mobi/
 * http://www.elmastudio.de/webdesign/webdesign-goes-mobile-first-eine-kleine-einfuhrung-zum-neuen-webdesign-trend/
 * http://t3n.de/news/responsive-webdesign-einstieg-524171/
-
+---
 
 ## CSS(3)
 
 
 hier kommt noch text hin
-
+---
 
 ## SASS
 
@@ -181,7 +181,7 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
 * http://sass-lang.com/
 * http://webkrauts.de/artikel/2012/css-modularisierung-mit-sass
 * http://de.wikipedia.org/wiki/Sass_%28Stylesheet-Sprache%29
-
+---
 
 ## LESS
 
@@ -294,7 +294,7 @@ Eine weitere Syslesheet-Sprache, die in Javascript geschriebenen und für die Pl
 * http://www.lesscss.de/
 * http://de.wikipedia.org/wiki/LESS_%28Stylesheet-Sprache%29
 * http://less2css.org/
-
+---
 
 ## Foundation 5
 
@@ -343,7 +343,7 @@ Neue Feature für Foundation 5 sind unter anderem ein Editor, um das Framework v
 * http://foundation.zurb.com/
 * [iq2](http://www.iq2.at/blog-details/zurb-foundation-frontend-framework-einfuehrung.html)
 * http://de.wikipedia.org/wiki/Foundation_%28Framework%29
-
+---
 
 ## Bootstrap
 
@@ -402,7 +402,7 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 
 * http://getbootstrap.com/
 * http://de.wikipedia.org/wiki/Bootstrap_%28Framework%29
-
+---
 
 ## 960 Grid System
 
@@ -465,7 +465,7 @@ Auf [960.gs](http://www.960.gs) gibt es passende Stylesheets.
 * http://t3n.de/magazin/css-frameworks-schnelle-neue-stylesheet-welt-230278/
 * http://www.designinfluences.com/fluid960gs/
 * http://andytaylor.me/2013/04/09/1140px-css-grid-retired/
-
+---
 
 ## HTML5 Boilerplate
 
@@ -492,7 +492,7 @@ HTML5 Boilerplate ist ein Build-Skript welches Vorlagen zur zeitgemäßen und sc
 * http://html5boilerplate.com/
 * http://webkrauts.de/artikel/2011/bauen-wie-die-ameisen
 * http://www.sitepoint.com/introduction-html5-boilerplate/
-
+---
 
 ## Additional Stuff
 
@@ -510,9 +510,10 @@ HTML5 Boilerplate ist ein Build-Skript welches Vorlagen zur zeitgemäßen und sc
 * http://lessframework.com/
 * http://lesscss.org/
 * http://www.lesscss.de/
-
+---
 
 ## Einschätzung
 
 
 hier kommt noch text hin
+---
