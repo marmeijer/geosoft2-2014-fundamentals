@@ -106,17 +106,6 @@ LESS ist eine Stylesheet-Sprache, die CSS effektiver machen soll durch Erweiteru
  	}  
  	```
  	
- 	```javascript
- 	@mycolor: #4D926F;
- 	
- 	#header {
- 		color: @mycolor;
- 	}
- 	h2 {
- 		color: @mycolor;
- 	}
- 	```
-
 * wird in CSS zu :
 
  	```javascript
@@ -159,20 +148,20 @@ Eine weitere Syslesheet-Sprache, die in Javascript geschriebenen und für die Pl
  	background-color meineFarbe   
  	h1   
  	color meineFarbe   
- 	a`   
+ 	a   
  	color meineFarbe    
 
 wird in CSS zu:
 
  	```javascript
- 	header{   
- 		background-color: #0033ff;   
- 	}   
- 	h1{   
- 		color: #0033ff;   
- 	}    
- 	a{    
- 		color: #0033ff;   
+ 	header {
+ 		background-color: #0033ff;
+ 	}
+ 	h1 {
+ 		color: #0033ff;
+ 	}
+ 	a {
+ 		color: #0033ff;
  	}
  	```
 
