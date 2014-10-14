@@ -16,7 +16,7 @@ Reqiurements to modern day websites.
   1. [Foundation 5](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#foundation-5)
   2. [Bootstrap](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#bootstrap)
   3. [HTML 5 Boilerplate](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#html-5-boilerplate)
-  4. [960 Grid System](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#960-gid-system)
+  4. [960 Grid System](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#960-grid-system)
   5. [Additional Stuff](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#additional-stuff)
 
 
@@ -26,7 +26,7 @@ Reqiurements to modern day websites.
 Responsive Webdesign ist ein gestalterisches und technisches Paradigma bei der Erstellung von Websites.
 Der Inhalt reagiert dabei auf die jeweils genutzten Endgeräte. 
 Dies betrifft sowohl die Auflösung, den Inhalt, als auch Eingabemethoden.
-Die Grundlage bilden die aktuellen Webstandards HTML5, CSS3 und JavaScript (siehe: jeweilige Handouts)
+Die Grundlage bilden die aktuellen Webstandards [HTML5](https://github.com/JanVan01/geosoft2-2014-fundamentals/blob/master/03-html5-and-websockets/handout.md), [CSS3](https://github.com/JanVan01/geosoft2-2014-fundamentals/blob/master/03-html5-and-websockets/handout.md) und [JavaScript](https://github.com/m-mohr08/geosoft2-2014-fundamentals/blob/m-mohr08/11-javascript-frameworks/handout.md) (siehe: jeweilige Handouts)
 
 #### Technik:
 
