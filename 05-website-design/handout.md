@@ -100,7 +100,6 @@ Cascading Style Sheets , kurz CSS, ist eine Gestaltungssprache zum Formatieren v
 
 ####Code-Beispiel
 
-	```
 	<head>
 		<style="text/css">
 			p {
@@ -113,7 +112,6 @@ Cascading Style Sheets , kurz CSS, ist eine Gestaltungssprache zum Formatieren v
 		Normaler Text
 		<p> veränderter Text </p>
 	</body>
-	```
 
 Wie hier im Beispiel, die Schirftfarbe und -art. Weitere Informationen und Tutorials finden sich in den Quellen.
 
