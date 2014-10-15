@@ -94,7 +94,7 @@ Beispiele für OpenLayers im Einsatz:
 * [National Library of Scotland](http://maps.nls.uk/view/74400666)
 
 Leaflet hat dank seiner Einfachheit schon in vielen Bereichen Anwendung gefunden, sowohl bei Endnutzern, als auch als technologische Grundlage für eigenständige Unternehmen:
-* [Mapbox](https://www.mapbox.com/mapbox.js/api/v2.1.2/), ein Start-up Unternehmen mit einer  eigenen mapping Library aufgrundlage von Leaflet.
+* [Mapbox](https://www.mapbox.com/mapbox.js/api/v2.1.2/), ein Start-up Unternehmen mit einer  eigenen mapping Library auf Grundlage von Leaflet.
 * [CartoDB](http://cartodb.com/), ein weiteres Start-up Unternehmen unter anderem auf der Basis von Leaflet.
 * [Ethermap](http://giv-wilhelm.uni-muenster.de/), Kollaborativer Kartendienst entstanden im Zuge einer Masterarbeit.
 
