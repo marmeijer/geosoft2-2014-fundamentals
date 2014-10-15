@@ -131,7 +131,7 @@ p {
 }
 ```
 
-Wie hier im Beispiel, die Schirftfarbe und -art. Weitere Informationen und Tutorials finden sich in den Quellen.
+Wie hier im Beispiel, die Schriftfarbe und -art. Weitere Informationen und Tutorials finden sich in den Quellen.
 
 ####Quellen:
 
@@ -312,13 +312,15 @@ Eine weitere Syslesheet-Sprache, die in Javascript geschriebenen und für die Pl
 
 ####Code Beispiel
 
- 		meineFarbe = #0033ff
-		header
-		background-color meineFarbe
-		h1
-		color meineFarbe
-		a
-		color meineFarbe
+```javascript
+meineFarbe = #0033ff
+header
+background-color meineFarbe
+h1
+color meineFarbe
+a
+color meineFarbe
+```
 
 * wird in CSS zu:
 
