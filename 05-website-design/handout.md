@@ -100,7 +100,6 @@ Cascading Style Sheets , kurz CSS, ist eine Gestaltungssprache zum Formatieren v
 
 ####Code-Beispiel
 	
-	```html
 	<!doctype html>
 		<head>
 			<style type="text/css">
@@ -112,30 +111,26 @@ Cascading Style Sheets , kurz CSS, ist eine Gestaltungssprache zum Formatieren v
 		Normaler Text
 		<p> veränderter Text </p>
 	</body>
-	```
 
 Also ab
 
-	```html
 	<stlye="text/css">
-	```
 
 handelt es sich um CSS. Danach sollte die optische Veränderung folgen:
 
-	```css
 	p {
 		color:red;
 		font-family:verdana;
 	}
-	```
 
-Wie hier im Beispiel, die Schirftfarbe und  -art. Weitere Informationen finden sich in den Quellen
+Wie hier im Beispiel, die Schirftfarbe und -art. Weitere Informationen und Tutorials finden sich in den Quellen.
 
-####Quellen
-http://www.csstutorial.net/
-http://panjutorials.de/html-css-tutorial-fur-anfanger-10-einfuhrung-in-css/
-http://www.w3schools.com/css/default.asp
-http://www.w3schools.com/css/css3_intro.asp
+####Quellen:
+
+* http://www.csstutorial.net/
+* http://panjutorials.de/html-css-tutorial-fur-anfanger-10-einfuhrung-in-css/
+* http://www.w3schools.com/css/default.asp
+* http://www.w3schools.com/css/css3_intro.asp
 
 
 ---
