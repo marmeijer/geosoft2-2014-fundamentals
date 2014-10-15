@@ -139,7 +139,6 @@ Wie hier im Beispiel, die Schirftfarbe und -art. Weitere Informationen und Tutor
 * http://www.w3schools.com/css/default.asp
 * http://www.w3schools.com/css/css3_intro.asp
 
-
 ---
 
 ## SASS
@@ -279,7 +278,17 @@ LESS ist eine Stylesheet-Sprache, die CSS effektiver machen soll durch Erweiteru
 
 Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
 
-#### Vergleich [LESS/SASS](http://www.hongkiat.com/blog/sass-vs-less/)
+####Quellen
+
+* http://lesscss.org/
+* http://www.lesscss.de/
+* http://de.wikipedia.org/wiki/LESS_%28Stylesheet-Sprache%29
+* http://less2css.org/
+
+---
+
+## Vergleich [LESS/SASS](http://www.hongkiat.com/blog/sass-vs-less/) & Tools
+
 
 * SASS benötigt mehr Einarbeitungszeit, LESS ist einfacher zu lernen
 * beide in [Ruby] entwickelt, aber LESS ist um eine JavaScript-Bibliothek erweitert
@@ -333,12 +342,53 @@ Eine weitere Syslesheet-Sprache, die in Javascript geschriebenen und für die Pl
 
 [SASS/LESS/STYLUS](http://www.heise.de/developer/artikel/CSS-Praeprozessoren-im-Vergleich-2288284.html?artikelseite=2)
 
+###Grunt
+
+Grunt ist ein Tool, um Arbeitschritte beim Bau einer Web-Anwendung zu automatisieren und zu vereinfachen.
+Es läuft mit node.js
+
+Grunt vereinfacht durch Plugins (LESS, SASS, Stylus, CoffeeScript) das Kompilieren. Zum Beispiel soll das SASS File automatisch als CSS kompiliert werden und ein JavaScript File soll automatisch getetest werden. All das übernimmt Grunt. Es gibt viele solche Task Runner (Cake, Gulp etc.), aber Grunt überzeugt mit seiner große Anzahl an Plugins.
+
+[Grunt-Homepage](http://gruntjs.com/)
+[Grunt-Installation](http://gruntjs.com/getting-started)
+[Grunt-Plugins](http://gruntjs.com/plugins)
+[Grunt-Tutorial](http://culttt.com/2013/11/11/getting-started-grunt/)
+[Grunt-Sass Installation](http://culttt.com/2013/11/18/setting-sass-grunt/)
+[Vergleich mit anderen Task-Runnern](http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/)
+
+Hier auf GitHub
+https://github.com/gruntjs/grunt-contrib-sass
+
+###Bower
+
+Bower ist ein Package Management für das Web. Es läuft mit node.js und dem Node Package Manager (npm), sowie Git.
+
+```javascript
+npm install -g bower
+```
+
+npm aktiviert den Node Package Manager. Install –g bower installiert dann global den Bower Package Manager. Außerdem wird Git benötigt, da die meisten Packages über Github bezogen werden.
+
+Weitere Informationen zu [Bower](http://bower.io/)
+[Tutorial/Installation](http://webkrauts.de/artikel/2013/workflow-mit-dem-bower-package-manager)
+
+Vorallem im Zusammenhang mit Grunt lässt sich durch Bower viel Zeit sparen.
+
+[Tutorial Getting Start with Grunt and Bower](http://www.nitinh.com/2013/05/getting-started-with-grunt-bower/)
+[Auf Github](https://github.com/sapegin/grunt-bower-concat)
+
 ####Quellen
 
 * http://lesscss.org/
 * http://www.lesscss.de/
 * http://de.wikipedia.org/wiki/LESS_%28Stylesheet-Sprache%29
 * http://less2css.org/
+* http://culttt.com/2013/11/18/setting-sass-grunt/
+* http://gruntjs.com/
+* http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/
+* http://bower.io/
+* https://github.com/sapegin/grunt-bower-concat
+* http://webkrauts.de/artikel/2013/workflow-mit-dem-bower-package-manager
 
 ---
 
