@@ -299,10 +299,10 @@ Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
 
 * Variablen-Namen zum Beispiel
 
- ```javascript
- @ LESS
- $- SASS
- ```
+```javascript
+@ LESS
+$- SASS
+```
 
 * weitere Vergleiche unter [LESS/SASS](http://www.hongkiat.com/blog/sass-vs-less/)
 
@@ -350,7 +350,7 @@ a {
 Grunt ist ein Tool, um Arbeitschritte beim Bau einer Web-Anwendung zu automatisieren und zu vereinfachen.
 Es läuft mit node.js
 
-Grunt vereinfacht durch Plugins (LESS, SASS, Stylus, CoffeeScript) das Kompilieren. Zum Beispiel soll das SASS File automatisch als CSS kompiliert werden und ein JavaScript File soll automatisch getetest werden. All das übernimmt Grunt. Es gibt viele solche Task Runner (Cake, Gulp etc.), aber Grunt überzeugt mit seiner große Anzahl an Plugins.
+Grunt vereinfacht durch Plugins (LESS, SASS, Stylus, CoffeeScript) das Kompilieren. Zum Beispiel soll das SASS File automatisch als CSS kompiliert werden und eine JavaScript File automatisch getetest werden. All das übernimmt Grunt. Es gibt viele solche Task Runner (Cake, Gulp etc.), aber Grunt überzeugt mit seiner große Anzahl an Plugins.
 
 [Grunt-Homepage](http://gruntjs.com/)     
 [Grunt-Installation](http://gruntjs.com/getting-started)     
@@ -619,7 +619,7 @@ HTML5 Boilerplate ist ein Build-Skript welches Vorlagen zur zeitgemäßen und sc
 ## Einschätzung
 
 
-kjfgd
+Foundation 5 gewinnt da hier die Vorteile überwiegen
 
 ---
 ---
