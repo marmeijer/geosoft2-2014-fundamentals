@@ -12,6 +12,7 @@
   1. [CSS(3)](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#css3)
   2. [SASS](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#sass)
   3. [LESS](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#less)
+  4. [Vergleich LESS/SASS & Tools](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#vergleich-lesssass--tools)
 3. [Frameworks & Tools](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#foundation-5)
   1. [Foundation 5](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#foundation-5)
   2. [Bootstrap](https://github.com/Ehrecke/geosoft2-2014-fundamentals/blob/master/05-website-design/handout.md#bootstrap)
@@ -349,12 +350,12 @@ Es läuft mit node.js
 
 Grunt vereinfacht durch Plugins (LESS, SASS, Stylus, CoffeeScript) das Kompilieren. Zum Beispiel soll das SASS File automatisch als CSS kompiliert werden und ein JavaScript File soll automatisch getetest werden. All das übernimmt Grunt. Es gibt viele solche Task Runner (Cake, Gulp etc.), aber Grunt überzeugt mit seiner große Anzahl an Plugins.
 
-[Grunt-Homepage](http://gruntjs.com/)
-[Grunt-Installation](http://gruntjs.com/getting-started)
-[Grunt-Plugins](http://gruntjs.com/plugins)
-[Grunt-Tutorial](http://culttt.com/2013/11/11/getting-started-grunt/)
-[Grunt-Sass Installation](http://culttt.com/2013/11/18/setting-sass-grunt/)
-[Vergleich mit anderen Task-Runnern](http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/)
+[Grunt-Homepage](http://gruntjs.com/)     
+[Grunt-Installation](http://gruntjs.com/getting-started)     
+[Grunt-Plugins](http://gruntjs.com/plugins)    
+[Grunt-Tutorial](http://culttt.com/2013/11/11/getting-started-grunt/)    
+[Grunt-Sass Installation](http://culttt.com/2013/11/18/setting-sass-grunt/)    
+[Vergleich mit anderen Task-Runnern](http://blog.cozycloud.cc/technic/2014/06/18/task-runners-comparison/)    
 
 Hier auf GitHub
 https://github.com/gruntjs/grunt-contrib-sass
@@ -369,12 +370,12 @@ npm install -g bower
 
 npm aktiviert den Node Package Manager. Install –g bower installiert dann global den Bower Package Manager. Außerdem wird Git benötigt, da die meisten Packages über Github bezogen werden.
 
-Weitere Informationen zu [Bower](http://bower.io/)
+Weitere Informationen zu [Bower](http://bower.io/)     
 [Tutorial/Installation](http://webkrauts.de/artikel/2013/workflow-mit-dem-bower-package-manager)
 
 Vorallem im Zusammenhang mit Grunt lässt sich durch Bower viel Zeit sparen.
 
-[Tutorial Getting Start with Grunt and Bower](http://www.nitinh.com/2013/05/getting-started-with-grunt-bower/)
+[Tutorial Getting Start with Grunt and Bower](http://www.nitinh.com/2013/05/getting-started-with-grunt-bower/)     
 [Auf Github](https://github.com/sapegin/grunt-bower-concat)
 
 ####Quellen
