@@ -37,17 +37,17 @@ Die Grundlage bilden die aktuellen Webstandards [HTML5](https://github.com/JanVa
 * Design richtet sich nach abgefragten Eigenschaften (Größe des Geräts, Bildschirmauflösung, etc.)
 * in folgendem Beispiel wird die Breite eines Inhaltes auf 600px verkleinert sobald die breite des Browserfensters 1025px unterschreitet
 
-	```css
+```css
+#inhalt {
+	width: 800px;
+}
+
+@media screen and (max-width: 1024px) {
 	#inhalt {
-		width: 800px;
+		width: 600px;
 	}
-	
-	@media screen and (max-width: 1024px) {
-		#inhalt {
-			width: 600px;
-		}
-	}
-	```
+}
+```
 
 #### Vorteile:
 
@@ -163,48 +163,48 @@ Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erwei
 
 * __Variablen__ definieren, um zum Beispiel Farben und Schriftarten schneller aufrufen zu können
 
-	```javascript
-	$font-stack:    Helvetica, sans-serif
-	$primary-color: #333
+```javascript
+$font-stack:    Helvetica, sans-serif
+$primary-color: #333
 
-	body
-		font: 100% $font-stack
-		color: $primary-color
-	```
+body
+	font: 100% $font-stack
+	color: $primary-color
+```
 
 * wird in CSS zu:
 
-	```css
-	body {
-		font: 100% Helvetica, sans-serif;
-		color: #333;
-	}
-	```
+```css
+body {
+	font: 100% Helvetica, sans-serif;
+	color: #333;
+}
+```
 
 
 * __[Mixin]s__, um Gruppen von CSS-Deklarationen zu erstellen
 
-	```javascript
-	=border-radius($radius)
-		-webkit-border-radius : $radius
-		-moz-border-radius : $radius
-		ms-border-radius : $radius
-		border-radius : $radius
+```javascript
+=border-radius($radius)
+	-webkit-border-radius : $radius
+	-moz-border-radius : $radius
+	ms-border-radius : $radius
+	border-radius : $radius
 
-	.box
-		+border-radius(10px)
-	```
+.box
+	+border-radius(10px)
+```
 
 * wird in CSS zu:
 
-	```css
-	.box {
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		-ms-border-radius: 10px;
-		border-radius: 10px;
-	}
-	```
+```css
+.box {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+}
+```
 
 ####Vorteile
 
@@ -254,28 +254,28 @@ LESS ist eine Stylesheet-Sprache, die CSS effektiver machen soll durch Erweiteru
 * spezielle Farbe als Variable definieren
 * jederzeit wieder aufrufbar
 
- 	```javascript
- 	@mycolor: #4D926F;  
+```javascript
+@mycolor: #4D926F;  
 
- 	#header {   
- 		color: @mycolor;   
-	 }   
- 	h2 {   
- 		color: @mycolor;   
- 	}  
- 	```
+#header {   
+ 	color: @mycolor;   
+}   
+h2 {   
+	color: @mycolor;   
+}  
+```
  	
 * wird in CSS zu :
 
- 	```css
- 	#header {   
- 		background-color: #4D926F;   
- 	}   
+```css
+#header {   
+	background-color: #4D926F;   
+}    
 
- 	h2 {   
- 		color: #4D926F;   
- 	}
- 	```
+h2 {   
+	color: #4D926F;   
+}
+```
 
 Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
 
@@ -299,10 +299,10 @@ Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
 
 * Variablen-Namen zum Beispiel
 
- 	```javascript
- 	@ LESS
- 	$- SASS
- 	```
+ ```javascript
+ @ LESS
+ $- SASS
+ ```
 
 * weitere Vergleiche unter [LESS/SASS](http://www.hongkiat.com/blog/sass-vs-less/)
 
@@ -324,17 +324,17 @@ color meineFarbe
 
 * wird in CSS zu:
 
- 	```css
- 	header {
- 		background-color: #0033ff;
- 	}
- 	h1 {
- 		color: #0033ff;
- 	}
- 	a {
- 		color: #0033ff;
- 	}
- 	```
+```css
+header {
+	background-color: #0033ff;
+}
+h1 {
+	color: #0033ff;
+}
+a {
+	color: #0033ff;
+}
+```
 
 ####Im Vergleich zu SASS/LESS
 
@@ -466,20 +466,20 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 * alternativ lassen sich natürlich auch direkt kompilierte Dateien einbinden
 * bei der Verwendung von JavaScript muss außerdem zunächst die jQuery Bibliothek eingebunden werden
 
-	```html
-	<head>
-		<title>Beispiel</title>
+```html
+<head>
+	<title>Beispiel</title>
+	
+	<!-- Einbinden des Bootstrap-Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 
-		<!-- Einbinden des Bootstrap-Stylesheets -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- optional: Einbinden der jQuery-Bibliothek -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 
-		<!-- optional: Einbinden der jQuery-Bibliothek -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-
-		<!-- optional: Einbinden der Bootstrap-JavaScript-Plugins -->
-		<script src="js/bootstrap.min.js"></script>
-	</head>
-	```
+	<!-- optional: Einbinden der Bootstrap-JavaScript-Plugins -->
+	<script src="js/bootstrap.min.js"></script>
+</head>
+```
 
 #### Vorteile
 
