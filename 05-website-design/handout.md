@@ -96,7 +96,47 @@ In der direkten Umsetzung programmiert man also nach dem min-width Prinzip, also
 ## CSS(3)
 
 
-hier kommt noch text hin
+Cascading Style Sheets , kurz CSS, ist eine Gestaltungssprache zum Formatieren von HTML/XHTML-Elementen. Es erweitert die HTML-Formatierung um Schriftgestaltung, Rahmen, Abstände, Listen, Hintergründe, etc.
+
+####Code-Beispiel
+	
+	```html
+	<!doctype html>
+		<head>
+			<style type="text/css">
+				p{color:red;
+				font-family:verdana;}
+			</style>
+		</head>
+	<body>
+		Normaler Text
+		<p> veränderter Text </p>
+	</body>
+	```
+
+Also ab
+
+	```html
+	<stlye="text/css">
+	```
+
+handelt es sich um CSS. Danach sollte die optische Veränderung folgen:
+
+	```css
+	p {
+		color:red;
+		font-family:verdana;
+	}
+	```
+
+Wie hier im Beispiel, die Schirftfarbe und  -art. Weitere Informationen finden sich in den Quellen
+
+####Quellen
+http://www.csstutorial.net/
+http://panjutorials.de/html-css-tutorial-fur-anfanger-10-einfuhrung-in-css/
+http://www.w3schools.com/css/default.asp
+http://www.w3schools.com/css/css3_intro.asp
+
 
 ---
 
@@ -524,6 +564,8 @@ HTML5 Boilerplate ist ein Build-Skript welches Vorlagen zur zeitgemäßen und sc
 ## Einschätzung
 
 
-hier kommt noch text hin
+kjfgd
 
+---
+---
 ---
