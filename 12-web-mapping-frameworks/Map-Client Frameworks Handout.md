@@ -208,6 +208,7 @@ Alle Quellen sowie nützliche und Interessante Links zum Thema "Map-Client Frame
 * [http://www.youtube.com/watch?v=2H9g2DBIuLA] Aktueller Talk von Vladimir Agafonkin auf der JS.geo über die Zukunft von Leaflet und der baldigen 1.0 Veröffentlichung.
 * [http://vimeo.com/107472767] Aktueller Talk von der foss4g von Justin Miller über Mapbox GL und möglichkeiten von Vectormaps.
 * [http://vimeo.com/106227909] Aktueller Talk von der foss4g über OpenLayers 3
+* [https://maptime.github.io/anatomy-of-a-web-map/#0] Herrvorragende Präsentation, die noch einmal alles zusammenfasst was man über moderne webmaps wissen muss.
 
 
 
