@@ -621,15 +621,15 @@ HTML5 Boilerplate ist ein Build-Skript welches Vorlagen zur zeitgemäßen und sc
 
 Unter Berücksichtigung aller von uns erarbeiten Quellen, Meinungen, usw. lässt sich folgende Einschätzung und Empfehlung geben:
 
-* Die Berücksichtigung mobiler Endgeräte ist im modernen Webdesign unverzichtbar
+* Die Berücksichtigung mobiler Endgeräte ist im modernen Webdesign alternativlos
 * Die entsprechenden Frameworks sind dabei unverzichtbar, und haben, trotz der hohen Vielfalt, im Funktionsumfang meist nur marginale Unterschiede
 
 Letztendlich überwiegen bei Foundation 5 dann doch die Vorteile:
 
 * Verwendet das syntaktisch etwas einfachere SASS welches leichter zu lernen ist und somit leichter strukturell zu verändern ist, wenn man mehr vorhat, als nur kleine optische Veränderungen (Vorteil gegenüber Bootstrap)
 * Der Funktionsumfang ist im Vergleich insgesamt sehr hoch (viele Templates, Interchange, Off-Canvans-Navigation, etc.)
-* andere, wie das 960 Grid System sind in ihrer ursprünglichen Struktur zu unflexibel
-* sehr gute Dokumentation und Tutorials
+* Andere, wie das 960 Grid System sind in ihrer ursprünglichen Struktur zu unflexibel
+* Sehr gute Dokumentation und Tutorials
 
 Außerdem ist es zu empfehlen, die sinnvollen Hilfen von Build-Skripten und Task-Runnern (Grunt, Bower, HTML 5 Boilerplate) auch zu nutzen. Sie erleichtern und verkürzen die Arbeit häufig enorm und sorgen unter Einhaltung gängiger Standards für ein schlankes und performantes Gesamtkonstrukt.
 
