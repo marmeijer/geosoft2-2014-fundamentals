@@ -8,6 +8,7 @@ Handouts for background technical presentations for Geosoftware II Seminar at if
 1. Do your research
 1. Edit the handout.md file in your folder
   * Take a look at the [markdown syntax](https://guides.github.com/features/mastering-markdown/)
+  * Split up your work into logical commits and use informative names for each of these
 1. Create a presentation based on your handout
 1. Send a pull request before the submission deadline containing your handout (not the presentation)
   * Give the pull request a useful name
