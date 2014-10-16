@@ -64,6 +64,9 @@ Bazaar: [http://bazaar.canonical.com/en/](http://bazaar.canonical.com/en/)
 - Private Repositories gegen Entgelt
 - Hilfreiches Buch: http://git-scm.com/book/de/ 
 - Tutorial: https://www.youtube.com/watch?v=mvnPj_0_GmE
+- **Egit**, Github Integration in Eclipse: http://eclipse.org/egit/download/
+- Egit Tutorial: http://eclipsesource.com/blogs/tutorials/egit-tutorial/
+- Egit Wiki: https://wiki.eclipse.org/EGit/User_Guide
 
 **SourceForge**: http://sourceforge.net/
 -	Erlaubt SVN, Git, Mercurial, Bazaar, CVS
