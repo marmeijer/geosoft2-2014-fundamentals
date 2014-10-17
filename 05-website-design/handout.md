@@ -23,8 +23,13 @@
 
 ---
 
-## Responsive Design
 
+## Einführung
+
+
+Grundsätzlich lässt sich sagen, dass die Thematik der Anforderungen an modernes Webdesign ein sehr weites Feld sind. Zum einen gibt es eine Vielzahl von Meinungen sowie ein unüberschaubares Angebot an Umsetzungsmöglichkeiten, zum anderen hängen die Anforderungen auch zu einem Stück weit immmer von persönlichem Geschmack und der aktuellen Mode ab. Abgesehen von diesen Vorraussetzungen lässt sich ein Umstand jedoch nicht ignorieren; Die rasant gestiegene Anzahl mobiler Endgeräte und die Erwartungshaltung der Endnutzer immer und überall auf die entsprechenden Webangebote zugreifen zu können. Um diese Herausforderungen angemessen zu lösen ist einem Grundsatz in jüngster Vergagenheit eine enorme Gewichtung zugekommen; Das "Responsive (Web)Design".
+
+### Responsive Design
 
 Responsive Webdesign ist ein gestalterisches und technisches Paradigma bei der Erstellung von Websites.
 Der Inhalt reagiert dabei auf die jeweils genutzten Endgeräte. 
@@ -296,7 +301,6 @@ Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
 * LESS lässt sich zustätzlich in ein HTML-Dokument einbinden
 * beide in CSS-Syntax, aber SASS verzichtet auf Klammern und Semikolons (minimalistischste Schreibweise)
 * SASS hat den größten Funktionsumgang, LESS ist nur bedingt erweiterbar
-
 * Variablen-Namen zum Beispiel
 
 ```javascript
