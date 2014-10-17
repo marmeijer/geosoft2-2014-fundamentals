@@ -26,7 +26,7 @@
 ## Einführung
 
 
-Grundsätzlich lässt sich sagen, dass die Thematik der Anforderungen an modernes Webdesign ein sehr weites Feld sind. Zum einen gibt es eine Vielzahl von Meinungen, sowie ein unüberschaubares Angebot an Umsetzungsmöglichkeiten, zum anderen hängen die Anforderungen auch zu einem Stück weit immer von persönlichem Geschmack und der aktuellen Mode ab. Abgesehen von diesen Vorraussetzungen, lässt sich ein Umstand jedoch nicht ignorieren; Die rasant gestiegene Anzahl mobiler Endgeräte und die Erwartungshaltung der Endnutzer, immer und überall, auf die entsprechenden Webangebote zugreifen zu können. Um diese Herausforderungen angemessen zu lösen ist einem Grundsatz in jüngster Vergagenheit eine enorme Gewichtung zugekommen; Das "Responsive (Web)Design".
+Grundsätzlich lässt sich sagen, dass die Thematik der Anforderungen an modernes Webdesign ein sehr weites Feld ist. Zum einen gibt es eine Vielzahl von Meinungen, sowie ein unüberschaubares Angebot an Umsetzungsmöglichkeiten, zum anderen hängen die Anforderungen auch zu einem Stück weit immer von persönlichem Geschmack und der aktuellen Mode ab. Abgesehen von diesen Vorraussetzungen, lässt sich ein Umstand jedoch nicht ignorieren; Die rasant gestiegene Anzahl mobiler Endgeräte und die Erwartungshaltung der Endnutzer, immer und überall, auf die entsprechenden Webangebote zugreifen zu können. Um diese Herausforderungen angemessen zu lösen ist einem Grundsatz in jüngster Vergagenheit eine enorme Gewichtung zugekommen; Dem "Responsive (Web)Design".
 
 ### Responsive Design
 
