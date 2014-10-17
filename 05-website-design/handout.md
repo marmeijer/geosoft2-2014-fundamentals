@@ -23,11 +23,10 @@
 
 ---
 
-
 ## Einführung
 
 
-Grundsätzlich lässt sich sagen, dass die Thematik der Anforderungen an modernes Webdesign ein sehr weites Feld sind. Zum einen gibt es eine Vielzahl von Meinungen sowie ein unüberschaubares Angebot an Umsetzungsmöglichkeiten, zum anderen hängen die Anforderungen auch zu einem Stück weit immmer von persönlichem Geschmack und der aktuellen Mode ab. Abgesehen von diesen Vorraussetzungen lässt sich ein Umstand jedoch nicht ignorieren; Die rasant gestiegene Anzahl mobiler Endgeräte und die Erwartungshaltung der Endnutzer immer und überall auf die entsprechenden Webangebote zugreifen zu können. Um diese Herausforderungen angemessen zu lösen ist einem Grundsatz in jüngster Vergagenheit eine enorme Gewichtung zugekommen; Das "Responsive (Web)Design".
+Grundsätzlich lässt sich sagen, dass die Thematik der Anforderungen an modernes Webdesign ein sehr weites Feld sind. Zum einen gibt es eine Vielzahl von Meinungen, sowie ein unüberschaubares Angebot an Umsetzungsmöglichkeiten, zum anderen hängen die Anforderungen auch zu einem Stück weit immer von persönlichem Geschmack und der aktuellen Mode ab. Abgesehen von diesen Vorraussetzungen, lässt sich ein Umstand jedoch nicht ignorieren; Die rasant gestiegene Anzahl mobiler Endgeräte und die Erwartungshaltung der Endnutzer, immer und überall, auf die entsprechenden Webangebote zugreifen zu können. Um diese Herausforderungen angemessen zu lösen ist einem Grundsatz in jüngster Vergagenheit eine enorme Gewichtung zugekommen; Das "Responsive (Web)Design".
 
 ### Responsive Design
 
@@ -152,9 +151,9 @@ Wie hier im Beispiel, die Schriftfarbe und -art. Weitere Informationen und Tutor
 
 * Syntactically Awesome Stylesheets
 
-Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erweitert. Sie wird von Natalie Weizenbaum und Chris Eppstein entwickelt. SASS wird in einer SCSS-Datei erstelllt und dann in eine CSS-Datei umgewandelt.
+Ist eine Stylesheet-Sprache, die CSS um ein paar nützlichen Eigenschaften erweitert. Sie wird von Natalie Weizenbaum und Chris Eppstein entwickelt. SASS wird in einer SCSS-Datei erstellt und dann in eine CSS-Datei umgewandelt.
 
-* ursprünglich von Auszeichnungssprache YAML
+* ursprünglich von der Auszeichnungssprache YAML beeinflusst
 * basiert auf [Ruby](http://www.ruby.org)
 * minimalistischste Schreibweise
 
@@ -213,7 +212,7 @@ body {
 
 ####Vorteile
 
-* Nutzung von Variablen zum Beispiel um mathmatisch Operationen zu definieren
+* Nutzung von Variablen zum Beispiel um mathematisch Operationen zu definieren
 * Verschachtelungen von "Klassen"
 * bessere Übersicht
 * Vererbung
@@ -236,20 +235,20 @@ body {
 ## LESS
 
 
-LESS ist eine Stylesheet-Sprache, die CSS effektiver machen soll durch Erweiterung von Variablen, Mixins, Berechnung von Funktionen. Entwickelt wird sie von Alexis Sellier.
+LESS ist eine Stylesheet-Sprache, die CSS effektiver machen soll durch Erweiterung von Variablen, Mixins, Berechnungen von Funktionen. Entwickelt wird sie von Alexis Sellier.
 
 ####Eigenschaften
 
 * Vermeidungen von Code-Wiederholungen durch Regeln
-* Klasse von Elementen können Regeln zugewiesen werden
-* Varibablen können ebenfalls wie bei SASS festgelegt und an andere Stelle wiederbenutzt werden
+* Einer Klasse von Elementen können Regeln zugewiesen werden
+* Variablen können ebenfalls wie bei SASS festgelegt und an anderer Stelle wiederbenutzt werden
 * LESS unterstützt ebenfalls Mixins, wodurch Regeln unter Namen zusammengefasst werden können
 
 ####LESS Kompilierung
 
 * Server-seitig (Node.js)
 * Client-seitig (moderne Browser)
-* Änderungen mit Watch mode automatisch im Webrowser
+* Änderungen mit Watch Mode automatisch im Webrowser
 * wird in CSS kompiliert
 
 ####Codebeispiele
@@ -297,11 +296,11 @@ Mehr Beispiele: [Los geht's!](http://www.lesscss.de/)
 
 
 * SASS benötigt mehr Einarbeitungszeit, LESS ist einfacher zu lernen
-* beide in [Ruby] entwickelt, aber LESS ist um eine JavaScript-Bibliothek erweitert
+* beide in Ruby entwickelt, aber LESS ist um eine JavaScript-Bibliothek erweitert
 * LESS lässt sich zustätzlich in ein HTML-Dokument einbinden
 * beide in CSS-Syntax, aber SASS verzichtet auf Klammern und Semikolons (minimalistischste Schreibweise)
 * SASS hat den größten Funktionsumgang, LESS ist nur bedingt erweiterbar
-* Variablen-Namen zum Beispiel
+* Unterschied in der Benennung der Variablen
 
 ```javascript
 @ LESS
@@ -351,10 +350,10 @@ a {
 
 ###Grunt
 
-Grunt ist ein Tool, um Arbeitschritte beim Bau einer Web-Anwendung zu automatisieren und zu vereinfachen.
+Grunt ist ein Tool, um Arbeitsschritte beim Bau einer Web-Anwendung zu automatisieren und zu vereinfachen.
 Es läuft mit node.js
 
-Grunt vereinfacht durch Plugins (LESS, SASS, Stylus, CoffeeScript) das Kompilieren. Zum Beispiel soll das SASS File automatisch als CSS kompiliert werden und eine JavaScript File automatisch getetest werden. All das übernimmt Grunt. Es gibt viele solche Task Runner (Cake, Gulp etc.), aber Grunt überzeugt mit seiner große Anzahl an Plugins.
+Grunt vereinfacht durch Plugins (LESS, SASS, Stylus, CoffeeScript) das Kompilieren. Als Beispiel könnte etwa ein SASS File automatisch als CSS kompiliert und eine JavaScript File automatisch getetest werden. All das übernimmt Grunt. Es gibt viele solche Task Runner (Cake, Gulp etc.), aber Grunt überzeugt mit seiner große Anzahl an Plugins.
 
 [Grunt-Homepage](http://gruntjs.com/)     
 [Grunt-Installation](http://gruntjs.com/getting-started)     
@@ -368,7 +367,7 @@ https://github.com/gruntjs/grunt-contrib-sass
 
 ###Bower
 
-Bower ist ein Package Management für das Web. Es läuft mit node.js und dem Node Package Manager (npm), sowie Git.
+Bower ist ein Package Management für das Web. Es läuft mit node.js und dem Node Package Manager (npm), sowie auf Git.
 
 ```javascript
 npm install -g bower
@@ -379,7 +378,7 @@ npm aktiviert den Node Package Manager. Install –g bower installiert dann glob
 Weitere Informationen zu [Bower](http://bower.io/)     
 [Tutorial/Installation](http://webkrauts.de/artikel/2013/workflow-mit-dem-bower-package-manager)
 
-Vorallem im Zusammenhang mit Grunt lässt sich durch Bower viel Zeit sparen.
+Vor allem im Zusammenhang mit Grunt lässt sich durch Bower viel Zeit sparen.
 
 [Tutorial Getting Start with Grunt and Bower](http://www.nitinh.com/2013/05/getting-started-with-grunt-bower/)     
 [Auf Github](https://github.com/sapegin/grunt-bower-concat)
@@ -404,14 +403,14 @@ Vorallem im Zusammenhang mit Grunt lässt sich durch Bower viel Zeit sparen.
 
 ####Allgemein
 
-Foundation ist ein User-Interface-Framework, also ein komponentenbasiertes Konstrukt, dass die Software-Entwicklung erleichtern soll.
+Foundation ist ein häufig verwendetes User-Interface-Framework, also ein komponentenbasiertes Konstrukt, dass die Entwicklung u.a. von Webanwendungen erleichtern soll.
 
-* aus einem Stylequide, des Unternehmen [Zurb](http://zurb.com/) entstanden
+* Aus einem Stylequide, des Unternehmens [Zurb](http://zurb.com/) entstanden
 * CSS (SASS)-Framework
-* primär für User-Interface-Gestaltung
+* Primär für User-Interface-Gestaltung
 * Foundation enthält Designvorlagen für HTML, CSS sowie optionale JavaScript-Erweiterungen
 * Open-Source-Responsive-Frontend Framework
-* erstes semantisches Framework nach dem Mobile First Prinzip
+* Erstes semantisches Framework nach dem Mobile First Prinzip
 
 > "Heute bezeichnet sich Foundation selbst als das "Most advanced responsive front-end
 > framework in the world" und das - wie wir meinen - völlig zu Recht." [iq2](http://www.iq2.at/blog-details/zurb-foundation-frontend-framework-einfuehrung.html)
@@ -422,20 +421,20 @@ Foundation ist ein User-Interface-Framework, also ein komponentenbasiertes Konst
 
 ####Vorteile
 
-* auf jedem Geräte-Typ nutzbar
+* Auf jedem Geräte-Typ nutzbar
 
 > "Laut Zurbs „Chief-Instigator“ und Gründer Bryan Zmijewski ist Foundation 5 unter
 > mehreren Aspekten das schnellste Framework" [t3n]
 
-* schnell lernbar, codierbar, laufbar
-* Schneller für Einsteiger ( gute Dokumentation und Tutorials )
+* Schnell lernbar, codierbar, laufbar
+* Schneller für Einsteiger (gute Dokumentation und Tutorials)
 
 ####Nachteile und Probleme
 
-* mitgeliefertes CSS-Styling kann störend sein,
-* Möglichkeiten an [Kurse](http://zurb.com/university/foundation-intro?utm_source=Foundation%20Docs&utm_medium=Large%20Banner&utm_campaign=Intro%20to%20Foundation) teilzunehmen, sind vorhanden aber teuer
+* Mitgeliefertes CSS-Styling kann störend sein
+* Möglichkeiten an [Kursen](http://zurb.com/university/foundation-intro?utm_source=Foundation%20Docs&utm_medium=Large%20Banner&utm_campaign=Intro%20to%20Foundation) teilzunehmen, sind vorhanden aber teuer
 
-Neue Feature für Foundation 5 sind unter anderem ein Editor, um das Framework vor dem Download anzupassen, Code ist lesbarer und semantisch, Einsatz von SASS, UI-Pattern und ein Mobile-First-Ansatz. Außerdem gibt es mehr [Templates](http://foundation.zurb.com/templates.html)
+Neue Features für Foundation 5 sind unter anderem ein Editor, um das Framework vor dem Download anzupassen, Code ist lesbarer und semantisch, Einsatz von SASS, UI-Pattern und ein Mobile-First-Ansatz. Außerdem gibt es ein sehr große Anzahl an [Templates](http://foundation.zurb.com/templates.html)
 
 [Beispiel Webseiten die Foundation benutzen](http://zurb.com/responsive?framework_id=1)
 
@@ -452,12 +451,12 @@ Neue Feature für Foundation 5 sind unter anderem ein Editor, um das Framework v
 ## Bootstrap
 
 
-Bootstrap is ein sehr häufig verwendetes und auf Git Hub gehostetes Open Source CSS-Framework mit Gestaltungsvorlagen für Schriften, Formulare, Buttons, Tabellen, etc. Die Idee ist dabei Designer und Entwickler zusammenzubringen, um nicht nur Entwicklungszeiten zu verkürzen sondern auch, ohne langwierige Designprozesse für ein einheitliches Look-and-Feel der Anwendungen zu sorgen.   
-Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive Webdesigns, sowie die unterstützung älterer Browser durch die implementierung alternativer Stylesheets.
+Bootstrap ist ein sehr häufig verwendetes und auf GitHub gehostetes Open Source CSS-Framework mit Gestaltungsvorlagen für Schriften, Formulare, Buttons, Tabellen, etc. Die Idee ist dabei Designer und Entwickler zusammenzubringen, um nicht nur Entwicklungszeiten zu verkürzen sondern auch, ohne langwierige Designprozesse für ein einheitliches Look-and-Feel der Anwendungen zu sorgen.   
+Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive Webdesigns, sowie die Unterstützung älterer Browser durch die implementierung alternativer Stylesheets.
 
 #### Aufbau
 
-* enthält eine Reihe von Stylesheets die Grundlegende Stildefinition vorgeben 
+* enthält eine Reihe von Stylesheets die grundlegende Stildefinition vorgeben 
 * modular aus LESS-Stylesheets aufgebaut, Einzelkomponenten werden von einer zentralen bootstrap-Datei zusammengeführt
 * standardmäßig: 940px breites, zwölfspaltiges Grid-Layout
 * vier Variationen (für Smartphones, Tablets, PC's mit geringer und hoher Auflösung) stehen zur Verfügung
@@ -490,7 +489,7 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 * teils erhebliche Verkürzung der Entwicklungszeit    
 * einheitliches Look-and-Feel   
 * zahlreiche Icons und Buttons integriert    
-* Viele Templates und Erweiterungen frei verfügbar    
+* viele Templates und Erweiterungen frei verfügbar    
 * bei optischen Veränderungen muss nur die CSS-Datei angepasst werden    
 
 #### Nachteile
@@ -516,9 +515,9 @@ Es unterstützt auch den dynamischen Aufbau von Websites im Sinne des Responsive
 
 960 Grid System ist ein CSS-Grid-Framework entwickelt von Nathan Smith mit folgenden Eigenschaften und Features:
 
-* lässt Layouts, die auf Gastaltungsrastern basieren, schnell und leicht durch vordefinierte CSS-Klasen in Webseiten umwandeln
+* lässt Layouts, die auf Gestaltungsrastern basieren, schnell und leicht durch vordefinierte CSS-Klasen in Webseiten umwandeln
 * Darstellungsbreich auf 960 Pixel Breite festgelegt
-* funktioniert in allen gänigen Browsern
+* funktioniert in allen gängigen Browsern
 
 ####Optionen im Darstellungsbereich
 
@@ -540,16 +539,16 @@ Auf [960.gs](http://www.960.gs) gibt es passende Stylesheets.
 * einfach zu erlernen, da Aufbau leicht verständlich
 
 ####Nachteile
-* nicht flexibele
+* nicht besonders flexibel
 * schlechte Darstellungen auf mobilen Endgeräte
 
 ###Alternativen zu 960 Grid System
 
 ###Fluid 960 Grid System
 
-* basiert auf 960 Grid System
+* basiert auf dem 960 Grid System
 * ist um __flexibles Layouts__, erweitert
-* automatische Anpassung an Endgerät
+* automatische Anpassung an das Endgerät
 
 ####Aufbau
 
@@ -561,7 +560,7 @@ Auf [960.gs](http://www.960.gs) gibt es passende Stylesheets.
 
 * ebenfalls flexible Layouts
 * 12-spaltig & 1140 Pixel breites Grid
-* optimal bei Auflösung von 1280 Pixeln B
+* optimal bei Auflösung von 1280 Pixeln
 * passend für Darstellung auf mobilen Endgeräten
 
 ####Quellen
@@ -631,7 +630,7 @@ Unter Berücksichtigung aller von uns erarbeiten Quellen, Meinungen, usw. lässt
 Letztendlich überwiegen bei Foundation 5 dann doch die Vorteile:
 
 * Verwendet das syntaktisch etwas einfachere SASS welches leichter zu lernen ist und somit leichter strukturell zu verändern ist, wenn man mehr vorhat, als nur kleine optische Veränderungen (Vorteil gegenüber Bootstrap)
-* Der Funktionsumfang ist im Vergleich insgesamt sehr hoch (viele Templates, Interchange, Off-Canvans-Navigation, etc.)
+* Der Funktionsumfang ist im Vergleich insgesamt sehr hoch (viele Templates, Interchange, Off-Canvas-Navigation, etc.)
 * Andere, wie das 960 Grid System sind in ihrer ursprünglichen Struktur zu unflexibel
 * Sehr gute Dokumentation und Tutorials
 
