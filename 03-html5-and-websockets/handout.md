@@ -4,7 +4,7 @@ HTML5 ist:
 
 * ...eine textbasierte Auszeichnungssprache zur Strukturierung und semantischen Auszeichnungen von Inhalten wie Texten, Bildern und Hyperlinks in Dokumenten.
 * ...der Nachfolger von HTML4, unterstützt dieses aber.
-* ...am 16.09.2014 als künftige HTML5 Empfehltung von W3C veröffentlicht worden.
+* ...am 16.09.2014 als künftige HTML5 Empfehlung von W3C veröffentlicht worden.
 
 [weitere allgemeine Infos](https://de.wikipedia.org/wiki/HTML5 "weiter allgemeine Infos")
 
@@ -123,7 +123,7 @@ hinzu kommen noch neue Input Restriktionen/Attribute wie:
 
 #####Graphiken#####
 
-HTML5 benutzt das Element **`<canvas>`** um Graphiken, on the fly, zu zeichnen via scripting. Diese Element stellt nur einen Kontainer zur verfügung, um das Bild zu zeichnen wird ein Skript benutzt.
+HTML5 benutzt das Element **`<canvas>`** um Graphiken, on the fly, zu zeichnen via scripting. Diese Element stellt nur einen Container zur Verfügung, um das Bild zu zeichnen wird ein Skript benutzt.
 ([Beispiel](http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_first))
 		
 Zusätzlich unterstützt HTML5 auch **`<svg>`**(Scalable Vector Graphics). Dieses ist eine Sprache um 2D Vektorgraphiken in XML zu beschreiben.
@@ -169,12 +169,12 @@ WebSockets erlauben bidirektionale Kommunikation zwischen einem Server und einem
 * mit geringem Overhead
 
 
-...übertragen werden.[1] Websockets eignen sich deshalb besonders für Anwendungen mit viel Server-User-Interaktion oder mit mehreren Usern gleichzeiting. Beispiele sidn Onlinespiele oder colloboratives Editieren von Inhalten (in unserem Fall Kartenanwendungen). 
+...übertragen werden.[1] Websockets eignen sich deshalb besonders für Anwendungen mit viel Server-User-Interaktion oder mit mehreren Usern gleichzeitig. Beispiele sind Onlinespiele oder collaboratives Editieren von Inhalten (in unserem Fall Kartenanwendungen). 
 
 ####Bidirektional Kommunikation####
-Ein Großteil der "normalen" Komunikation zwischen Client und Server besteht darin, dass der Client einen HTTP-Request an den Server sendet und dieser ihm als Antwort darauf Informationen zurücksendet. Diese Art der Datenübertragung wird jedoch immer von Client initialisiert. Wenn auf dem Server eine Änderung der Daten stattfindet, gibt es erst dann die Möglichkeit diese Änderung zu übertragen, wenn der Client danach fragt.  
-Aber auch vor der Einführung von Websockets gab es schon Möglichkeiten, im Browser dargestellte Seiten in mehr oder weniger Echtzeit mit neuen vom Server kommenden Informationen zu versorgen. So kann der Client zum Beispiel in regelmäßigen Abständen einen Request an den Server senden um zu gucken, ob sich etwas verändert hat (Polling). Eine andere Möglichkeit ist, proforma einen Request an den Server zu senden, der jedoch erst dann beantwortet wird, wenn eine Änderung vorliegt (long Polling).  
-Dies ist jedoch nur halbduplex, Nachrichten können zwar in beide Richtungen verschickt werden, jedoch ist für jede Nachricht ein eigener HTTP Request nötig. Der bei jeder Nachricht mitgesendete HTTP Header erzeugt einen relativ großen Overhead, besonders wenn sich der Zustand von Server oder Client oft ändert (z.B. Mehrspielerspiele).[2] Mit WebSockets spart man diesen Overhead ein, indem nur ein einzelner Komunikationskanal geöffnet wird, über den sowohl Client als auch Server Nachrichten schicken können. Dieser Kanal bleibt für die länge der Session bestehen.
+Ein Großteil der "normalen" Kommunikation zwischen Client und Server besteht darin, dass der Client einen HTTP-Request an den Server sendet und dieser ihm als Antwort darauf Informationen zurücksendet. Diese Art der Datenübertragung wird jedoch immer von Client initialisiert. Wenn auf dem Server eine Änderung der Daten stattfindet, gibt es erst dann die Möglichkeit diese Änderung zu übertragen, wenn der Client danach fragt.  
+Aber auch vor der Einführung von Websockets gab es schon Möglichkeiten, im Browser dargestellte Seiten in mehr oder weniger Echtzeit mit neuen vom Server kommenden Informationen zu versorgen. So kann der Client zum Beispiel in regelmäßigen Abständen einen Request an den Server senden um zu gucken, ob sich etwas verändert hat (Polling). Eine andere Möglichkeit ist, pro forma einen Request an den Server zu senden, der jedoch erst dann beantwortet wird, wenn eine Änderung vorliegt (long Polling).  
+Dies ist jedoch nur halbduplex, Nachrichten können zwar in beide Richtungen verschickt werden, jedoch ist für jede Nachricht ein eigener HTTP Request nötig. Der bei jeder Nachricht mitgesendete HTTP Header erzeugt einen relativ großen Overhead, besonders wenn sich der Zustand von Server oder Client oft ändert (z.B. Mehrspielerspiele).[2] Mit WebSockets spart man diesen Overhead ein, indem nur ein einzelner Kommunikationskanal geöffnet wird, über den sowohl Client als auch Server Nachrichten schicken können. Dieser Kanal bleibt für die länge der Session bestehen.
 
 
 
@@ -239,15 +239,15 @@ Daten werden nach dem [RDF Schema](http://de.wikipedia.org/wiki/Resource_Descrip
 + Berlin - hat Einwohner - 3,4 Millionen
 + der Berliner Fernsehturm - steht in - Berlin
 
-Diese Aussagen können auch von einem Computer verstanden werden, sofern er weiß, wie er die einzelnen Elemente zu interpretieren hat. Hier kommen Resourcen ins Spiel, sie sind eindeutige Identifikatoren für das zu beschreibenden Objekt. Resourcen werden eindeutig durch eine URI beschrieben. URIs müssen aber nicht zwangsweise im Netzwerk erreichbar sein.
+Diese Aussagen können auch von einem Computer verstanden werden, sofern er weiß, wie er die einzelnen Elemente zu interpretieren hat. Hier kommen Ressourcen ins Spiel, sie sind eindeutige Identifikatoren für das zu beschreibenden Objekt. Ressourcen werden eindeutig durch eine URI beschrieben. URIs müssen aber nicht zwangsweise im Netzwerk erreichbar sein.
 Berlin wird beispielsweise in der [DBpedia](http://de.dbpedia.org/) mit `http://dbpedia.org/resource/Berlin` identifiziert. Von anderen Quellen kann jetzt auf das in der DBpedia-Datenbank enthaltene Berlin verwiesen werden, was demjenigen, der dem Verweis folgt alle in DBpedia enthaltenen Informationen und Verweise zur Verfügung stellt.
 
 Es gilt, Subjekt und Prädikat müssen immer Ressourcen sein, das Objekt kann aus einer Resource bestehen, kann aber auch auf einen elementaren Wert verweisen (Literal). In unserem Beispiel wäre dies bei der Einwohnerzahl der Fall, diese Beziehung verweist auf eine einfache Zahl.
-Prädikate bestehen aus Resourcen, die jedoch keinen Gegestand beschreiben, sondern eben die Beziehung zwischen zwei Objekten.
+Prädikate bestehen aus Ressourcen, die jedoch keinen Gegenstand beschreiben, sondern eben die Beziehung zwischen zwei Objekten.
 
 Mit Hilfe dieser Beschreibungen ist es möglich auch komplexe Zusammenhänge zu formalisieren und durch Abfragesprachen wie [SPARQL](http://de.wikipedia.org/wiki/SPARQL) abzufragen.
 
-*Anmerkung:* Es macht Sinn, wenn die URI, die eine Resource beschreibt aufrufbar ist, und selbst weiterführende Informationee in Form von RDF Tripeln liefert nur so wächst der Graph und können die verfügbaren Informationen vermehrt werden
+*Anmerkung:* Es macht Sinn, wenn die URI, die eine Resource beschreibt aufrufbar ist, und selbst weiterführende Informationen in Form von RDF Tripeln liefert nur so wächst der Graph und können die verfügbaren Informationen vermehrt werden
 
 
 
