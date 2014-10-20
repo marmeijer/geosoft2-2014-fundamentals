@@ -157,8 +157,27 @@ HTML5 hat zwei Tags um Plug-ins einzubinden `<object>,<embed>`. Beide haben die 
 
 [1] <https://de.wikipedia.org/wiki/HTML5>, Datum: 02.10.2014
 
-Der HTML5 Teil des Handouts orientiert sich an der W3school
+Der HTML5 Teil des Handouts orientiert sich an der W3school, abgerufen am 02.10.2014
 <http://www.w3schools.com/html/html5_intro.asp>
+<http://www.w3schools.com/html/html5_browsers.asp>
+<http://www.w3schools.com/html/html5_new_elements.asp>
+<http://www.w3schools.com/html/html5_semantic_elements.asp>
+<http://www.w3schools.com/html/html5_migration.asp>
+<http://www.w3schools.com/html/html5_form_elements.asp>
+<http://www.w3schools.com/html/html5_form_input_types.asp>
+<http://www.w3schools.com/html/html5_form_attributes.asp>
+<http://www.w3schools.com/html/html5_canvas.asp>
+<http://www.w3schools.com/html/html5_svg.asp>
+<http://www.w3schools.com/html/html_media.asp>
+<http://www.w3schools.com/html/html5_video.asp>
+<http://www.w3schools.com/html/html5_audio.asp>
+<http://www.w3schools.com/html/html_object.asp>
+<http://www.w3schools.com/html/html5_geolocation.asp>
+<http://www.w3schools.com/html/html5_draganddrop.asp>
+<http://www.w3schools.com/html/html5_webstorage.asp>
+<http://www.w3schools.com/html/html5_app_cache.asp>
+<http://www.w3schools.com/html/html5_webworkers.asp>
+<http://www.w3schools.com/html/html5_serversentevents.asp>
 
 
 ##WebSockets##
