@@ -1,17 +1,15 @@
-**Referat**
-
-**Geodatenformate**
+#Geodatenformate
 
 von Simon Schulte und Tobias Tasse
 
-**Häufige Schnittstellen:**
+##Häufige Schnittstellen:
 
 - WMS
 - WFS
 - SWE Common
 
 
-**Geodatenformate die,...**
+##Geodatenformate die,...
 
 **... maschinenunabhängig sind,**
 - NetCDF
@@ -40,17 +38,14 @@ von Simon Schulte und Tobias Tasse
 
 - GeoJSON
 
-**Häufige Schnittstellen:**
+##Häufige Schnittstellen:
 
-**WMS**
+###WMS
 
 - OpenGIS Wep Map Service (WMS)
 - definiert vom Open Geospatial Consortium (OGC)
 - Spezialfall eines Web Services
-
-- 
-  - Exkurs Web Service:
-
+- Exkurs Web Service:
 - ist eine Softwareanwendung, die über ein Netzwerk für die direkte Maschine-zu-Maschine-Interaktion bereitgestellt wird
 - jeder Webservice besitzt einen Uniform Resource Identifier (URI), über den er eindeutig identifizierbar ist
 - besitzt Schnittstellenbeschreibung in maschinenlesbarem Format (XML-Artefakt, meist WSDL), wodurch definiert wird wie mit Webservice zu interagieren ist
@@ -77,7 +72,7 @@ Quellen und hilfreiche Links:
 
 [http://de.wikipedia.org/wiki/Open\_Geospatial\_Consortium](http://de.wikipedia.org/wiki/Open_Geospatial_Consortium) (letzter Aufruf am 01.10.2014)
 
-**WFS**
+###WFS
 
 - OpenGIS Web Feature Service (WFS)
 - definiert vom Open Geospatial Consortium (OGC)
@@ -111,7 +106,7 @@ Quellen und hilfreiche Links:
 
 [http://www.weichand.de/2011/11/30/grundlagen-web-feature-service-wfs-2-0/](http://www.weichand.de/2011/11/30/grundlagen-web-feature-service-wfs-2-0/) (letzter Aufruf am 01.10.2014)
 
-**SWE Common**
+###SWE Common
 
 Allgemeines:
 
@@ -135,11 +130,11 @@ Quellen und hilfreiche Links:
 
 
 
-**Geodatenformate, die...**
+#Geodatenformate, die...
 
-**...maschinenunabhängig sind:**
+##...maschinenunabhängig sind:
 
-**NetCDF**
+###NetCDF
 
 - Dateiformat für den Austausch wissenschaftlicher Daten
 - binäres Dateiformat und damit durch Angabe der Byte-Reihenfolge im Header maschinenunabhängig ist
@@ -153,13 +148,13 @@ Quellen und hilfreiche Links:
 [http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/](http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/) (letzter Aufruf am 01.10.2014)
 [http://www.unidata.ucar.edu/downloads/netcdf/index.jsp](http://www.unidata.ucar.edu/downloads/netcdf/index.jsp) (letzter Aufruf am 01.10.2014)
 
-**...XML basiert sind:**
+##...XML basiert sind:
 
-**Observations and Measurements (O&M)**
+###Observations and Measurements (O&M)
 
 - OGC und ISO Standard
-- spezifierzt eine XML-Implementation für das OGC und ISO O&M conceptual model (OGC Observations and Measurements v2.0 und ISO/DIS 19156), inklusive einem Schema für Sampling Features
-- h. es ist ein Standard zur Modellierung von Observationen und zur Beschreibung des Zusammenhangs zwischen dem räumlichen Zielobjekt das observiert wird, der gemessenen „properties & measurement procedure" und den erfassten Daten, die aus der Observation resultieren
+- spezifiziert eine XML-Implementation für das OGC und ISO O&M conceptual model (OGC Observations and Measurements v2.0 und ISO/DIS 19156), inklusive einem Schema für Sampling Features
+- es ist ein Standard zur Modellierung von Observationen und zur Beschreibung des Zusammenhangs zwischen dem räumlichen Zielobjekt das observiert wird, der gemessenen „properties & measurement procedure" und den erfassten Daten, die aus der Observation resultieren
 - basiert auf Geography Markup Language (GML)
 - wichtig für Sensor Web Enablement (SWE Framework), SensorML und Sensor Observation Service (SOS)
 
@@ -171,17 +166,7 @@ Quellen und hilfreiche Links:
 
 [http://www.spatineo.com/2012/02/what-is-an-om-observation-and-why-should-you-care/](http://www.spatineo.com/2012/02/what-is-an-om-observation-and-why-should-you-care/) (letzter Aufruf am 01.10.2014)
 
-
-
-
-
-
-
-
-
-
-
-**Tagged data**
+###Tagged data
 
 - Auszeichnung eines Datenbestandes mit zusätzlichen Informationen
 - Zu finden in Auszeichnungssprachen wie SGML, HTML oder auch XML
@@ -195,7 +180,6 @@ Quellen und hilfreiche Links:
 Beispiel:
 
 Aus XML-Beispiel
-
 ```
 <Kreditkarte
   Herausgeber="Xema"
@@ -216,14 +200,18 @@ Aus XML-Beispiel
     <Kinder />
   </Inhaber>
 </Kreditkarte>
-Tags sind hier zum Beispiel <Inhaber></Inhaber> und <Hobbys></Hobbys>.
 ```
+Tags sind hier zum Beispiel 
+```
+<Inhaber></Inhaber> und <Hobbys></Hobbys>.
+```
+
 
 Quellen und hilfreiche Links:
 
 [http://en.wikipedia.org/wiki/Tag\_%28metadata%29](http://en.wikipedia.org/wiki/Tag_%28metadata%29) (letzter Aufruf am 01.10.2014)
 
-**GML**
+###GML
 
 - Geography Markup Language (GML)
 - OGC(Entwickler) und ISO Standard
@@ -260,23 +248,23 @@ Beispiel:
 
 Schulgebäude
 
-```   
-<Feature   fid="142" featureType="school" > 
-   <Description>Balmoral Middle School</Description>> 
-   <Property Name="NumFloors" type="Integer" value="3"/> 
-   <Property Name="NumStudents" type="Integer" value="987"/> 
-       <Polygon  name="extent" srsName="epsg:27354"> 
-            <LineString  name="extent" srsName="epsg:27354"> 
-                <CData> 
-                  491888.999999459,5458045.99963358 491904.999999458,5458044.99963358 
-                  491908.999999462,5458064.99963358 491924.999999461,5458064.99963358 
-                  491925.999999462,5458079.99963359 491977.999999466,5458120.9996336 
-                  491953.999999466,5458017.99963357 </CData> 
-        </LineString> 
-    </Polygon> 
-</Feature>
-    
 ```
+	<Feature   fid="142" featureType="school" > 
+  	 <Description>Balmoral Middle School</Description>> 
+  	 <Property Name="NumFloors" type="Integer" value="3"/> 
+ 	  <Property Name="NumStudents" type="Integer" value="987"/> 
+  	     <Polygon  name="extent" srsName="epsg:27354"> 
+    	        <LineString  name="extent" srsName="epsg:27354"> 
+    	            <CData> 
+      	            491888.999999459,5458045.99963358 491904.999999458,5458044.99963358 
+      	            491908.999999462,5458064.99963358 491924.999999461,5458064.99963358 
+      	            491925.999999462,5458079.99963359 491977.999999466,5458120.9996336 
+      	            491953.999999466,5458017.99963357 </CData> 
+     	   </LineString> 
+  	  </Polygon> 
+	</Feature>
+```    
+
 
 Quellen und hilfreiche Links:
 
@@ -294,7 +282,7 @@ Quellen und hilfreiche Links:
 
 
 
-**KML**
+###KML
 
 - Keyhole Markup Language (KML)
 - .kml, .kmz
@@ -314,17 +302,17 @@ Beispiel:
 
 KML-Code für ein einfaches Placemark:
 ```
-<?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
-<Placemark>
-<name>Simple placemark</name>
-<description>Attached to the ground. Intelligently places itself 
-at the height of the underlying terrain.</description>
-<Point>
-<coordinates>-122.0822035425683,37.42228990140251,0</coordinates>
-</Point>
-</Placemark>
-</kml>
+	<?xml version="1.0" encoding="UTF-8"?>
+	<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Placemark>
+	<name>Simple placemark</name>
+	<description>Attached to the ground. Intelligently places itself 
+	at the height of the underlying terrain.</description>
+	<Point>
+	<coordinates>-122.0822035425683,37.42228990140251,0</coordinates>
+	</Point>
+	</Placemark>
+	</kml>
 ```
 
 
@@ -339,8 +327,9 @@ Quellen und hilfreiche Links:
 [https://developers.google.com/kml/documentation/kml\_tut?hl=de](https://developers.google.com/kml/documentation/kml_tut?hl=de) (Tutorial)(letzter Aufruf am 01.10.2014)
 
 [http://www.opengeospatial.org/standards/kml](http://www.opengeospatial.org/standards/kml) (letzter Aufruf am 01.10.2014)
+###Really Simple Syndication
 
-**RSS Really Simple Syndication**
+####RSS 
 
 - ermöglicht es die Inhalte einer Seite leicht zu teilen
 - Daten können automatisch aktualisiert werden
@@ -349,7 +338,7 @@ Quellen und hilfreiche Links:
 - zählt zu den ersten Anwendungsgebieten des semantischen Webs.
 - Nur Formate wie „escaped", HTML und reinen Text
 
-GeoRSS
+####GeoRSS
 
 - ist ein neuer Standard der es ermöglicht Georeferenzierungen durch Web Feeds zu teilen
 - Zwei Standards: GeoRSS-Simple und GeoRSS-GML
@@ -371,43 +360,43 @@ GeoRSS
 
 
 Beispiel RSS-Datei
+```
+	<?xml version="1.0" encoding="UTF-8" ?>
+	<rss version="2.0">
 
-  
- ``` 
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
-
-<channel>
-  <title>W3Schools Home Page</title>
-  <link>http://www.w3schools.com</link>
-  <description>Free web building tutorials</description>
-  <item>
-    <title>RSS Tutorial</title>
-    <link>http://www.w3schools.com/rss</link>
-    <description>New RSS tutorial on W3Schools</description>
-  </item>
-  <item>
-    <title>XML Tutorial</title>
-    <link>http://www.w3schools.com/xml</link>
-    <description>New XML tutorial on W3Schools</description>
-  </item>
-</channel>
-</rss>
- 
- GeoRSS-Simple:
-<georss:point>40.533203 -105.0712</georss:point>
-
+	<channel>
+	  <title>W3Schools Home Page</title>
+	  <link>http://www.w3schools.com</link>
+	  <description>Free web building tutorials</description>
+	  <item>
+	    <title>RSS Tutorial</title>
+	    <link>http://www.w3schools.com/rss</link>
+	    <description>New RSS tutorial on W3Schools</description>
+	  </item>
+	  <item>
+	    <title>XML Tutorial</title>
+	    <link>http://www.w3schools.com/xml</link>
+	    <description>New XML tutorial on W3Schools</description>
+	  </item>
+	</channel>
+	</rss>
+```
+GeoRSS-Simple:
+```
+		<georss:point>40.533203 -105.0712</georss:point>
+```
 
 
 
 GeoRSS-GML
+```
 <GeoRSS:where>
         <gml:Point>
            <gml:pos>40.533203 -105.0712</gml:pos>
         </gml:Point>
       <GeoRSS:where>
- 
 ```
+
  
 
 Quellen und hilfreiche Links:_de.wikipedia.org/wiki/RSS (letzter Aufruf am 01.10.2014)_
@@ -420,7 +409,7 @@ Tutorial: [http://www.w3schools.com/rss/](http://www.w3schools.com/rss/) (letzte
 
 
 
-**Atom**
+###Atom
 
 Allgemeines:
 
@@ -432,10 +421,10 @@ Allgemeines:
 
 Beispiel Atom
 
-```
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <author>
+``` 
+	<?xml version="1.0" encoding="utf-8"?>
+	<feed xmlns="http://www.w3.org/2005/Atom">
+  	<author>
     <name>Autor des Weblogs</name>
   </author>
   <title>Titel des Weblogs</title>
@@ -466,11 +455,11 @@ Quellen und hilfreiche Links:
 
 
 
-**...Daten zu Geometrien enthalten:**
+##...Daten zu Geometrien enthalten:
 
 
 
-**Shapefiles**
+###Shapefiles
 
 - Dateiformat für Geodaten, dass ursprünglich für die Software ArcView der Firma ESRI entwickelt wurde
 - heute im Desktop-GIS-Umfeld verbreitet
@@ -500,7 +489,7 @@ Quellen und hilfreiche Links:
 
 
 
-**Simple Features**
+###Simple Features
 
 - ein Standard des Open Geospatial Consortium und der International Organization for Standardization (ISO 19125) 
 - definiert eine gültige Architektur für geografische Daten und deren Geometrien.
@@ -517,28 +506,20 @@ Folgende instanzierbare Klassen beinhaltet das Modell:
 
 Sämtliche Geometrien leiten sich von der abstrakten Klasse Geometry ab.
 
-1. Grundlegende Abfragen: Geometrietyp (GeometryType),
+1. Grundlegende Abfragen: 
+   - Geometrietyp (GeometryType),
+   - die Abfrage der Ausdehnung (Envelope),
+   - die Rückgabe der Geometrie als Text (AsText).
 
-                   die Abfrage der Ausdehnung (Envelope) ,
+2. räumliche Beziehungen: 
+   - ob Objekte gleich sind (Equals),
+   - sich schneiden (Intersects) ,
+   - berühren (Touches).
 
-       die Rückgabe der Geometrie als Text (AsText).
-
-2. räumliche Beziehungen: ob Objekte gleich sind (Equals),
-
-      sich schneiden (Intersects) ,
-
-    berühren (Touches).
-
-3. räumlichen Analyse: Pufferzone (Buffer),
-
-   Verschneidung (Intersection),
-
-   Differenz (Difference)
-
-
-
-
-
+3. räumlichen Analyse:
+   - Pufferzone (Buffer),
+   - Verschneidung (Intersection),
+   - Differenz (Difference)
 
 
 Verwendung:
@@ -557,7 +538,7 @@ Quellen und hilfreiche Links:
 
 [http://www.opengeospatial.org/standards/sfa](http://www.opengeospatial.org/standards/sfa) (letzter Aufruf am 01.10.2014)
 
-GeoPackage
+###GeoPackages
 
 - OGC® Encoding Standard definiert GeoPackages
 - Ein Offenes Format für Informationen mit Raumbezug
@@ -577,9 +558,9 @@ Quellen und hilfreiche Links:
 
 
 
-**...Bilddaten enthalten:**
+##...Bilddaten enthalten:
 
-**GeoTIFF**
+###GeoTIFF
 
 - .geotiff oder auch nur .tif
 - Spezialform eines TIFF-Bildes
@@ -614,9 +595,9 @@ Quellen und hilfreiche Links:
 
 
 
-… **und JSON basiert sind:**
+##und JSON basiert sind:
 
-**GeoJSON**
+###GeoJSON
 
 - pen standard (für jeden kostenlos zugänglich und nutzbar)
 - GIS File Format
