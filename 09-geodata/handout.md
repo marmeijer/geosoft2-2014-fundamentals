@@ -11,6 +11,8 @@ von Simon Schulte und Tobias Tasse
 
 
 ##Geodatenformate die,...
+ 
+
 
 **...XML basiert sind,**
 
@@ -488,7 +490,7 @@ Verwendung:
 - Zwei sehr bekannte LGPL(Lesser General Public License) lizenzierte Programmbiblotheken sind die JTS Topology Suite und GEOS
 - JTS stellt eine API für JAVA
 - GEOS eine API für C++
-- GEOS in PostGIS kann WellKnownText direkt in der Datenbank von PostgreSQL 6verwendet werden
+- GEOS in PostGIS kann WellKnownText direkt in der Datenbank von PostgreSQL verwendet werden
 
 
 
@@ -514,7 +516,6 @@ Quellen und hilfreiche Links:
 
 [https://bitbucket.org/luciad/libgpkg](https://bitbucket.org/luciad/libgpkg) (letzter Aufruf am 01.10.2014)
 
-
 ###NetCDF
 - steht für Network Common Data Form
 - Dateiformat für den Austausch wissenschaftlicher Daten
@@ -528,7 +529,6 @@ Quellen und hilfreiche Links:
 [http://de.wikipedia.org/wiki/NetCDF](http://de.wikipedia.org/wiki/NetCDF) (letzter Aufruf am 01.10.2014)
 [http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/](http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/) (letzter Aufruf am 01.10.2014)
 [http://www.unidata.ucar.edu/downloads/netcdf/index.jsp](http://www.unidata.ucar.edu/downloads/netcdf/index.jsp) (letzter Aufruf am 01.10.2014)
-
 
 
 
@@ -707,3 +707,82 @@ Quellen und hilfreiche Links:
 [http://de.wikipedia.org/wiki/JavaScript\_Object\_Notation](http://de.wikipedia.org/wiki/JavaScript_Object_Notation) (letzter Aufruf am 01.10.2014)
 
 [http://de.wikipedia.org/wiki/Auszeichnungssprache](http://de.wikipedia.org/wiki/Auszeichnungssprache) (letzter Aufruf am 01.10.2014)
+
+
+TODO
+___________________________________
+
+###LinkedData
+
+
+
+- im World Wide Web frei verfügbare Daten, die per URI identifiziert sind, per HTTP abgerufen werden können und ebenfalls per URI auf andere Daten verweisen
+
+
+
+- Entstehung von Web of Data/ Semantic Web
+
+
+
+- Grundprinzipien:
+
+
+	- Verwende URIs als Namen für Dinge
+	- Verwende HTTP URIs, damit Leute diese Namen nachschlagen können
+	- Wenn jemand einen Namen nachschlägt, biete nützliche Informationen und verwende dabei die Standards (RDF, SPARQL)
+	- Biete von dort auch Links auf andere URIs, damit wir mehr Dinge entdecken können
+
+
+- bekanntes Modell aus Spatial Information Infrastructures
+
+
+	- http://de.wikipedia.org/wiki/Linked_Open_Data#mediaviewer/File:LOD_Cloud_Diagram_as_of_September_2011.png
+
+Quellen und hilfreiche Links:
+[http://de.wikipedia.org/wiki/Linked_Open_Data](http://de.wikipedia.org/wiki/Linked_Open_Data) (letzter Aufruf am 21.10.2014)
+[https://www.innoq.com/de/linked-data/](https://www.innoq.com/de/linked-data/) (letzter Aufruf am 21.10.2014)
+
+###LinkedGeoData
+
+
+
+- Wissensbasis
+
+
+- fügt dem Web of Data/ Semantic Web eine räumliche Dimension hinzu
+
+
+	- d.h.:
+
+
+		- OpenStreetMap sammelt Informationen
+
+
+		- diese Informationen werden im LinkedData-Prinzip als RDF zur Verfügung gestellt
+
+
+		- diese RDF-basierten Informationen werden dem Web of Data hinzugefügt
+
+
+		- so werden räumliche Informationen zu Suchbegriffen hinzugefügt
+
+
+			- Bsp.: Suchbegriff „Berlin“ erhält auch räumliche Informationen zu Berlin wie die Koordinaten oder die Fläche
+
+
+- OpenStreetMap, weil:
+
+
+	- große Kollektion von räumlichen Daten (mehr als 1 Milliarde Punkte und 100 Millionen Wege)
+
+
+	- durch öffentlichen Standard frei nutzbar (erweiterbar)
+
+
+	- Daten stehen nach Linked Data Prinzipien zur Verfügung und sind verkettet mit Dbpedia und Geo-Namen
+
+Quellen und hilfreiche Links:
+
+[http://linkedgeodata.org/About)](http://linkedgeodata.org/About)) (letzter Aufruf am 21.10.2014)
+[http://wiki.openstreetmap.org/wiki/LinkedGeoData](http://wiki.openstreetmap.org/wiki/LinkedGeoData) (letzter Aufrug am 21.10.2014)
+
