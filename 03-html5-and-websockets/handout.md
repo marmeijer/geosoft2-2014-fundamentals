@@ -6,7 +6,7 @@ HTML5 ist:
 * ...der Nachfolger von HTML4, unterstützt dieses aber.
 * ...am 16.09.2014 als künftige HTML5 Empfehlung von W3C veröffentlicht worden.
 
-[weitere allgemeine Infos](https://de.wikipedia.org/wiki/HTML5 "weiter allgemeine Infos")
+[weitere allgemeine Infos](http://www.w3.org/TR/html5/ "weiter allgemeine Infos")
 
 
 ####Veränderungen zu HTML4####
@@ -152,6 +152,12 @@ HTML5 hat zwei Tags um Plug-ins einzubinden `<object>,<embed>`. Beide haben die 
 + [App Cache](http://www.w3schools.com/html/html5_app_cache.asp)
 + [Web Workers](http://www.w3schools.com/html/html5_webworkers.asp)
 + [Server-Sent Events](http://www.w3schools.com/html/html5_serversentevents.asp)
+
+####weitere nützliche Links####
+
+* [offizielle W3C Proposed Recommendation](http://www.w3.org/TR/html5/)
+* [HTML5 Handbuch](http://webkompetenz.wikidot.com/docs:html-handbuch)
+* [Demos und Beispiele](http://html5demos.com/)
 
 ####Quellen zu HTML5####
 
