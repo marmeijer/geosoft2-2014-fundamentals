@@ -1,3 +1,4 @@
+
 #Geodatenformate
 
 von Simon Schulte und Tobias Tasse
@@ -12,6 +13,7 @@ von Simon Schulte und Tobias Tasse
 ##Geodatenformate die,...
 
 **... maschinenunabhängig sind,**
+ 
 - NetCDF
 
 **...XML basiert sind,**
@@ -27,7 +29,7 @@ von Simon Schulte und Tobias Tasse
 
 - Shapefiles
 - Simple Features
-- GeoPackage
+- GeoPackages
 
 **...Bilddaten enthalten,**
 
@@ -37,6 +39,9 @@ von Simon Schulte und Tobias Tasse
 … **und JSON basiert sind.**
 
 - GeoJSON
+
+------------------------------
+------------------------------
 
 ##Häufige Schnittstellen:
 
@@ -50,9 +55,7 @@ von Simon Schulte und Tobias Tasse
 - jeder Webservice besitzt einen Uniform Resource Identifier (URI), über den er eindeutig identifizierbar ist
 - besitzt Schnittstellenbeschreibung in maschinenlesbarem Format (XML-Artefakt, meist WSDL), wodurch definiert wird wie mit Webservice zu interagieren ist
 - Kommunikation läuft meist über Protokolle aus dem Internetkontext wie HTTP und ist XML-basiert
-
 - Visualisierung von Geodaten in Browser
-
 - HTTP-Schnittstelle zum Abrufen von Auszügen aus Landkarten, die von einer oder mehreren geo-räumlichen Datenbanken bereitgestellt werden
 - die WMS Anfrage definiert den gewünschten Bereich und die geographischen Layer die verarbeitet werden sollen
 - die Anfrage liefert Kartenmaterial, dass, meist wiedergegeben in Dateiformaten wie JPG, PNG, etc., in einer Browser-Anwendung dargestellt wird
@@ -89,7 +92,7 @@ Quellen und hilfreiche Links:
 
 - HTTP-Anfrage vom Client an WFS gesendet
 - es gibt sechs Operationen, die von einem Benutzer angefragt werden können;
-  - für uns interessant:
+  - **_für uns interessant:_**
     - GetCapabilities – liefert XML-Dokument mit allgemeinen Angaben zum Anbieter des WFS, abgefragte Feature Types und mögliche Operationen
 
 - GetGmlObject – liefert einzelne Elemente aus der GML-Datei per Xlink
@@ -135,7 +138,7 @@ Quellen und hilfreiche Links:
 ##...maschinenunabhängig sind:
 
 ###NetCDF
-
+- steht für Network Common Data Form
 - Dateiformat für den Austausch wissenschaftlicher Daten
 - binäres Dateiformat und damit durch Angabe der Byte-Reihenfolge im Header maschinenunabhängig ist
 - offener Standard
@@ -181,25 +184,13 @@ Beispiel:
 
 Aus XML-Beispiel
 ```
-<Kreditkarte
-  Herausgeber="Xema"
-  Nummer="1234-5678-9012-3456"
-  Deckung="2e+6"
-  Waehrung="EURO">
-  <Inhaber
-    Name="Mustermann"
-    Vorname="Max"
-    maennlich="true"
-    Alter="42"
-    Partner="null">
-    <Hobbys>
-      <Hobby>Reiten</Hobby>
-      <Hobby>Golfen</Hobby>
-      <Hobby>Lesen</Hobby>
-    </Hobbys>
-    <Kinder />
-  </Inhaber>
-</Kreditkarte>
+<Points Of Interest
+    <Locations>
+      <Address>Reiten</Address>
+      <Address>Golfen</Address>
+      <Address>Lesen</Address>
+    </Locations>
+</Points Of Interest>
 ```
 Tags sind hier zum Beispiel 
 ```
@@ -346,19 +337,6 @@ Quellen und hilfreiche Links:
 - GeoRSS-GML unterstützt mehr Geometrien als Geo-RSS-Simple und dazu noch andere Koordinatensysteme als WGS1984. Dabei basiert es auf dem OGC Standard GML.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 Beispiel RSS-Datei
 ```
 	<?xml version="1.0" encoding="UTF-8" ?>
@@ -418,6 +396,8 @@ Allgemeines:
 - Atom Publishing Protocol(APP) zum Bearbeiten und Erstellen von HTML und XML basierten Webressourcen
 - Unterstützt mehr Formate als RSS
 - Feeds sind sehr modular, sie erlauben zusätzliche Attribute (beheben Darstellungsprobleme vom RSS-Standard)
+- INSPIRE Atom Feeds erlauben das automatisierte Downloaden von Geodaten die in dem Feed bereitgestellt werden
+
 
 Beispiel Atom
 
@@ -441,9 +421,6 @@ Beispiel Atom
   </entry>
 </feed>
 ```
- 
-
-
 
 Quellen und hilfreiche Links:
 
@@ -451,7 +428,9 @@ Quellen und hilfreiche Links:
 
 [http://www.intertwingly.net/wiki/pie/FrontPage](http://www.intertwingly.net/wiki/pie/FrontPage) (letzter Aufruf am 01.10.2014)
 
+[http://www.weichand.de/2012/06/20/inspire-pre-defined-atom-download-service-client-for-qgis/](http://www.weichand.de/2012/06/20/inspire-pre-defined-atom-download-service-client-for-qgis/)(letzter Aufruf am 20.10.2014)
 
+[http://fmepedia.safe.com/articles/Samples_and_Demos/Read-INSPIRE-ATOM-Download-Services-with-FME](http://fmepedia.safe.com/articles/Samples_and_Demos/Read-INSPIRE-ATOM-Download-Services-with-FME) (letzter Aufruf am 20.10.2014)
 
 
 
@@ -528,7 +507,7 @@ Verwendung:
 - Zwei sehr bekannte LGPL(Lesser General Public License) lizenzierte Programmbiblotheken sind die JTS Topology Suite und GEOS
 - JTS stellt eine API für JAVA
 - GEOS eine API für C++
-- GEOS in PostGIS kann WellKnownText direkt in der Datenbank von PostgreSQL verwendet werden
+- GEOS in PostGIS kann WellKnownText direkt in der Datenbank von PostgreSQL 6verwendet werden
 
 
 
