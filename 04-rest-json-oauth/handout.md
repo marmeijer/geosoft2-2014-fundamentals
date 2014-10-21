@@ -68,6 +68,59 @@ Der Response darauf sieht dann folgendermaßen aus (im JSON-Format):
 
 Ihr könnt das Beispiel und viele weitere zu dieser API auf dieser Seite finden -> [HP-Gloe Rest-Examples](http://wiki.hpgloe.com/restexamples "HP-Gloe Rest-Examples").
 
+### Warum REST? [[Q1]](#restful-webservices-quellen)<br> ###
+Da das bis dato vorherschende SOAP (**S**imple **O**bject **A**ccess **P**rotocol) sehr kompliziert war, herrschte ein großes Verlangen nach Vereinfachung (viele APIs basieren bis heute auf SOAP). <br>
+
+*Tabelle 1: Stärken und Schwächen von SOAP:*
+
+|                    Stärken                    |            Schwächen         |
+| --------------------------------------------- | ---------------------------  |
+|     große Mächtigkeit der SOAP-Envelopes      | komplizierte XML-Nachrichten |
+| Programmiersprachen- und Plattform-unabhängig |         großer Overhead      |
+|                        -                      |         rechenintensiv       |    
+
+#### Beispiel: ####
+
+In diesem Beispiel sehen wir uns eine Webanwendung an, die das Telefonbuch des IFGIs verwaltet und wir möchten mit einem Aufruf den Benutzer mit der UserID 0815 aufrufen. <br>
+
+Als SOAP-Envelope sieht das ganze dann so aus: <br>
+
+```xml
+<?xml version="1.0"?>
+<soap:Envelope
+xmlns:soap="http://www.w3.org/2001/12/soap-envelope"
+soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
+ <soap:body pb="http://ifgi.uni-muenster.de/phonebook">
+  <pb:GetUserInfo>
+   <pb:UserID>0815</pb:UserID>
+  </pb:GetUserInfo>
+ </soap:Body>
+</soap:Envelope>
+```
+
+Ist unsere Anwendung hingegen nun RESTful reicht uns diese kurze URL, die wir als HTTP-GET-Request senden, um die gleiche Ressource anzufragen: <br>
+
+	http://ifgi.uni-muenster.de/phonebook/UserInfo/0815
+
+### Sind jetzt alle Anwendungen RESTful oder gibt es noch andere? ###
+
+Sehr viele SOAP-Anwendungen
+Einige XML-RPCs
+
+### Weitere HTTP-Request-Methoden? ###
+
+Ja, folgende Methoden werden auch noch genutzt:
+
+
+| Request-Methode | Funktion |
+| --------------- | -------- |
+|      HEAD       | Anfrage nach Server-Header wie bei GET aber ohne den Body zu schicken |
+|     TRACE       | Anfrage die an den Server gestellt wurde wird unverändert zurückgegeben (zu Troubleshoot-Zwecken) |
+|    OPTIONS      | Liefert eine Liste der vom Server unterstützten Mathoden und Features |
+|    CONNECT      | Wird bei Proxyservern zum Aufbau von SSL-Tunneln zur Verfügung gestellt |
+
+[Quelle](http://de.wikipedia.org/wiki/Representational_State_Transfer#Umsetzung "Quelle")
+
 ## JSON ##
 
 [[Quellen]](#json-quellen)
@@ -155,17 +208,117 @@ Hier ein Beispiel einer Methode in JavaScript, um JSON-Dokumete zu parsen:
 ```javascript
 JSON.parse()
 ```
+
+### JSON Schema [[Q7]](#json-quellen)###
+Ein (eigenes) JSON Schema beschreibt ein (eigenes) Datenformat. <br>
+
+Der grundlegende Aufbau ist durch ```JSON Schema Core``` definiert. (Siehe [hier](http://json-schema.org/latest/json-schema-core.html "hier")) <br>
+
+```JSON Schema Validation``` definiert zudem die gültigen Schlüsselwörter von JSON Schema. (Siehe [hier](http://json-schema.org/latest/json-schema-validation.html "hier")): <br> 
+
+Beispiel:
+```json
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Product",
+    "description": "A product from Acme's catalog",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "The unique identifier for a product",
+            "type": "integer"
+        },
+        "name": {
+            "description": "Name of the product",
+            "type": "string"
+        },
+        "price": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true
+        }
+    },
+    "required": ["id", "name", "price"]
+}
+```
+
+- In diesem Beispiel befinden sich sechs ```Keywords```: $schema, title, description (drei mal), type (vier mal), properties und required.
+- required beschreibt, welche Eigenschaften eines JSON-Objektes des JSON Schema nicht null/leer sein dürfen
+- $schema legt in diesem Falle fest, dass das Schema gemäß der draft v4 Spezifikation entworfen ist 
+
+### Geo JSON [[Q8]](#json-quellen)###
+
+Geo JSON ist ein ```GIS-Datenformat``` (in JSON) und ein offener Standard. <br>
+Im Grunde ist es ein JSON Schema, enworfen als offenes Format. <br>
+
+Unterstützt werden folgende geometrischen Typen:
+
+- Point
+- LineString
+- Polygon
+- MultiPoint
+- MultiLinestring
+- MultiPolygon
+
+Listen von diesen Typen heißen ```GeometryCollection```. <br>
+Typen mit weiteren Eigenschaften werden ```Features``` genannt. <br>
+Und eine Liste aus Features ist eine ```FeatureCollection```. <br>
+
+Hier mal ein Beispiel für eine sog. FeatureCollection:
+
+```json
+{ "type": "FeatureCollection",
+    "features": [
+      { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
+        "properties": {"prop0": "value0"}
+        },
+      { "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [102.0, 0.0], [103.0, 1.0], [104.0, 0.0], [105.0, 1.0]
+            ]
+          },
+        "properties": {
+          "prop0": "value0",
+          "prop1": 0.0
+          }
+        },
+      { "type": "Feature",
+         "geometry": {
+           "type": "Polygon",
+           "coordinates": [
+             [ [100.0, 0.0], [101.0, 0.0], [101.0, 1.0],
+               [100.0, 1.0], [100.0, 0.0] ]
+             ]
+         },
+         "properties": {
+           "prop0": "value0",
+           "prop1": {"this": "that"}
+           }
+         }
+       ]
+     }
+```
+
+Die komplette Spezifikation mit Erklärungen u.a. zu den geometrischen Typen findet man bei geojson.org [hier](http://geojson.org/geojson-spec.html). <br>
+
+Wichtig zu erwähnen ist aber, dass das CRS eines Geo JSON standardmäßig WGS84  (wie im Beispiel auch zu sehen) verwendet.
+
+Ein nettes Tool zum ausprobieren eines Geo JSON findet man unter [geojson.io](http://geojson.io/#map=7/0.511/102.497). Fügt man dort das obige Beispiel ein, sieht zum einen den Point, den LineString und das Polygon.
+
             
 ## OAuth ##
 
 [[Quellen]](#oauth-quellen)
 
-### Was ist OAuth?  [[Q7]](#oauth-quellen)###
+### Was ist OAuth?  [[Q9]](#oauth-quellen)###
 OAuth steht für **O** pen **Auth** entication <br>
 Es handelt sich um ein Protokoll, das standardisierte API-Autorisierung für Desktop-, Web und Mobil-Applications erlaubt. <br>
 Ziel: Übermittlung von Authorisierungsdaten an Dritte vermeiden.
 
-### Begriffe [[Q7]](#oauth-quellen)###
+### Begriffe [[Q9]](#oauth-quellen)###
 
 - **Service Provider:** <br>
   Damit ist eine Webseite oder ein Dienst gemeint, bei dem die Informationen liegen
@@ -178,7 +331,7 @@ Ziel: Übermittlung von Authorisierungsdaten an Dritte vermeiden.
 - **Token:** <br>
   Authentifikations-Token ersetzen die Authorisierungsdaten und geben Zugang entweder für Abfragen oder Zugang zu bestimmten Bereichen (Es handelt sich um eine Kryptografisch erzeugte lange Zeichenfolge, die schwer zu erraten ist)
 
-### Ablauf [[Q8]](#oauth-quellen)###
+### Ablauf [[Q10]](#oauth-quellen)###
 
 Diese 6 Schritte stellen eine abstrakte Beschreibung des Ablauf einer API-Autorisierung durch OAuth dar:
 
@@ -198,7 +351,7 @@ Diese 6 Schritte stellen eine abstrakte Beschreibung des Ablauf einer API-Autori
   - Consumer kann auf Daten des User zugreifen
 
 
-### Sicherheit [[Q7]](#oauth-quellen)###
+### Sicherheit [[Q9]](#oauth-quellen)###
 
 In der aktuellen Version OAuth 2.0 ist das Protokoll erheblich komplexer geworden, was aber bis heute zu Diskussionen führt. Hier die markantesten Sicherheitsfeatures des Protokolls:
 
@@ -206,7 +359,9 @@ In der aktuellen Version OAuth 2.0 ist das Protokoll erheblich komplexer geworde
 - Token mit Güligkeitsdauer
 - Verwendung von SSL zur Verschlüsselung
 
-> Zitat Eran Hammer (ehemaliger Redakteur des Spezifikationsdokuments von OAuth 2.0): OAuth 2.0 sei "... vor allem weniger sicher" als 1.0 [[Q10]](#oauth-quellen)
+> Zitat Eran Hammer (ehemaliger Redakteur des Spezifikationsdokuments von OAuth 2.0): OAuth 2.0 sei "... vor allem weniger sicher" als 1.0, da die Komplexität des Protokolls viele Möglichkeiten für Sicherheitsprobleme bei der Implementierung birgt.
+Er erklärte OAuth für gescheitert und zog sich deshalb  vom Projekt zurück.  [[Q12]](#oauth-quellen)
+
     
 ### OAuth 2.0 Playground ###
 
@@ -227,18 +382,21 @@ Mit den hier aufgeführten Tutorial für JavaScript und HTML5 könnt ihr OAuth s
 
 [Q1 - Restful Webservices - was ist das überhaubt](https://blog.mittwald.de/webentwicklung/restful-webservices-1-was-ist-das-uberhaupt/ "RESTful") <br>
 [Q2 - RFC 6749 (REST)](http://tools.ietf.org/html/rfc6749 "REST RFC bei der IETF") <br>
-[Q3 - Fielding - Dissertation - Chapter 5](http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm "Disertation about REST by Fielding")
+[Q3 - Fielding - Dissertation - Chapter 5](http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm "Disertation about REST by Fielding") <br>
         
 ### JSON-Quellen ###
 
 [Q4 - JSON-Projekt Homepage](http://json.org/ "JSON Projekt-Homepage") <br>
 [Q5 - RFC 4627 (JSON)](http://tools.ietf.org/html/rfc4627 "JSON RFC bei der IETF") <br>
-[Q6 - Wikipedia-Seite über Douglas Crockford](http://en.wikipedia.org/wiki/Douglas_Crockford)
+[Q6 - Wikipedia-Seite über Douglas Crockford](http://en.wikipedia.org/wiki/Douglas_Crockford) <br>
+[Q7 - JSON Schema](http://json-schema.org/) <br>
+[Q8 - Geo JSON](http://geojson.org/) <br>
+
 
 ### OAuth-Quellen###
-[Q7 - Beginners Guide to OAuth](http://hueniverse.com/2007/10/04/beginners-guide-to-oauth-part-i-overview/ "Beginners Guide to OAuth 1.0") <br>
-[Q8 - Introduction to OAuth](http://blog.varonis.com/introduction-to-oauth/ ) <br>
-[Q9 - Google OAuth 2.0 Playground](https://developers.google.com/oauthplayground/) <br>
-[Q10 - Kritik von Eran Hammer an OAuth 2.0](http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell/ "OAuth 2.0 and the Road to Hell") <br>
+[Q9 - Beginners Guide to OAuth](http://hueniverse.com/2007/10/04/beginners-guide-to-oauth-part-i-overview/ "Beginners Guide to OAuth 1.0") <br>
+[Q10 - Introduction to OAuth](http://blog.varonis.com/introduction-to-oauth/ ) <br>
+[Q11 - Google OAuth 2.0 Playground](https://developers.google.com/oauthplayground/) <br>
+[Q12 - Kritik von Eran Hammer an OAuth 2.0](http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell/ "OAuth 2.0 and the Road to Hell") <br>
 
     
