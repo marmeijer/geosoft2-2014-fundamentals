@@ -147,23 +147,29 @@ HTML5 hat zwei Tags um Plug-ins einzubinden `<object>,<embed>`. Beide haben die 
 ####neue HTML APIs####
 
 + [Geolocation](http://www.w3schools.com/html/html5_geolocation.asp)
+	+ die Funktion getCurrentPosition(), gibt die aktuelle geographische Position des Benutzers zurück
 + [Drag/Drop](http://www.w3schools.com/html/html5_draganddrop.asp)
 + [Local Storage](http://www.w3schools.com/html/html5_webstorage.asp)
+	+ eine Web Application kann Daten local im Browser speichern
 + [App Cache](http://www.w3schools.com/html/html5_app_cache.asp)
+	+ die Web App ist im Cache und der Benutzer kann sie auch noch offline benutzen
 + [Web Workers](http://www.w3schools.com/html/html5_webworkers.asp)
+	+ der Web Worker wird unabhängig von anderen Scripts im Hintergrund ausgeführt
 + [Server-Sent Events](http://www.w3schools.com/html/html5_serversentevents.asp)
+	+ die Webpage wird automatisch vom Server geupdated
 
 ####weitere nützliche Links####
 
 * [offizielle W3C Proposed Recommendation](http://www.w3.org/TR/html5/)
 * [HTML5 Handbuch](http://webkompetenz.wikidot.com/docs:html-handbuch)
 * [Demos und Beispiele](http://html5demos.com/)
+* Die Browser Kompabilität findet ihr jeweils auf der [W3schools-Seite](<http://www.w3schools.com/html/html5_intro.asp>)
 
 ####Quellen zu HTML5####
 
-[1] 
-* <https://de.wikipedia.org/wiki/HTML5>, Datum: 02.10.2014
-* <http://www.w3.org/TR/html5/>, Datum: 21.10.2014
+ 
+<https://de.wikipedia.org/wiki/HTML5>, Datum: 02.10.2014
+<http://www.w3.org/TR/html5/>, Datum: 21.10.2014
 
 Der HTML5 Teil des Handouts orientiert sich an der W3school, abgerufen am 02.10.2014
 * <http://www.w3schools.com/html/html5_intro.asp>
