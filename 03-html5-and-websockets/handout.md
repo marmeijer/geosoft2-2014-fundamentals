@@ -161,7 +161,8 @@ HTML5 hat zwei Tags um Plug-ins einzubinden `<object>,<embed>`. Beide haben die 
 
 ####Quellen zu HTML5####
 
-[1] <https://de.wikipedia.org/wiki/HTML5>, Datum: 02.10.2014
+[1] * <https://de.wikipedia.org/wiki/HTML5>, Datum: 02.10.2014
+    * <http://www.w3.org/TR/html5/>, Datum: 21.10.2014
 
 Der HTML5 Teil des Handouts orientiert sich an der W3school, abgerufen am 02.10.2014
 * <http://www.w3schools.com/html/html5_intro.asp>
