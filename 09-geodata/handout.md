@@ -61,7 +61,11 @@ von Simon Schulte und Tobias Tasse
 
 - Geodatenformate:
   - zur Kommunikation → XML
+  
 
+_Alleinstellungsmerkmal:_
+Visualisierung von Geodaten in Browser via Web Service
+→ Zurückgegebenes Format: JPG, PNG, etc.
 
 
 Quellen und hilfreiche Links:
@@ -99,6 +103,10 @@ Quellen und hilfreiche Links:
 - Geodatenformate:
   - GML
   - XML
+
+_Alleinstellungsmerkmal:_
+Visualisierung von Features von Geodaten in Browser via Web Service
+→ Zurückgegebenes Format: GML(XML)
 
 Quellen und hilfreiche Links:
 
@@ -144,6 +152,10 @@ Quellen und hilfreiche Links:
 - basiert auf Geography Markup Language (GML)
 - wichtig für Sensor Web Enablement (SWE Framework), SensorML und Sensor Observation Service (SOS)
 
+_Alleinstellungsmerkmal:_
+Standard zur Modellierung von Observationen inklusive Beschreibung des allgemeinen Zusammenhangs
+→ GML-basiert
+
 Quellen und hilfreiche Links:
 
 [http://www.opengeospatial.org/standards/om](http://www.opengeospatial.org/standards/om) (letzter Aufruf am 01.10.2014)
@@ -177,9 +189,10 @@ Aus XML-Beispiel
 ```
 Tags sind hier zum Beispiel 
 ```
-<Inhaber></Inhaber> und <Hobbys></Hobbys>.
+<Locations></Locations> und <Address></Address>.
 ```
-
+_Alleinstellungsmerkmal:_
+Speicherung von Zusatz-/Metainformationen in XML, HTML oder SGML
 
 Quellen und hilfreiche Links:
 
@@ -210,14 +223,6 @@ Quellen und hilfreiche Links:
 
 3. XML ist einfach zu transformieren (via XSLT, Java, C++, etc.)
 
-
-
-
-
-
-
-
-
 Beispiel:
 
 Schulgebäude
@@ -238,6 +243,8 @@ Schulgebäude
   	  </Polygon> 
 	</Feature>
 ```    
+_Alleinstellungsmerkmal:_
+Beschreibung von räumlichen Objekten in XML Grammatik
 
 
 Quellen und hilfreiche Links:
@@ -245,15 +252,6 @@ Quellen und hilfreiche Links:
 [http://www.w3.org/Mobile/posdep/GMLIntroduction.html](http://www.w3.org/Mobile/posdep/GMLIntroduction.html)(Punkt 3.0, letzter Aufruf am 01.10.2014)
 
 [http://live.osgeo.org/de/standards/gml\_overview.html](http://live.osgeo.org/de/standards/gml_overview.html) (letzter Aufruf am 01.10.2014)
-
-
-
-
-
-
-
-
-
 
 
 ###KML
@@ -289,7 +287,8 @@ KML-Code für ein einfaches Placemark:
 	</kml>
 ```
 
-
+_Alleinstellungsmerkmal:_
+Ähnlich wie GML, aber speziell für Google-Dienste entwickelt (Placemark-Elemente)
 
 
 Quellen und hilfreiche Links:
@@ -437,19 +436,20 @@ Quellen und hilfreiche Links:
 - Optional kann das Design eines Shapefiles in einer Legendendatei .avl oder .lyr(neuer) gespeichert werden und nach dem Einladen einer Shapefile als Themeneigenschaft hinzugefügt werden
 - Größe der Shp- und DBF-Dateien darf 2 GB nicht überschreiten
 
+_Alleinstellungsmerkmal:_
+„Container“ der Geometriedaten, Sachdaten und einen Index zur Verknüpfung beider enthält
+→ für Desktop-GIS 
+
+
 Beispiele zu Shapefiles:
 
 [http://www.geofabrik.de/de/data/shapefiles.html](http://www.geofabrik.de/de/data/shapefiles.html) (letzter Aufruf am 01.10.2014)
 
 (Beispiele enthalten verschiedene Layer mit Punkten, Linien, Flächen und Multi-Punkten)
 
-
-
 Quellen und hilfreiche Links:
 
 [http://de.wikipedia.org/wiki/Shapefile](http://de.wikipedia.org/wiki/Shapefile) (letzter Aufruf am 01.10.2014)
-
-
 
 ###Simple Features
 
@@ -559,7 +559,9 @@ Katalog von Beispiel GeoTIFF Bildern:
 
 [http://www.landesvermessung.sachsen.de/inhalt/produkte/lika/alk/alk\_download.html](http://www.landesvermessung.sachsen.de/inhalt/produkte/lika/alk/alk_download.html)(letzter Aufruf am 01.10.2014)
 
-
+_Alleinstellungsmerkmal:_
+Bilddaten mit geographischen Zusatzinformationen und verlustfreie Speicherung
+→ mehr Informationen als GeoJPEG durch höheren Detailierungsgrad
 
 Quellen und hilfreiche Links:
 
@@ -696,6 +698,8 @@ XML-Code:
 </Kreditkarte>
 ```
 
+_Alleinstellungsmerkmal:_
+Ähnlich wie GML, aber einfacher gehalten (nur Datenaustauschformat) und weniger technischer Support
 
 
 Quellen und hilfreiche Links:
