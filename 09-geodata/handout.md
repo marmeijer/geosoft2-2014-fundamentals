@@ -63,7 +63,7 @@ von Simon Schulte und Tobias Tasse
   - zur Kommunikation → XML
   
 
-_Alleinstellungsmerkmal:_
+**_Alleinstellungsmerkmal:_**
 Visualisierung von Geodaten in Browser via Web Service
 → Zurückgegebenes Format: JPG, PNG, etc.
 
@@ -104,7 +104,7 @@ Quellen und hilfreiche Links:
   - GML
   - XML
 
-_Alleinstellungsmerkmal:_
+**_Alleinstellungsmerkmal:_**
 Visualisierung von Features von Geodaten in Browser via Web Service
 → Zurückgegebenes Format: GML(XML)
 
@@ -152,7 +152,7 @@ Quellen und hilfreiche Links:
 - basiert auf Geography Markup Language (GML)
 - wichtig für Sensor Web Enablement (SWE Framework), SensorML und Sensor Observation Service (SOS)
 
-_Alleinstellungsmerkmal:_
+**_Alleinstellungsmerkmal:_**
 Standard zur Modellierung von Observationen inklusive Beschreibung des allgemeinen Zusammenhangs
 → GML-basiert
 
@@ -191,7 +191,7 @@ Tags sind hier zum Beispiel
 ```
 <Locations></Locations> und <Address></Address>.
 ```
-_Alleinstellungsmerkmal:_
+**_Alleinstellungsmerkmal:_**
 Speicherung von Zusatz-/Metainformationen in XML, HTML oder SGML
 
 Quellen und hilfreiche Links:
@@ -243,7 +243,7 @@ Schulgebäude
   	  </Polygon> 
 	</Feature>
 ```    
-_Alleinstellungsmerkmal:_
+**_Alleinstellungsmerkmal:_**
 Beschreibung von räumlichen Objekten in XML Grammatik
 
 
@@ -287,7 +287,7 @@ KML-Code für ein einfaches Placemark:
 	</kml>
 ```
 
-_Alleinstellungsmerkmal:_
+**_Alleinstellungsmerkmal:_**
 Ähnlich wie GML, aber speziell für Google-Dienste entwickelt (Placemark-Elemente)
 
 
@@ -436,7 +436,7 @@ Quellen und hilfreiche Links:
 - Optional kann das Design eines Shapefiles in einer Legendendatei .avl oder .lyr(neuer) gespeichert werden und nach dem Einladen einer Shapefile als Themeneigenschaft hinzugefügt werden
 - Größe der Shp- und DBF-Dateien darf 2 GB nicht überschreiten
 
-_Alleinstellungsmerkmal:_
+**_Alleinstellungsmerkmal:_**
 „Container“ der Geometriedaten, Sachdaten und einen Index zur Verknüpfung beider enthält
 → für Desktop-GIS 
 
@@ -559,7 +559,7 @@ Katalog von Beispiel GeoTIFF Bildern:
 
 [http://www.landesvermessung.sachsen.de/inhalt/produkte/lika/alk/alk\_download.html](http://www.landesvermessung.sachsen.de/inhalt/produkte/lika/alk/alk_download.html)(letzter Aufruf am 01.10.2014)
 
-_Alleinstellungsmerkmal:_
+**_Alleinstellungsmerkmal:_**
 Bilddaten mit geographischen Zusatzinformationen und verlustfreie Speicherung
 → mehr Informationen als GeoJPEG durch höheren Detailierungsgrad
 
@@ -698,7 +698,7 @@ XML-Code:
 </Kreditkarte>
 ```
 
-_Alleinstellungsmerkmal:_
+**_Alleinstellungsmerkmal:_**
 Ähnlich wie GML, aber einfacher gehalten (nur Datenaustauschformat) und weniger technischer Support
 
 
