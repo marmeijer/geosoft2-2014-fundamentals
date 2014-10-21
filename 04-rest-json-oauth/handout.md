@@ -306,7 +306,7 @@ Die komplette Spezifikation mit Erklärungen u.a. zu den geometrischen Typen fin
 
 Wichtig zu erwähnen ist aber, dass das CRS eines Geo JSON standardmäßig WGS84  (wie im Beispiel auch zu sehen) verwendet.
 
-Ein nettes Tool zum ausprobieren eines Geo JSON findet man unter [geojson.io](http://geojson.io/#map=7/0.511/102.497). Fügt man dort das obige Beispiel ein, sieht zum einen den Point, den LineString und das Polygon.
+Ein nettes Tool zum ausprobieren eines Geo JSON findet man unter [geojson.io](http://geojson.io/#map=7/0.511/102.497). Fügt man dort das obige Beispiel ein, sieht zum einen den Point, den LineString und das Polygon. Außerdem kann man selber Geometrien erstellen und bekommt dazu das passende Geo JSON ausgegeben.
 
             
 ## OAuth ##
