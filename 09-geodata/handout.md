@@ -12,10 +12,6 @@ von Simon Schulte und Tobias Tasse
 
 ##Geodatenformate die,...
 
-**... maschinenunabhängig sind,**
- 
-- NetCDF
-
 **...XML basiert sind,**
 
 - O&M
@@ -30,6 +26,7 @@ von Simon Schulte und Tobias Tasse
 - Shapefiles
 - Simple Features
 - GeoPackages
+- NetCDF
 
 **...Bilddaten enthalten,**
 
@@ -134,22 +131,6 @@ Quellen und hilfreiche Links:
 
 
 #Geodatenformate, die...
-
-##...maschinenunabhängig sind:
-
-###NetCDF
-- steht für Network Common Data Form
-- Dateiformat für den Austausch wissenschaftlicher Daten
-- binäres Dateiformat und damit durch Angabe der Byte-Reihenfolge im Header maschinenunabhängig ist
-- offener Standard
-- basiert auf dem Common Data Format (CDF), ist jedoch nicht mehr kompatibel und deutlich weiter entwickelt
-- Nutzungsschwerpunkte sind Klimatologie und Geoinformationssystemen.
-- Biblothek ist in C geschrieben mit Schnittstellen zu C++,R, Python, Ruby, Matlab und weitere. Außerdem gibt es noch eine Implementierung in Java
-
-Quellen und hilfreiche Links:
-[http://de.wikipedia.org/wiki/NetCDF](http://de.wikipedia.org/wiki/NetCDF) (letzter Aufruf am 01.10.2014)
-[http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/](http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/) (letzter Aufruf am 01.10.2014)
-[http://www.unidata.ucar.edu/downloads/netcdf/index.jsp](http://www.unidata.ucar.edu/downloads/netcdf/index.jsp) (letzter Aufruf am 01.10.2014)
 
 ##...XML basiert sind:
 
@@ -533,6 +514,20 @@ Quellen und hilfreiche Links:
 
 [https://bitbucket.org/luciad/libgpkg](https://bitbucket.org/luciad/libgpkg) (letzter Aufruf am 01.10.2014)
 
+
+###NetCDF
+- steht für Network Common Data Form
+- Dateiformat für den Austausch wissenschaftlicher Daten
+- binäres Dateiformat und damit durch Angabe der Byte-Reihenfolge im Header maschinenunabhängig ist
+- offener Standard
+- basiert auf dem Common Data Format (CDF), ist jedoch nicht mehr kompatibel und deutlich weiter entwickelt
+- Nutzungsschwerpunkte sind Klimatologie und Geoinformationssystemen.
+- Biblothek ist in C geschrieben mit Schnittstellen zu C++,R, Python, Ruby, Matlab und weitere. Außerdem gibt es noch eine Implementierung in Java
+
+Quellen und hilfreiche Links:
+[http://de.wikipedia.org/wiki/NetCDF](http://de.wikipedia.org/wiki/NetCDF) (letzter Aufruf am 01.10.2014)
+[http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/](http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/) (letzter Aufruf am 01.10.2014)
+[http://www.unidata.ucar.edu/downloads/netcdf/index.jsp](http://www.unidata.ucar.edu/downloads/netcdf/index.jsp) (letzter Aufruf am 01.10.2014)
 
 
 
