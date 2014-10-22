@@ -24,7 +24,7 @@
 
 ##Clientseitige und serverseitige Skriptsprachen         
 
-Client-Side:
+###Client-Side:
 
 * Programmcode wird auf der Seite des Clients (im Webbrowser) ausgeführt.
 * Clientseitige Skriptsprachen: 
@@ -38,7 +38,7 @@ JavaScript, ActionScript, Dart, Typescript
   - Source Code für alle sichtbar
   - Zustandsspeicherung via cookies
 
-Server-Side:
+###Server-Side:
 
 * Programmcode wird auf dem Webserver ausgeführt.
 * Serverseitige Skriptsprachen: PHP, ASP.NET, Perl, Python, Server-Side JS.  
@@ -55,7 +55,7 @@ Server-Side:
 ●	schnellere und performantere Ausführung  
 ●	(weniger Arbeitsspeicher-Nutzung)  
 
-Laufzeitvergleich verschiedener Skriptsprachen: http://benchmarksgame.alioth.debian.org/
+[Hier kann man Laufzeit verschiedener Skriptsprachen vergleichen](http://benchmarksgame.alioth.debian.org/)
 
 ##NodeJS  
 ●	Basiert auf Javascript-Umgebung „V8“ von Google  
@@ -67,7 +67,7 @@ Laufzeitvergleich verschiedener Skriptsprachen: http://benchmarksgame.alioth.deb
  
 Bei Node.JS gibt es nur einen Thread, der Anfragen annimmt und sie direkt weitergibt. Er ist also im Gegensatz zu den mehreren Threads bei „normalen“ Webservern nie blockiert oder muss warten. Grund dafür ist auch das asynchrone Input/Output, welches zeitlich versetzt stattfindet, um Prozesse nicht zu blockieren. 
 
-Node.js Tutorials:            
+###Node.js Tutorials:            
 1. [nodecode.de](http://nodecode.de)      
 2. [Video-Tutorial](http://nodetuts.com)        
 3. [blog.rapsli.ch](http://blog.rapsli.ch/posts/2013/2013-04-22-anfangerwissen-fur-node-js.html/)         
@@ -95,15 +95,25 @@ Den Hintergrund für die große Bedeutung der SOP bildet im Wesentlichen die Kom
 
 Daraus ergibt sich die Anforderung, dass keine Informationen aus einem Kontext (zum Beispiel der Verbindung des Browsers zu der Seite einer Bank) von einem Skript aus einem anderen Kontext zugreifbar oder manipulierbar sein darf. Um dies zu erreichen, wird beim Zugriff eines Skriptes auf ein Objekt einer Webseite die Herkunft (origin) von beiden verglichen.
 
+Beispiel:     
+Ein in der Datei http://www.example.com/dir/page.html eingebettetes Skript versucht, auf ein Element in den folgenden Seiten zuzugreifen:      
+
+Angesprochene URL                        | Ergebnis | Grund
+---------------------------------------- | -------- | ----------------------------------------------
+http://www.example.com/dir/page2.htm     | Ja       | selbes Protokoll und Host
+http://www.example.com:81/dir/other.html | Nein     | selbes Protokoll und Host, aber anderer Port
+https://www.example.com/dir/other.html   | Nein     | anderes Protokoll
+http://en.example.com/dir/other.html     | Nein     | anderer Host
+
 Die Grenzen der Same-Origin-Policy sind in zweierlei Hinsicht von Bedeutung:
 
 * Die SOP ist als Sicherheitsmechanismus nicht ausreichend wirksam. Viele aktuelle Angriffsmethoden wie DNS Rebinding und Cross-Site Request Forgery zielen erfolgreich darauf ab, die SOP zu umgehen.
 * Andererseits sind die von der SOP gezogenen Grenzen in vielen Fällen unerwünscht. Insbesondere mit dem Aufkommen von Ajax-basierenden Anwendungen und Mashups gibt es legitimerweise den Wunsch, die Grenzen der SOP zu überschreiten. Eine Möglichkeit bietet das Cross-Origin Resource Sharing, dies wird allerdings nicht von allen Webbrowsern unterstützt.
 
 ##CORS or Cross Origin Resource Sharing         
- ein Mechanismus,der benutzt wird um auf die Webseiten zuzugreifen, die nicht dem Origin (Port/Domain) entsprechen. 
+ ein Mechanismus,der benutzt wird um auf die Webseiten zuzugreifen, die nicht der Origin (Port/Domain) entsprechen. 
  
- Um das zu tun, muss ein request ein Origin-HTTP-Header enthalten. Der Server muss dann den Zugriff durch entsprechende HTTP-Header erlauben.
+ Um das zu tun, muss der request einen Origin-HTTP-Header enthalten. Der Server muss dann den Zugriff durch entsprechende HTTP-Header erlauben.
  Beispiel: ein Script will von der Seite http://api.bob.com will auf einen Server der abweichenden Domain http://api.alice.com zugreifen. Um ein request zu schicken kann folgenden JavaScript code benutzt werden:
 
 ```javascript
