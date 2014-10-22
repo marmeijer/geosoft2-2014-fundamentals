@@ -1,15 +1,28 @@
-Server-Side JS und JS Security
+#Server-Side JS und JS Security
 ==============================
 **Inhaltsverzeichnis:**                       
 
-1. Clientseitige und serverseitige Skriptsprachen              
-2. Vorteile von Server-Side JS im Vergleich zu anderen serverseitigen Sprachen              
-3. Node.js             
-4. JS Sicherheit              
-5. Same-origin-policy, CORS                
+1. [Einführung](https://github.com/MilanMilanMilan/geosoft2-2014-fundamentals/edit/master/07-js-server-and-security/handout.md#einführung)
+2. [Clientseitige und serverseitige Skriptsprachen](https://github.com/MilanMilanMilan/geosoft2-2014-fundamentals/edit/master/07-js-server-and-security/handout.md#clientseitige-und-serverseitige-skriptsprachen)              
+3. [Vorteile von ServerSide JS im Vergleich zu anderen serverseitigen Sprachen](https://github.com/MilanMilanMilan/geosoft2-2014-fundamentals/edit/master/07-js-server-and-security/handout.md#vorteile-von-serverside-js-im-vergleich-zu-anderen-serverseitigen-sprachen)            
+4. [NodeJS](https://github.com/MilanMilanMilan/geosoft2-2014-fundamentals/edit/master/07-js-server-and-security/handout.md#nodejs)             
+5. [JS Sicherheit](https://github.com/MilanMilanMilan/geosoft2-2014-fundamentals/edit/master/07-js-server-and-security/handout.md#js-sicherheit)             
+6. [Same-origin-policy](https://github.com/MilanMilanMilan/geosoft2-2014-fundamentals/edit/master/07-js-server-and-security/handout.md#same-origin-policy)
+7. [CORS or Cross Origin Resource Sharing ](https://github.com/MilanMilanMilan/geosoft2-2014-fundamentals/edit/master/07-js-server-and-security/handout.md#cors-or-cross-origin-resource-sharing)             
 
 --------------------------
-**Clientseitige und serverseitige Skriptsprachen**            
+##Einführung
+...
+
+
+
+
+
+
+
+
+
+##Clientseitige und serverseitige Skriptsprachen         
 
 Client-Side:
 
@@ -37,12 +50,14 @@ Server-Side:
 • Langsamer  
 
 
-**Vorteile von  Server-Side JS**  
+##Vorteile von ServerSide JS im Vergleich zu anderen serverseitigen Sprachen 
 ●	ermöglicht das Verwenden von gemeinsamen Code auf Server und Client   
 ●	schnellere und performantere Ausführung  
-●	weniger Arbeitsspeicher-Nutzung   
+●	(weniger Arbeitsspeicher-Nutzung)  
 
-**Node.js**  
+Laufzeitvergleich verschiedener Skriptsprachen: http://benchmarksgame.alioth.debian.org/
+
+##NodeJS  
 ●	Basiert auf Javascript-Umgebung „V8“ von Google  
 ●	serverseitige Plattform zum Betrieb von Netzwerkanwendungen   
 ●	ressourcenschonend, da nicht Thread-, sondern Event-Basiert  
@@ -52,7 +67,15 @@ Server-Side:
  
 Bei Node.JS gibt es nur einen Thread, der Anfragen annimmt und sie direkt weitergibt. Er ist also im Gegensatz zu den mehreren Threads bei „normalen“ Webservern nie blockiert oder muss warten. Grund dafür ist auch das asynchrone Input/Output, welches zeitlich versetzt stattfindet, um Prozesse nicht zu blockieren. 
 
-**JS-Sicherheit**  
+Node.js Tutorials:            
+1. [nodecode.de](http://nodecode.de)      
+2. [Video-Tutorial](http://nodetuts.com)        
+3. [blog.rapsli.ch](http://blog.rapsli.ch/posts/2013/2013-04-22-anfangerwissen-fur-node-js.html/)         
+4. [nodeguide.com](http://nodeguide.com/beginner.html)
+
+[Node.js Module mit Geobezug](https://nodejsmodules.org/tags/geos)
+
+##JS Sicherheit
 ●	JS kann Sicherheitslücken hervorrufen  
 ●	 durch zu freizügige oder nicht funktionierende Sicherheitsmechanismen  
 ●	 Sandbox-Prinzip als Lösung:  strenger Rahmen für Script (nur Zugriff auf Browserfenster und Dokument, nicht Dateisystem)  
@@ -62,7 +85,7 @@ Bei Node.JS gibt es nur einen Thread, der Anfragen annimmt und sie direkt weiter
 
 ●	 Auch möglich: JavaScript deaktivieren   
 
-**Same-Origin Policy**  
+##Same Origin Policy
 ein Sicherheitskonzept, das clientseitigen Skriptsprachen aber auch Cascading Style Sheets untersagt, auf Objekte zuzugreifen, die von einer anderen Webseite stammen oder deren Speicherort nicht der Origin entspricht.
 
 Den Hintergrund für die große Bedeutung der SOP bildet im Wesentlichen die Kombination aus zwei Tatsachen:
@@ -77,7 +100,7 @@ Die Grenzen der Same-Origin-Policy sind in zweierlei Hinsicht von Bedeutung:
 * Die SOP ist als Sicherheitsmechanismus nicht ausreichend wirksam. Viele aktuelle Angriffsmethoden wie DNS Rebinding und Cross-Site Request Forgery zielen erfolgreich darauf ab, die SOP zu umgehen.
 * Andererseits sind die von der SOP gezogenen Grenzen in vielen Fällen unerwünscht. Insbesondere mit dem Aufkommen von Ajax-basierenden Anwendungen und Mashups gibt es legitimerweise den Wunsch, die Grenzen der SOP zu überschreiten. Eine Möglichkeit bietet das Cross-Origin Resource Sharing, dies wird allerdings nicht von allen Webbrowsern unterstützt.
 
-**CORS: Cross-Origin Resource Sharing**              
+##CORS or Cross Origin Resource Sharing         
  ein Mechanismus,der benutzt wird um auf die Webseiten zuzugreifen, die nicht dem Origin (Port/Domain) entsprechen. 
  
  Um das zu tun, muss ein request ein Origin-HTTP-Header enthalten. Der Server muss dann den Zugriff durch entsprechende HTTP-Header erlauben.
@@ -114,8 +137,9 @@ Mehr zum Thema CORS:
 2. http://www.html5rocks.com/en/tutorials/cors/?redirect_from_locale=de#toc-adding-cors-support-to-the-server               
 
 
-**Quellen:**  
-1.	www.wikipedia.org    
+###Quellen:
+
+1.	www.wikipedia.org  
 2.	http://nodecode.de/php-oder-nodejs  
 3.	http://stackoverflow.com/  
 4.	http://www.hongkiat.com/blog/node-js-server-side-javascript/  
