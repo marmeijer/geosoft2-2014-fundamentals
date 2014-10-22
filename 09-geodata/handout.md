@@ -126,6 +126,9 @@ Allgemeines:
 - SWE Common 1.0 ist definiert im OGC SensorML1.0 Standard 
 - Viele verschiedene Standards : OGC Sensor Model Language (SensorML), Encoding Standard, Sensor Observation Service (SOS) Interface Standard, Sensor Planning Service (SPS) Interface Standard
 
+**_Alleinstellungsmerkmal:_**
+OGC Standard um Daten von Sensoren untereinander auszutauschen mit vielen anderen Möglichkeiten
+
 Quellen und hilfreiche Links:
 
 [http://www.opengeospatial.org/standards/swecommon](http://www.opengeospatial.org/standards/swecommon) (letzter Aufruf am 01.10.2014)
@@ -356,7 +359,9 @@ GeoRSS-GML
         </gml:Point>
       <GeoRSS:where>
 ```
-
+**_Alleinstellungsmerkmal:_**
+-> Große Mengen an Inhalt können per RSS Feed, in einem einheitlichen Format, zugänglich gemacht werden
+-> GeoRSS dient dazu Geo-Inhalte über RSS Feeds zu teilen
  
 
 Quellen und hilfreiche Links:_de.wikipedia.org/wiki/RSS (letzter Aufruf am 01.10.2014)_
@@ -403,6 +408,8 @@ Beispiel Atom
   </entry>
 </feed>
 ```
+**_Alleinstellungsmerkmal:_**
+-> Atom bietet ähnliche Funktionen wie RSS, es behebt jedoch Darstellungsprobleme und ist modularer als RSS
 
 Quellen und hilfreiche Links:
 
@@ -492,6 +499,9 @@ Verwendung:
 - GEOS eine API für C++
 - GEOS in PostGIS kann WellKnownText direkt in der Datenbank von PostgreSQL verwendet werden
 
+**_Alleinstellungsmerkmal:_**
+-> Definiert grundlegende Geometrien, die in einer "GeometryCollection" gespeichert sind
+-> Haben wir bereits in Geosoftware 2 benutzt.
 
 
 Quellen und hilfreiche Links:
@@ -504,9 +514,13 @@ Quellen und hilfreiche Links:
 
 - OGC® Encoding Standard definiert GeoPackages
 - Ein Offenes Format für Informationen mit Raumbezug
-- Alternative zu Shapefile und dem SDTS (Spatial Data Transfer Standard)
 - SQLite-basiertes Format dass Vector features und Bild Kacheln effizient speichert und überträgt
 - Direkter Zugriff, das bedeutet ohne ein zwischen Format wie z.B mit einer API
+
+
+**_Alleinstellungsmerkmal:_**
+-> Alternative zu Shapefiles, wurde entwickelt sodass man es auch noch erweitern kann.
+-> Ist für Kommerzielle und open-source Software gedacht
 
 Quellen und hilfreiche Links:
 
@@ -522,8 +536,12 @@ Quellen und hilfreiche Links:
 - binäres Dateiformat und damit durch Angabe der Byte-Reihenfolge im Header maschinenunabhängig ist
 - offener Standard
 - basiert auf dem Common Data Format (CDF), ist jedoch nicht mehr kompatibel und deutlich weiter entwickelt
-- Nutzungsschwerpunkte sind Klimatologie und Geoinformationssystemen.
 - Biblothek ist in C geschrieben mit Schnittstellen zu C++,R, Python, Ruby, Matlab und weitere. Außerdem gibt es noch eine Implementierung in Java
+
+**_Alleinstellungsmerkmal:_**
+ -> wird hauptsächlich in der Klimatologie und in Geoinformationssystemen verwendet
+ -> schneller Zugriff auf Daten
+
 
 Quellen und hilfreiche Links:
 [http://de.wikipedia.org/wiki/NetCDF](http://de.wikipedia.org/wiki/NetCDF) (letzter Aufruf am 01.10.2014)
