@@ -121,8 +121,6 @@ Quellen und hilfreiche Links:
 
 ###SWE Common
 
-Allgemeines:
-
 - Definiert vom Open Geospatial Consortium (OGC)
 - Zum Austausch von Sensoren Daten zwischen Knoten des OGC® Sensor Web Enablement (SWE)
 - Definiert niedriege Datenstrukturen wodurch Sensoren-Daten in einer selbst definierenden Art und mit einer semantischen Beziehung verschlüsselt und übertragen werden können
@@ -378,8 +376,6 @@ Tutorial: [http://www.w3schools.com/rss/](http://www.w3schools.com/rss/) (letzte
 
 
 ###Atom
-
-Allgemeines:
 
 - Basiert auf XML
 - Atom Syndication Format(ASF) ermöglicht den plattformunabhängigen Austausch von Informationen
