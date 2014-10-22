@@ -20,8 +20,8 @@ von Simon Schulte und Tobias Tasse
 - tagged data
 - GML
 - KML
-- RSS+geo
-- Atom+geo
+- RSS
+- Atom
 
 **...Daten zu Geometrien enthalten,**
 
@@ -35,10 +35,10 @@ von Simon Schulte und Tobias Tasse
 - GeoTIFF
 - JPEG/GeoJPEG
 
-… **und JSON basiert sind.**
+… **unter Sonstiges einzuordnen sind.**
 
 - GeoJSON
-
+- LinkedGeoData
 ------------------------------
 ------------------------------
 
@@ -589,7 +589,7 @@ Quellen und hilfreiche Links:
 
 
 
-##und JSON basiert sind:
+##Sonstiges:
 
 ###GeoJSON
 
@@ -729,10 +729,6 @@ Quellen und hilfreiche Links:
 [http://de.wikipedia.org/wiki/JavaScript\_Object\_Notation](http://de.wikipedia.org/wiki/JavaScript_Object_Notation) (letzter Aufruf am 01.10.2014)
 
 [http://de.wikipedia.org/wiki/Auszeichnungssprache](http://de.wikipedia.org/wiki/Auszeichnungssprache) (letzter Aufruf am 01.10.2014)
-
-
-TODO
-___________________________________
 
 ###LinkedData
 
