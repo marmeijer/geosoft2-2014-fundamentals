@@ -96,9 +96,8 @@ Quellen und hilfreiche Links:
     - Beispiel: Feature Type „Fluss", Instanz eines Features ist ein konkreter Fluss
 
 - Technischer Hintergrund:
-
-- HTTP-Anfrage vom Client an WFS gesendet
-- es gibt sechs Operationen, die von einem Benutzer angefragt werden können;
+	- HTTP-Anfrage vom Client an WFS gesendet
+	- es gibt sechs Operationen, die von einem Benutzer angefragt werden können;
   - **_für uns interessant:_**
     - GetCapabilities – liefert XML-Dokument mit allgemeinen Angaben zum Anbieter des WFS, abgefragte Feature Types und mögliche Operationen
 
