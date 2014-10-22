@@ -64,6 +64,7 @@ von Simon Schulte und Tobias Tasse
 
 - Geodatenformate:
   - zur Kommunikation → XML
+  - zur Darstellung → JPG, PNG, etc.
   
 
 **_Alleinstellungsmerkmal:_**
