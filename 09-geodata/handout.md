@@ -53,14 +53,14 @@ von Simon Schulte und Tobias Tasse
 - definiert vom Open Geospatial Consortium (OGC)
 - Spezialfall eines Web Services
 - Exkurs Web Service:
-- ist eine Softwareanwendung, die über ein Netzwerk für die direkte Maschine-zu-Maschine-Interaktion bereitgestellt wird
-- jeder Webservice besitzt einen Uniform Resource Identifier (URI), über den er eindeutig identifizierbar ist
-- besitzt Schnittstellenbeschreibung in maschinenlesbarem Format (XML-Artefakt, meist WSDL), wodurch definiert wird wie mit Webservice zu interagieren ist
-- Kommunikation läuft meist über Protokolle aus dem Internetkontext wie HTTP und ist XML-basiert
+	- ist eine Softwareanwendung, die über ein Netzwerk für die direkte Maschine-zu-Maschine-Interaktion bereitgestellt wird
+	- jeder Webservice besitzt einen Uniform Resource Identifier (URI), über den er eindeutig identifizierbar ist
+	- besitzt Schnittstellenbeschreibung in maschinenlesbarem Format (XML-Artefakt, meist WSDL), wodurch definiert wird wie mit Webservice zu interagieren ist
+	- Kommunikation läuft meist über Protokolle aus dem Internetkontext wie HTTP und ist XML-basiert
 - Visualisierung von Geodaten in Browser
-- HTTP-Schnittstelle zum Abrufen von Auszügen aus Landkarten, die von einer oder mehreren geo-räumlichen Datenbanken bereitgestellt werden
-- die WMS Anfrage definiert den gewünschten Bereich und die geographischen Layer die verarbeitet werden sollen
-- die Anfrage liefert Kartenmaterial, dass, meist wiedergegeben in Dateiformaten wie JPG, PNG, etc., in einer Browser-Anwendung dargestellt wird
+	- HTTP-Schnittstelle zum Abrufen von Auszügen aus Landkarten, die von einer oder mehreren geo-räumlichen Datenbanken bereitgestellt werden
+	- die WMS Anfrage definiert den gewünschten Bereich und die geographischen Layer die verarbeitet werden sollen
+	- die Anfrage liefert Kartenmaterial, dass, meist wiedergegeben in Dateiformaten wie JPG, PNG, etc., in einer Browser-Anwendung dargestellt wird
 
 - Geodatenformate:
   - zur Kommunikation → XML
