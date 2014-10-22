@@ -98,10 +98,10 @@ Quellen und hilfreiche Links:
 - Technischer Hintergrund:
 	- HTTP-Anfrage vom Client an WFS gesendet
 	- es gibt sechs Operationen, die von einem Benutzer angefragt werden können;
-  - **_für uns interessant:_**
-    - GetCapabilities – liefert XML-Dokument mit allgemeinen Angaben zum Anbieter des WFS, abgefragte Feature Types und mögliche Operationen
+  	- **_für uns interessant:_**
+		 - GetCapabilities – liefert XML-Dokument mit allgemeinen Angaben zum Anbieter des WFS, abgefragte Feature Types und mögliche Operationen
 
-- GetGmlObject – liefert einzelne Elemente aus der GML-Datei per Xlink
+		- GetGmlObject – liefert einzelne Elemente aus der GML-Datei per Xlink
 
 - Geodatenformate:
   - GML
