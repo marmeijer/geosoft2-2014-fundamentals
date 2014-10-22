@@ -33,7 +33,6 @@ von Simon Schulte und Tobias Tasse
 **...Bilddaten enthalten,**
 
 - GeoTIFF
-- JPEG/GeoJPEG
 
 … **unter Sonstiges einzuordnen sind.**
 
@@ -492,7 +491,7 @@ Sämtliche Geometrien leiten sich von der abstrakten Klasse Geometry ab.
 
 Verwendung:
 
-- weite Verbreitung in der Geoinformatik, Open Source als auch in proprietären Programmen
+- weite Verbreitung in der Geoinformatik,in Open Source und in proprietären Programmen
 - Zwei sehr bekannte LGPL(Lesser General Public License) lizenzierte Programmbiblotheken sind die JTS Topology Suite und GEOS
 - JTS stellt eine API für JAVA
 - GEOS eine API für C++
