@@ -7,7 +7,7 @@ verfasst von Boris Stöcker und Matthias Mohr
 JavaScript (JS) Frameworks gibt es in großer Zahl und sie haben ganz unterschiedliche Anwendungsgebiete.  
 Vor- und Nachteile bei der Verwendung von JS-Frameworks sind divers und hängen von den verwendeten Frameworks ab. Folgend sind Gründe genannt, die zutreffen können, aber nicht immer zutreffen, da jedes Framework anders ist. Es handelt sich jedoch um Beispiele, die häufig anzutreffen sind. 
 
-Mögliche Vorteile: 
+Mögliche Vorteile:
 
 *   Häufig benutzte Funktionalität ist vorhanden und getestet
 *   Cross-Browser-Kompatibilität
@@ -25,7 +25,7 @@ Mögliche Nachteile:
 Eine große Übersicht über JavaScript-Frameworks kann bei Wikipedia gefunden werden: 
 
 *   [Comparison of JavaScript frameworks](http://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks)
-*   [<span>List of JavaScript libraries](http://en.wikipedia.org/wiki/List_of_JavaScript_libraries)
+*   [List of JavaScript libraries](http://en.wikipedia.org/wiki/List_of_JavaScript_libraries)
 
 ## Hinweise zu Ladezeiten und CDN
 
@@ -33,11 +33,15 @@ JavaScript-Frameworks tendieren dazu sehr umfangreich zu sein und damit eine hoh
 
 ### 1. Minification
 
-Im ersten Schritt wird die JavaScript-Datei im ursprünglichen Zustand um alle Leerzeichen, Kommentare und sonstige Überflüssigen Zeichen reduziert. Häufig werden auch die Namen von Variablen und internen Funktionen gekürzt. Im Falle von AngularJS ist die Dateigröße nach diesem Verfahren bereits von 766kb auf 105kb verkleinert. Die verkleinerte Datei nennt man häufig “minified” und der Dateiname endet auf “.min”. 
+Im ersten Schritt wird die JavaScript-Datei im ursprünglichen Zustand um alle Leerzeichen, Kommentare und sonstige Überflüssigen Zeichen reduziert. Häufig werden auch die Namen von Variablen und internen Funktionen gekürzt. Im Falle von AngularJS ist die Dateigröße nach diesem Verfahren bereits von 766kb auf 105kb verkleinert. Die verkleinerte Datei nennt man häufig “minified” und der Dateiname endet auf “.min”. Mögliche Tools zur Minification sind z.B. der [YUI Compressor](http://yui.github.io/yuicompressor/) (offline) oder [jscompress.com](http://jscompress.com/) (online).
 
 ### 2. Komprimierung
 
-Zusätzlich kann die Übertragung von Webseiten zwischen Server und Client (Browser), je nach verwendeter Client- und Serversoftware noch komprimiert werden. Häufig wird die GZip-Komprimierung verwendet. Die Kompressionsmethode ist jedoch vom Server abhängig. Im Falle von AngularJS wird die Datei dadurch auf bis zu 40kb verkleinert. 
+Zusätzlich kann die Übertragung von Webseiten zwischen Server und Client (Browser), je nach verwendeter Client- und Serversoftware noch komprimiert werden. Häufig wird die GZip-Komprimierung verwendet. Die Kompressionsmethode ist jedoch vom Server abhängig, ggf. kann aber auch vorkomprimiert werden. Im Falle von AngularJS wird die Datei dadurch auf bis zu 40kb verkleinert. 
+
+Nähere Erklärungen:
+* [Serverseitige Komprimierung aktivieren](http://betterexplained.com/articles/how-to-optimize-your-site-with-gzip-compression/)
+* [Webseiten-Inhalte vorkomprimieren](http://playground.ebiene.de/wordpress-css-vorkomprimiert/)
 
 ### 3. Nutzung eines CDN
 
@@ -50,9 +54,9 @@ Universal-Frameworks nennen wir Frameworks, die die allgemeine Arbeit mit JavaSc
 
 ### [jQuery](http://jquery.com/) (Version 2.1.1 vom 01.05.2014)
 
-Lizenz: MIT- und GPL-Lizenz 
-Dateigröße (minified): 252kb (84kb) 
-Abhängigkeit: Keine 
+Lizenz: MIT- und GPL-Lizenz  
+Dateigröße (minified): 252kb (84kb)  
+Abhängigkeit: Keine
 
 #### Hinweise
 
@@ -63,9 +67,9 @@ Abhängigkeit: Keine
 
 ### [mooTools](http://mootools.net/) (Version 1.5.1 vom 29.08.2014)
 
-Lizenz: MIT-Lizenz 
-Dateigröße (minified): 152kb (89kb) 
-Abhängigkeit: keine 
+Lizenz: MIT-Lizenz  
+Dateigröße (minified): 152kb (89kb)  
+Abhängigkeit: keine  
 
 #### Hinweise
 
@@ -85,9 +89,9 @@ Abhängigkeit: keine
 
 ### [D3.js](http://d3js.org/) (Version 3.4.11 vom 2014-07-18)
 
-Lizenz: BSD-Lizenz 
-Dateigröße (minified): 319kb (144kb) 
-Abhängigkeit: Keine 
+Lizenz: BSD-Lizenz  
+Dateigröße (minified): 319kb (144kb)  
+Abhängigkeit: Keine  
 
 #### Hinweise
 
@@ -110,9 +114,9 @@ Eine interessante Hilfe zur MVC-Framework-Wahl ist [TodoMVC](http://todomvc.com/
 
 ### [AngularJS](https://angularjs.org/) (Version 1.2.26 vom 01.10.2014)
 
-Lizenz: MIT-Lizenz 
-Dateigröße (minified): 766kb (105kb) 
-Abhängigkeit: jQuery Light 
+Lizenz: MIT-Lizenz  
+Dateigröße (minified): 766kb (105kb)  
+Abhängigkeit: jQuery Light  
 
 #### Hinweise
 
@@ -122,9 +126,9 @@ Abhängigkeit: jQuery Light
 
 ### [Backbone.js](http://backbonejs.org/) (Version 1.1.2 vom 20.02.2014)
 
-Lizenz: MIT-Lizenz 
-Dateigröße (minified): 60kb (20kb) 
-Abhängigkeit: Underscore.js, jQuery (empfohlen) 
+Lizenz: MIT-Lizenz  
+Dateigröße (minified): 60kb (20kb)  
+Abhängigkeit: Underscore.js, jQuery (empfohlen)
 
 #### Hinweise
 
@@ -141,11 +145,11 @@ Abhängigkeit: Underscore.js, jQuery (empfohlen)
 
 ### [JSONIX](https://github.com/highsource/jsonix) (Version 2.0.0 vom 24.02.2014)
 
-Lizenz: BSD-artige Lizenz 
-Dateigröße (minified): 163kb (104kb) 
+Lizenz: BSD-artige Lizenz  
+Dateigröße (minified): 163kb (104kb)  
 Abhängigkeit: keine 
 
-#### Hinweise
+#### Hinweise / Funktionen
 
 *   Umwandlung XML =&gt; JSON (“Unmarshalling”)
 *   Umwandlung JSON =&gt; XML (“Marshalling”)
@@ -157,12 +161,9 @@ Abhängigkeit: keine
 Templating erlaubt die Trennung von Programmlogik und Oberfläche. Zudem können häufig genutzte Oberflächenelemente wiederverwendet werden. 
 
 ### [Mustache](http://mustache.github.io/) (Version 0.8.2 vom 17.03.2014)
-
-Lizenz: MIT-Lizenz 
-Dateigröße (minified): 17kb (-) 
-Abhängigkeit: Keine 
-
-#### Hinweise
+Lizenz: MIT-Lizenz  
+Dateigröße (minified): 17kb (-)  
+Abhängigkeit: Keine
 
 ### Alternativen
 
@@ -175,13 +176,11 @@ Basierend auf bereits vorgestellten Frameworks gibt es Frameworks, die sich mit 
 
 ### [jQuery UI](http://jqueryui.com/) (Version 1.11.1 vom 01.05.2014)
 
-Lizenz: MIT- und GPL-Lizenz 
-Dateigröße (minified): 454kb (233kb) 
-Abhängigkeit: jQuery 
+Lizenz: MIT- und GPL-Lizenz  
+Dateigröße (minified): 454kb (233kb)  
+Abhängigkeit: jQuery  
 
-#### Hinweise
-
-Unterstützt:
+#### Funktionen
 
 *   Interaktionen (Drag &amp; Drop, Skalierung, Sortierung, ...)
 *   Widgets (Autovervollständigung, Dialog, Menü, Fortschrittsbalken, Tabs, ...)
@@ -189,7 +188,20 @@ Unterstützt:
 
 ### Alternativen
 
-*   [Dojo >Widgets](http://dojotoolkit.org/)
+*   [Dojo Widgets](http://dojotoolkit.org/)
 *   [Ext JS](http://www.sencha.com/products/extjs/)
 *   [script.aculo.us](https://script.aculo.us/)
 *   [YUI Library](http://yuilibrary.com/)
+
+## Empfehlungen
+jQuery ist das populärste JS-Framework und beseitzt daher große Community, die Erweiterungen, Tutorials und Hilfe bietet. Zudem ist jQuery häufig Basis anderer Frameworks oder Software, z.B. WordPress oder die vorgestellten MVC-Frameworks. Daher empfehlen wir die Verwendung von jQuery. Bei den MVC-Frameworks hängt die Wahl davon ab, was genau Anforderung ist. Eine gute Unterstützung bei der Wahl kann ToDoMVC bieten. Sollte Backbone.js gewählt werden, bietet es sich an Underscore.js als Template-Engine zu nutzen, ansonsten ist Mustache in vielen Sprachen weit verbreitet. Zur Oberflächengesteltung bietet sich, neben den aus anderen Vorstellungen bekannten Frameworks, wie Bootstrap, bietet es sich bei Nutzung von jQuery an, die Erweiterung jQuery UI zu nutzen, da hier eine gewisse Synergie entsteht und somit auch die Einarbeitung leichter fallen sollte.
+
+Ansonsten haben wir einige weitere populäre Alternativen genannt, die sicherlich auch prinzipiell keine verkehrte Wahl darstellen. Die Alternativen sind jedoch möglicherweise nicht so populär, was die Verfügbarkeit von Hilfestellungen und Erweiterungen einschränken kann.
+
+Tipp: Zu JavaScript und einigen der hier vorgestellten Frameworks gibt es bei [video2brain](https://www.video2brain.com) gute erklärende Videos zu verschiedenen Themen. Diese sind eigentlich kostenpflichtig, jedoch können wir das Angebot mit unserer Uni-Kennung (via [edu-Login](https://www.video2brain.com/de/edu-login)) kostenlos nutzen.
+
+## Weitere Hilfsmittel zur JavaScript-Entwicklung
+* [Bower](http://bower.io/): Paket-Manager für JavaScrpt, inkl. Verwaltung der Abhängigkeiten (ähnlich wie Maven [Repository] in Java)
+* [Grunt](http://gruntjs.com/): Automatisierung von sich wiederholenden Aufgaben wie Minification, Testen etc.
+* [Yeoman](http://yeoman.io/): Hilft bei der Einrichtung eines neuen Projekts, auch im Zusammenspiel mit z.B. Grunt und Bower.
+* [Einführung in JS Build mit Node, Bower, Yeoman, Grunt und Co.](http://juristr.com/blog/2014/08/node-grunt-yeoman-bower/)
