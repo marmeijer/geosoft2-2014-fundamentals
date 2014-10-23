@@ -58,10 +58,12 @@ JavaScript, ActionScript, Dart, Typescript
 [Hier kann man Laufzeit verschiedener Skriptsprachen vergleichen](http://benchmarksgame.alioth.debian.org/)
 
 ##NodeJS  
-●	Basiert auf Javascript-Umgebung „V8“ von Google  
+●	Basiert auf Javascript-Umgebung „[V8](https://developers.google.com/v8/intro)“ von Google  
 ●	serverseitige Plattform zum Betrieb von Netzwerkanwendungen   
 ●	ressourcenschonend, da nicht Thread-, sondern Event-Basiert  
-●	asynchrones I/O  
+●	[asynchrones I/O](http://t3n.de/magazin/serverseitige-javascript-entwicklung-nodejs-einsatz-231152/3/) (wird ausgelagert und blockiert nicht)  
+●	weitere Vorteile: einheitliche Entwicklungssprache, plattformunabhängige Software, durch Module erweiterbar,  
+für Cloud Dienste geeignet
 
 ![Node.JS](http://dev-ops.net/wp-content/uploads/2014/07/threading_node.png)  
  
@@ -78,11 +80,13 @@ Bei Node.JS gibt es nur einen Thread, der Anfragen annimmt und sie direkt weiter
 ##JS Sicherheit
 ●	JS kann Sicherheitslücken hervorrufen  
 ●	 durch zu freizügige oder nicht funktionierende Sicherheitsmechanismen  
-●	 Sandbox-Prinzip als Lösung:  strenger Rahmen für Script (nur Zugriff auf Browserfenster und Dokument, nicht Dateisystem)  
+●	 Sandbox-Prinzip als Lösung:  strenger Rahmen für Script (nur Zugriff auf Browserfenster und Dokument, nicht Dateisystem)
   - Website/ -anwendung wird in Browser isoliert ausgeführt, um Datenaustausch zu unterbinden   
   - kann keine Daten lesen oder schreiben  
-  - schützt vor z.B. Cross-Site-Scripting (Informationen aus nicht vertrauenswürdigen Kontext werden in anderen eingefügt, um als vertrauenswürdig eingestuft zu werden (Ziel: sensible Benutzerdaten in parallel geöffnetem Browserfenster auslesen/manipulieren))  
+  - schützt vor z.B. [Cross-Site-Scripting](http://de.wikipedia.org/wiki/Cross-Site-Scripting) (Informationen aus nicht vertrauenswürdigen Kontext werden in anderen eingefügt, um als vertrauenswürdig eingestuft zu werden (Ziel: sensible Benutzerdaten in parallel geöffnetem Browserfenster auslesen/manipulieren))  
 
+●  Es besteht die Gefahr, dass beim Login mit (clientseitigem) JavaScript Daten mithilfe von z.B. Cross-Site-Scripting ausgelesen oder manipuliert werden. Als Schutz können hierbei unerwünschte bzw. erwünschte Eingaben definiert und auf Listen gesetzt werden, welche serverseitig geprüft werden, um nur die gwollten zuzulassen  
+●  Passwörter können durch beispielsweise eine [MD5-Hashfunktion](http://aktuell.de.selfhtml.org/artikel/javascript/md5/)  verschlüsselt werden, um nicht als Klartext übertragen zu werden  
 ●	 Auch möglich: JavaScript deaktivieren   
 
 ##Same Origin Policy
