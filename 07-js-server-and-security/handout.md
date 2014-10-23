@@ -12,11 +12,11 @@
 
 --------------------------
 ##Einführung
-...
-
-
-
-
+JavaScript ist nicht mehr wegzudenken in Zeiten von dynamischen Webseiten.   
+Auch durch die neue Verwendung von serverseitigem JavaScript (z.B. mit Node.JS) werden neue Möglichkeiten eröffnet.
+Trotzdem steht die Sicherheit dieser Scriptsprache immer wieder in der Kritik. Um vor unerwünschtem Zugriff zu schützen, wurden Konzepte wie die Same Origin Policy oder das Sandbox-Prinzip entwickelt. 
+Das Handout soll einen Überblick über (serverseitiges) JavaScript und dessen Sicherheit geben und durch
+weiterführende Links detailiert über das Thema informieren. 
 
 
 
