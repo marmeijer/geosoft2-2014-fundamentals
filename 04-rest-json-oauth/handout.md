@@ -214,7 +214,7 @@ Ein (eigenes) JSON Schema beschreibt ein (eigenes) Datenformat. <br>
 
 Der grundlegende Aufbau ist durch ```JSON Schema Core``` definiert. (Siehe [hier](http://json-schema.org/latest/json-schema-core.html "hier")) <br>
 
-```JSON Schema Validation``` definiert zudem die gültigen Schlüsselwörter von JSON Schema. (Siehe [hier](http://json-schema.org/latest/json-schema-validation.html "hier")): <br> 
+```JSON Schema Validation``` definiert zudem die gültigen Schlüsselwörter eines JSON Schema. (Siehe [hier](http://json-schema.org/latest/json-schema-validation.html "hier")): <br> 
 
 Beispiel:
 ```json
@@ -245,11 +245,12 @@ Beispiel:
 - In diesem Beispiel befinden sich sechs ```Keywords```: $schema, title, description (drei mal), type (vier mal), properties und required.
 - required beschreibt, welche Eigenschaften eines JSON-Objektes des JSON Schema nicht null/leer sein dürfen
 - $schema legt in diesem Falle fest, dass das Schema gemäß der draft v4 Spezifikation entworfen ist 
+- Weitere Erklärungen zu dem Beispiel findet man [hier](http://json-schema.org/example1.html).
 
-### Geo JSON [[Q8]](#json-quellen)###
+### GeoJSON [[Q8]](#json-quellen)###
 
-Geo JSON ist ein ```GIS-Datenformat``` (in JSON) und ein offener Standard. <br>
-Im Grunde ist es ein JSON Schema, enworfen als offenes Format. <br>
+GeoJSON ist ein ```GIS-Datenformat``` (in JSON) und ein offener Standard. <br>
+Im Grunde ist es ein JSON Schema, entworfen als offenes Format. <br>
 
 Unterstützt werden folgende geometrischen Typen:
 
@@ -304,9 +305,9 @@ Hier mal ein Beispiel für eine sog. FeatureCollection:
 
 Die komplette Spezifikation mit Erklärungen u.a. zu den geometrischen Typen findet man bei geojson.org [hier](http://geojson.org/geojson-spec.html). <br>
 
-Wichtig zu erwähnen ist aber, dass das CRS eines Geo JSON standardmäßig WGS84  (wie im Beispiel auch zu sehen) verwendet.
+Wichtig zu erwähnen ist aber, dass das CRS eines GeoJSON standardmäßig WGS84  (wie im Beispiel auch zu sehen) verwendet.
 
-Ein nettes Tool zum ausprobieren eines Geo JSON findet man unter [geojson.io](http://geojson.io/#map=7/0.511/102.497). Fügt man dort das obige Beispiel ein, sieht zum einen den Point, den LineString und das Polygon. Außerdem kann man selber Geometrien erstellen und bekommt dazu das passende Geo JSON ausgegeben.
+Ein nettes Tool zum ausprobieren eines GeoJSON findet man unter [geojson.io](http://geojson.io/#map=7/0.511/102.497). Fügt man dort das obige Beispiel ein, sieht zum einen den Point, den LineString und das Polygon. Außerdem kann man selber Geometrien erstellen und bekommt dazu das passende Geo JSON ausgegeben.
 
             
 ## OAuth ##
