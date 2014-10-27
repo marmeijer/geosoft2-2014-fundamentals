@@ -16,7 +16,7 @@ und einer Datenbank.
 **Datenbankmanagementsystem** 
 - eingesetzte Software, die für das Datenbanksystem installiert und konfiguriert wird
 - legt das Datenbankmodell fest
-- entscheidend für Finktionalität und Geschwindigkeit des Systems 
+- entscheidend für Funktionalität und Geschwindigkeit des Systems 
 - hochkomplexe Softwaresysteme
 
 **Datenbank** 
@@ -28,15 +28,15 @@ Relationale Datenbanken
 ---
 **Allgemeines:**
 
-Die relationale Datenbank ist die am weitesten verbreitete Form der Datenbanksysteme. 8 der 10 meistgenutzten Datenbanken basiert darauf. Dementsprechend gibt es eine intensive Weiterentwicklung und laufende Verbesserungen, auch dank großer Firmen wie Oracle und Microsoft. Die am häufigsten benutzten OpenSource Datenbanken sind MySQL und PostgreSQL.
+Die relationale Datenbank ist die am weitesten verbreitete Form der Datenbanksysteme. 8 der 10 meistgenutzten Datenbanken basiert darauf. Dementsprechend gibt es eine intensive Weiterentwicklung und laufende Verbesserungen, auch dank großer Firmen wie Oracle und Microsoft. Die am häufigsten benutzten OpenSource Datenbanken sind [MySQL](http://www.mysql.de/)  und [PostgreSQL](http://www.postgresql.org/).
 
 **Aufbau:**
 
-Diese Datenbanken basieren auf Tabellen (Relationen). Die Spalten enthalten dabei die Attribute und sind fest definiert durch ein Relationschemata. Die Zeilen bestehen aus den einzelnen Datensätzen und können dynamisch verändert werden.
+Diese Datenbanken basieren auf *Tabellen* (Relationen). Die Spalten enthalten dabei die Attribute und sind fest definiert durch ein Relationschemata. Die Zeilen bestehen aus den einzelnen Datensätzen und können dynamisch verändert werden.
 
 **Vorteile / Nachteile:**
 
-Vor allem für viele einfache Operationen/Zugriffe eignet sich diese Form der Datenbanken. Datenintegrität und Datenkonsistenz sind immer gesichert. Allerdings gibt es bei sehr komplexen Zugriffen, wo mehrere Relationen auf einmal betrachtet werden müssen, aufgrund der Struktur Leistungsabfälle. Zudem fehlt es an Dynamik, da das Relationschemata einmal festgelegt wird und danach nicht flexibel geändert werden kann.
+Vor allem für viele *einfache* Operationen/Zugriffe eignet sich diese Form der Datenbanken. Datenintegrität und Datenkonsistenz sind immer gesichert. Allerdings gibt es bei sehr komplexen Zugriffen, wo mehrere Relationen auf einmal betrachtet werden müssen, aufgrund der Struktur Leistungsabfälle. Zudem *fehlt es an Dynamik*, da das Relationschemata einmal festgelegt wird und danach nur sehr bedingt flexibel geändert werden kann.
 
 
 
@@ -92,9 +92,9 @@ Komplexe geometrische Objekte:
 - Topologische Oberfläche
     
 **Funktionalitäten einer Geodatenbank**
-- geometrys oder features genannt
+- geometries oder features genannt
 
-Folgende Operationen sind durch das OGC spezifizeiert und standatisiert
+Folgende Operationen werden standardmäßig bereitgestellt:
 - Räumliche Messungen: Länge einer Linie berechnen, Distanz zwischen Punkten oder Geometrien...
 - Räumliche Funktionen: bereits existierende features modifizieren, manipulieren und so neue features erzeugen
 - Räumliche Eigenschaften/Relationen: Erlaubt true/false Abfragen über raümlichen Zusammenhang zwischen Geometrien. 
@@ -106,29 +106,29 @@ Informationsfunktion: Abfragen, die spezifische Information über ein feature li
 
 **Beispiel einer Geodatenbank**
 
-PostGIS: ist eine Open Soruce Anwendung, die zusätzlichen Support für geographische Objekte 
+[PostGIS] (postgis.net) ist eine Open Soruce Anwendung, die zusätzlichen Support für geographische Objekte 
 für die objektrelationale PostgreSQL Datenbank liefert. Ein Standard-Datentyp 'geometry' wurde mit 
-entsprechenden Funktionen implementiert. PostGIS richtet sich nach den 'Simple Features for SQL specification' 
-des Open Geospatial Consortium (OGC).   
+entsprechenden Funktionen implementiert. PostGIS richtet sich nach den [Simple Features for SQL specification] (http://www.opengeospatial.org/standards/sfo) des Open Geospatial Consortium (OGC).   
 
 NoSQL
 ---
 **Allgemeines:**
 
-NoSQL bedeutet 'Not only SQL'. Es behandelt Datenbanken welche nicht auf eine herkömmliche Architektur basieren, sondern auf eine welche dynamisch und erweiterbar ist. D.h. es herrscht keine festes Schema. Die Entwicklung dieser Datenbanken ist meist auf den jeweiligen Anwendungsfall zugeschnitten. Daher gibt es viele sehr unterschiedliche NoSQL Datenbanktypen. Früher gab es lange nur SQL Datenbanken, aber seit ein paar Jahren werden diese immer beliebter. Firmen wie zum Beispiel Facebook entwickeln diese.
+NoSQL bedeutet 'Not only SQL'. Es behandelt Datenbanken welche nicht auf eine herkömmliche Architektur basieren, sondern auf eine welche dynamisch und erweiterbar ist. D.h. es herrscht keine festes Schema. Die Entwicklung dieser Datenbanken ist meist auf den jeweiligen Anwendungsfall zugeschnitten. Daher gibt es viele sehr unterschiedliche NoSQL Datenbanktypen. Früher gab es lange nur SQL Datenbanken, aber seit ein paar Jahren werden diese immer beliebter. Firmen, wie zum Beispiel [Facebook](http://www.infoq.com/news/2014/06/facebook-apollo) entwickeln diese.
 
-**Beispiel CouchDB:**
+**Beispiel [CouchDB](http://couchdb.apache.org/):**
 
-Diese Form ist eine dokumentorientierte Datenbank, was bedeutet, dass eine Speicherung unstrukturierter Daten mit flexibler Attributewahl Praxis ist. Dies ist vor allem positiv für die Skalierbarkeit und den Austausch zwischen Off-/Online Daten. Einsatzgebiet ist beispielsweise ist der Abgleich zwischen Dokumenten auf einem PC und Netzwerken. 
+Diese Form ist eine *dokumentorientierte Datenbank*, was bedeutet, dass eine Speicherung unstrukturierter Daten mit flexibler Attributewahl Praxis ist. Dies ist vor allem positiv für die Skalierbarkeit und den Austausch zwischen Off-/Online Daten. Einsatzgebiet ist beispielsweise ist der Abgleich zwischen Dokumenten auf einem PC und Netzwerken. Mit der Erweiterung [“GeoCouch”](https://github.com/couchbase/geocouch) ist auch der Umgang mit GeoDaten möglich. Diese Erweiterung wird mittlerweile professionell weiterentwickelt.
+Ein weiteres Beispiel für solch eine dokumentorientierte Datenbank ist [MongoDB] (http://www.mongodb.org/), welche wesentlich verbreiteter ist und auch entsprechende Erweiterungen für den räumlichen Einsatz unterstützt, z.Beispiel [GeoSpatial Indexes](http://docs.mongodb.org/manual/applications/geospatial-indexes/) .
 
-**Beispiel Neo4J:**
+**Beispiel [Neo4J](http://neo4j.com/):**
 
-Diese Graphen-Datenbanken bestehen nur aus Knoten, Beziehungen und den dazugehörigen Attributen. Daher eignet sich diese Art der NoSQL Datenbanken besonders gut für die Umsetzung komplexer Beziehungen zwischen Relationen. Auch hier gibt es wieder eine große Flexibilität. Sie werden häufig für die Verknüpfung von Daten in sozialen Netzwerken verwendet. 
+Diese *Graphen-Datenbanken* bestehen nur aus Knoten, Beziehungen und den dazugehörigen Attributen. Daher eignet sich diese Art der NoSQL Datenbanken besonders gut für die Umsetzung komplexer Beziehungen zwischen Relationen. Auch hier gibt es wieder eine große Flexibilität. Sie werden häufig für die Verknüpfung von Daten in sozialen Netzwerken verwendet. [“Neo4j Spatial”](https://github.com/neo4j-contrib/spatial) ist eine Bibliothek, welche die Verwendung von räumlichen Daten innerhalb von Neo4J erlaubt.
 
-**Vorteile / Nachteile:**
+Array Datenbanken 
+---
 
-NoSQL Datenbanken verzichten größtenteils auf eine immer garantierte Datenkonsistenz, erlauben dadurch aber eine wesentlich größere Dynamik. Je nach Projektanforderungen, sind sie eine ernsthafte Alternative zu herkömmlichen Datenbanken.
-
+Array Datenbanken speichern Daten in einer fest gegebenen Anzahl (mind. 1) von Dimensionen ab. Daher eignen sie sich besonders für Bilder, aber auch für Verknüpfungen zwischen Koordinaten und einem weiteren Faktor (zum Beispiel Ozeankoordinaten (3-dim.) in Verbindung mit Temperatur, insgesamt 4 Dimensionen). Dadurch kommen sie vor allem in der Wissenschaft zum Einsatz. Die meisten der Implementierungen sind auf Geodaten ausgerichtet und benötigen keine weiteren Bibliotheken. Bekannte Umsetzungen sind hierbei [Rasdaman] (http://www.rasdaman.de/), [MonetDB] (https://www.monetdb.org/Home), [SciDB] (http://www.scidb.org/) oder die bereits erwähnte OpenSource Umsetzung [PostGIS](http://postgis.net/). 
 
 
 
@@ -138,6 +138,7 @@ Triple Store
 - Triplestores dienen zur Speicherung von RDF in Datenbanken und Datenstrukturen
 - bietet persistente Speicherung und Zugriff auf RDF-Graphen
 - Zugriff erfolgt auch über Query-Language (SparQL)
+- Standard hier: [GeoSPARQL] (http://www.geosparql.org)
 
 **Vorteile**
 
@@ -153,24 +154,54 @@ Triple Store
 - nicht leicht Rückschlüsse zu ziehen  
 
 **Beispiele (open source)**
-- OpenLink Virtuoso
-- Garlik 4store 
-- Bigdata(R) 
-- YARS2 
-- Jena TDB 
-- Jena SDB 
-- Mulgara 
-- RDF gateway 
-- Jena with PostgreSQL 
-- Kowari 
-- 3store with MySQL 3 
-- Sesame 
+- [OpenLink Virtuoso] (http://virtuoso.openlinksw.com/)
+- [Garlik 4store] (http://4store.org/)
+- [Bigdata(R)] (http://www.bigdata.com/blog/)
+- [YARS2] (http://sw.deri.org/2004/06/yars/)
+- [Jena TDB] (http://jena.apache.org/documentation/tdb/index.html) 
+- [Jena SDB] (https://jena.apache.org/documentation/sdb/)
+- [Mulgara] (http://www.mulgara.org/)
+- [Jena with PostgreSQL] (http://jena.apache.org/) 
+- [Kowari] (http://www.kowari.org/)
+- [3store with MySQL 3] (http://threestore.sourceforge.net/) 
+- [Sesame] (http://www.rdf4j.org)
+
+
+**Beispielhafte Abfrage**
+
+*PostGIS(SQL)*:
+```sh
+SELECT attribute FROM table WHERE condition=true
+```
+
+*Triple Stores (GeoSPARQL)*:
+```sh
+SELECT ?what
+WHERE {
+  ?what geo:hasGeometry ?geometry .
+  ?geometry geo:asWKT ?wkt .
+ 
+  FILTER(geof:within(?wkt,
+     "POLYGON((
+-77.089005 38.913574,
+-77.029953 38.913574,
+-77.029953 38.886321,
+-77.089005 38.886321,
+-77.089005 38.913574
+))"^^geo:wktLiteral))
+}
+```
+Quoted from [wiki] (http://en.wikipedia.org/wiki/GeoSPARQL)
+
+
 
 Fazit
 ---
 
 Nach bisheriger Kenntnis stellt unser Projekt folgende Anforderungen an die Datenverwaltung: Datenkonsistenz, viele einfache Zugriffe, verschiedene Benutzer und das Speichern von Geodaten. Flexible und dynamische Relationschemata/Attribute werden nicht benötigt, da alle Felder fest vorgegeben sind.
-Diese Anforderungen werden unserer Meinung nach am besten mit relationalen Datenbanken erfüllt. Eine passende und kostenlose Implementiertung wäre 'MySQL': Diese verfügt über alle genannten Kriterien und kann auch explizit Geodaten speichern ("Spatial Data Types").
+Diese Anforderungen werden unserer Meinung nach am besten mit relationalen Datenbanken erfüllt. Eine passende und kostenlose Implementiertung wäre [MySQL] (http://www.mysql.de). Diese verfügt über alle genannten Kriterien und kann auch explizit Geodaten speichern ("Spatial Data Types").
+
+
 
 
 Quellen
@@ -178,33 +209,49 @@ Quellen
 
 Datenbanksystem:
 
-http://de.wikipedia.org/wiki/Datenbank
+* http://de.wikipedia.org/wiki/Datenbank
 
 Relationale Datenbank:
 
-http://de.wikipedia.org/wiki/Datei:Begriffe_relationaler_Datenbanken.svg
-http://db-engines.com/de/ranking
-http://www2.pmf.fh-goettingen.de/~jwitte/lehre/Medieninformatik/Datenbanken/Vorlesungskripte/Das%20Relationenmodell.pdf
+* http://de.wikipedia.org/wiki/Datei:Begriffe_relationaler_Datenbanken.svg
+
+* http://db-engines.com/de/ranking
+
+* http://www2.pmf.fh-goettingen.de/~jwitte/lehre/Medieninformatik/Datenbanken/Vorlesungskripte/Das%20Relationenmodell.pdf
 
 Geodatenbank:
 
-http://wikis.gm.fh-koeln.de/wiki_db/Datenbanken/Geodatenbank
-http://www.imn.htwk-leipzig.de/~jwinkle3/scripts/OS_Moderne_DB_Handout.pdf
-http://en.wikipedia.org/wiki/Spatial_database
+* http://wikis.gm.fh-koeln.de/wiki_db/Datenbanken/Geodatenbank
+
+* http://www.imn.htwk-leipzig.de/~jwinkle3/scripts/OS_Moderne_DB_Handout.pdf
+
+* http://en.wikipedia.org/wiki/Spatial_database
 
 NoSQL:
 
-http://www.heise.de/open/artikel/NoSQL-im-Ueberblick-1012483.html?artikelseite=2
-http://de.wikipedia.org/wiki/NoSQL
-http://www.nosqldatabases.com/main/tag/neo4j
-http://www.nosqldatabases.com/main/2010/8/5/san-diego-nosql-meetup-slides.html
+* http://www.heise.de/open/artikel/NoSQL-im-Ueberblick-1012483.html?artikelseite=2
+
+* http://de.wikipedia.org/wiki/NoSQL
+
+* http://www.nosqldatabases.com/main/tag/neo4j
+
+* http://www.nosqldatabases.com/main/2010/8/5/san-diego-nosql-meetup-slides.html
+
+* http://www.rasdaman.de/
+
+* http://www.paradigm4.com/why-an-array-database/
+
+* http://en.wikipedia.org/wiki/Rasdaman
 
 Triple Store:
 
-http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSRDFFAQ
-http://www.bioontology.org/wiki/images/6/6a/Triple_Stores.pdf
-http://www.w3.org/wiki/LargeTripleStores#Jena_with_PostgreSQL_.28200M.29
-http://en.wikipedia.org/wiki/Triplestore
-http://dna.fernuni-hagen.de/Tutorial-neu.pdf
+* http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSRDFFAQ
 
+* http://www.bioontology.org/wiki/images/6/6a/Triple_Stores.pdf
+
+* http://www.w3.org/wiki/LargeTripleStores#Jena_with_PostgreSQL_.28200M.29
+
+* http://en.wikipedia.org/wiki/Triplestore
+
+* http://dna.fernuni-hagen.de/Tutorial-neu.pdf
 
