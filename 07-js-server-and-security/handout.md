@@ -74,6 +74,7 @@ Bei Node.JS gibt es nur einen Thread, der Anfragen annimmt und sie direkt weiter
 2. [Video-Tutorial](http://nodetuts.com)        
 3. [blog.rapsli.ch](http://blog.rapsli.ch/posts/2013/2013-04-22-anfangerwissen-fur-node-js.html/)         
 4. [nodeguide.com](http://nodeguide.com/beginner.html)
+5. [nodeschool](http://nodeschool.io)
 
 [Node.js Module mit Geobezug](https://nodejsmodules.org/tags/geos)
 
