@@ -48,7 +48,7 @@ von Simon Schulte und Tobias Tasse
 
 ###WMS
 
-- OpenGIS Wep Map Service (WMS)
+- OpenGIS Web Map Service (WMS)
 - definiert vom Open Geospatial Consortium (OGC)
 - Spezialfall eines Web Services
 - Exkurs Web Service:
