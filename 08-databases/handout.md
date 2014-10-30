@@ -166,8 +166,16 @@ Triple Store
 - [3store with MySQL 3] (http://threestore.sourceforge.net/) 
 - [Sesame] (http://www.rdf4j.org)
 
+**Ergänzungen**
 
-**Beispielhafte Abfrage**
+Es gibt Tools, die es ermöglichen, in RDBMS gespeicherte Daten im RDF-Format darzustellen: 
+
+- [R2RML] (http://www.w3.org/TR/r2rml)
+- [morph-rdb] (http://mayor2.dia.fi.upm.es/oeg-upm/index.php/es/technologies/315-morph-rdb)
+- [triplify] (http://triplify.org/Overview)
+- [RDB2RDF] (http://www.w3.org/2001/sw/rdb2rdf/)
+
+**Beispielhafte Abfragen**
 
 *PostGIS(SQL)*:
 ```sh
