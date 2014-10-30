@@ -253,7 +253,7 @@ W3:
 Internet Engineering Task Force:   
 <http://tools.ietf.org/pdf/rfc6455.pdf>
 
-Einige Beispiele für WebSocket-Implementierungen:
+Einige Beispiele für WebSocket-Implementierungen:   
 <https://www.websocket.org/demos.html>
 
 Welche Browser WebSockets unterstützen findet man hier:  
