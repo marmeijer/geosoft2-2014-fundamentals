@@ -215,22 +215,22 @@ Dies ist jedoch nur halbduplex, Nachrichten können zwar in beide Richtungen ver
 Es gibt verschiedene Serverimplementierungen die das WebSocketprotokoll unterstützen sind zum Beispiel [3]:
 
 + Node.js
-    + Socket.IO
-    + WebSocket-Node
-    + ws
+    + [Socket.IO](http://socket.io/)
+    + [WebSocket-Node](https://github.com/Worlize/WebSocket-Node)
+    + [ws](https://github.com/einaros/ws)
 + Java
-    + Jetty
+    + [Jetty](http://www.eclipse.org/jetty/)
 + Ruby
-    + EventMachine
+    + [EventMachine](https://github.com/igrigorik/em-websocket)
 + Python
-    + pywebsocket
-    + Tornado
+    + [pywebsocket](https://code.google.com/p/pywebsocket/)
+    + [Tornado](http://www.tornadoweb.org/en/stable/)
 + Erlang
-    + Shirasu
+    + [Shirasu](https://github.com/michilu/shirasu)
 + C++
-    + libwebsockets
+    + [libwebsockets](http://git.warmcat.com/cgi-bin/cgit/libwebsockets/)
 + .NET
-    + SuperWebSocket
+    + [SuperWebSocket](http://superwebsocket.codeplex.com/)
 
 Wie man mit JavaScript eine WebSocketverbinung aufbaut findet man [hier](http://www.html5rocks.com/de/tutorials/websockets/basics/#toc-introduction-sockets).  
 Noch zu beachten ist vielleicht das Schema der URIs zur Verbindung mit einem WebSockets unterstützenden Server. Diese beginnen mit `ws:`, wenn die Verbindung unverschlüsselt ist und mit `wss:`, wenn sie verschlüsselt ist. 
@@ -253,6 +253,8 @@ W3:
 Internet Engineering Task Force:   
 <http://tools.ietf.org/pdf/rfc6455.pdf>
 
+Einige Beispiele für WebSocket-Implementierungen:
+<https://www.websocket.org/demos.html>
 
 Welche Browser WebSockets unterstützen findet man hier:  
 <http://caniuse.com/#feat=websockets>
