@@ -209,6 +209,9 @@ Alle Quellen sowie nützliche und Interessante Links zum Thema "Map-Client Frame
 * [http://vimeo.com/107472767] Aktueller Talk von der foss4g von Justin Miller über Mapbox GL und möglichkeiten von Vectormaps.
 * [http://vimeo.com/106227909] Aktueller Talk von der foss4g über OpenLayers 3
 * [https://maptime.github.io/anatomy-of-a-web-map/#0] Herrvorragende Präsentation, die noch einmal alles zusammenfasst was man über moderne webmaps wissen muss.
+* [http://www.opengeospatial.org/standards/wmts] OGC Web Map Tile Service Implementation Standard
+* [http://mayor2.dia.fi.upm.es/oeg-upm/index.php/en/technologies/172-map4rdf] map4rdf als brücke zwischen mapping und RDF
+* 
 
 
 
