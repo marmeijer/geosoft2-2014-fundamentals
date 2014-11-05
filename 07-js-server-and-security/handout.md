@@ -90,6 +90,8 @@ Bei Node.JS gibt es nur einen Thread, der Anfragen annimmt und sie direkt weiter
 ●  Passwörter können durch beispielsweise eine [MD5-Hashfunktion](http://aktuell.de.selfhtml.org/artikel/javascript/md5/)  verschlüsselt werden, um nicht als Klartext übertragen zu werden  
 ●	 Auch möglich: JavaScript deaktivieren   
 
+[Demo](http://www.heise.de/security/artikel/Passwortklau-fuer-Dummies-270910.html#) zum Thema Cross-Site-Scripting  
+
 ##Same Origin Policy
 ein Sicherheitskonzept, das clientseitigen Skriptsprachen aber auch Cascading Style Sheets untersagt, auf Objekte zuzugreifen, die von einer anderen Webseite stammen oder deren Speicherort nicht der Origin entspricht.
 
