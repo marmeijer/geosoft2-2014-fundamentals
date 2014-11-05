@@ -67,7 +67,9 @@ für Cloud Dienste geeignet
 
 ![Node.JS](http://dev-ops.net/wp-content/uploads/2014/07/threading_node.png)  
  
-Bei Node.JS gibt es nur einen Thread, der Anfragen annimmt und sie direkt weitergibt. Er ist also im Gegensatz zu den mehreren Threads bei „normalen“ Webservern nie blockiert oder muss warten. Grund dafür ist auch das asynchrone Input/Output, welches zeitlich versetzt stattfindet, um Prozesse nicht zu blockieren. 
+Bei Node.JS gibt es nur einen Thread, der Anfragen annimmt und sie direkt weitergibt. Er ist also im Gegensatz zu den mehreren Threads bei „normalen“ Webservern nie blockiert oder muss warten. Grund dafür ist auch das asynchrone Input/Output, welches zeitlich versetzt stattfindet, um Prozesse nicht zu blockieren.  
+
+**Fazit:** Node.JS ist für einige Szenarien mehr, für andere weniger geeignet. Gut geeignet ist es für moderne Webanwendungen, wie zum Beispiel JSON-basierte REST-Dienste. Es kann jedoch bei sehr rechenintensiven Anwendungen auch Schwächen zeigen.
 
 ###Node.js Tutorials:            
 1. [nodecode.de](http://nodecode.de)      
