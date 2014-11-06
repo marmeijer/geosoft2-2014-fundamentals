@@ -10,11 +10,15 @@ Handouts for background technical presentations for Geosoftware II Seminar at if
   * Take a look at the [markdown syntax](https://guides.github.com/features/mastering-markdown/)
   * Split up your work into logical commits and use informative names for each of these
 1. Create a presentation based on your handout
+2. Add a tag `handout-submission-1`
 1. Send a pull request before the submission deadline containing your handout (not the presentation)
   * Give the pull request a useful name
   * Implement the feedback by the lecturers
   * Update the pull request by pushing the changs to your repository
 1. Present at the seminar
+2. Incorporate feedback from the presentation into the handout
+  * Add a tag `handout-submission-2`
+  * Add a tag `handout-submission-1`
 1. If you see an error or want to extend information of your own or a colleagues handout...
   1. Update your fork (fetch and merge)
   1. Make the changes
